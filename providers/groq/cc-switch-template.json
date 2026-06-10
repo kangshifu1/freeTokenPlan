@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "groq",
+  "provider_name": "Groq",
+  "official_website": "https://groq.com/",
+  "console_url": "https://console.groq.com/keys",
+  "registration": {
+    "method": "email_or_social",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "openai_compatible",
+    "base_url": "https://api.groq.com/openai/v1",
+    "api_key_env": "GROQ_API_KEY",
+    "default_model": "llama-3.3-70b-versatile",
+    "supports_responses_api": false,
+    "supports_chat_completions": true,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Free start is available; exact quotas vary by account and current policy.",
+    "limit_window": "account-specific",
+    "reset_rule": "console policy applies",
+    "expires": "check-console"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "default",
+        "model": "llama-3.3-70b-versatile"
+      }
+    ]
+  },
+  "notes": [
+    "Good as a fast fallback route.",
+    "Verify exact model availability in the Groq console."
+  ]
+}

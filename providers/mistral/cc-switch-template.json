@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "mistral",
+  "provider_name": "Mistral",
+  "official_website": "https://mistral.ai/",
+  "console_url": "https://console.mistral.ai/",
+  "registration": {
+    "method": "email_signup",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "gateway_recommended",
+    "base_url": "https://your-openai-compatible-gateway.example.com/v1",
+    "api_key_env": "MISTRAL_API_KEY",
+    "default_model": "mistral-small-latest",
+    "supports_responses_api": false,
+    "supports_chat_completions": false,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Free mode exists for evaluation and prototyping; exact limits vary.",
+    "limit_window": "product-specific",
+    "reset_rule": "current plan rules apply",
+    "expires": "check-current-plan"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "small",
+        "model": "mistral-small-latest"
+      }
+    ]
+  },
+  "notes": [
+    "Prefer a compatible gateway before using with Codex-like tools.",
+    "Validate current model names in the Mistral console."
+  ]
+}

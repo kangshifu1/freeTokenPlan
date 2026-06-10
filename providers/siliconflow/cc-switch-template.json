@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "siliconflow",
+  "provider_name": "SiliconFlow",
+  "official_website": "https://siliconflow.cn/",
+  "console_url": "https://cloud.siliconflow.cn/",
+  "registration": {
+    "method": "email_or_phone",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "openai_compatible",
+    "base_url": "https://api.siliconflow.cn/v1",
+    "api_key_env": "SILICONFLOW_API_KEY",
+    "default_model": "Qwen/Qwen2.5-7B-Instruct",
+    "supports_responses_api": false,
+    "supports_chat_completions": true,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Some models are explicitly marked free on the model page.",
+    "limit_window": "model-specific",
+    "reset_rule": "current platform rule applies",
+    "expires": "check-model-page"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "free-model-placeholder",
+        "model": "Qwen/Qwen2.5-7B-Instruct"
+      }
+    ]
+  },
+  "notes": [
+    "Replace the placeholder model with a model currently marked free.",
+    "Very practical for China-based users testing multiple open models."
+  ]
+}

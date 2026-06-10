@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "replace-me",
+  "provider_name": "Replace Me",
+  "official_website": "https://example.com",
+  "console_url": "https://example.com/console",
+  "registration": {
+    "method": "email_or_social",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "openai_compatible",
+    "base_url": "https://example.com/v1",
+    "api_key_env": "REPLACE_ME_API_KEY",
+    "default_model": "replace-model",
+    "supports_responses_api": false,
+    "supports_chat_completions": true,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "replace with current official statement",
+    "limit_window": "unknown",
+    "reset_rule": "unknown",
+    "expires": "check-console"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "default",
+        "model": "replace-model"
+      }
+    ]
+  },
+  "notes": [
+    "This file is a repo-defined template for CC Switch preparation.",
+    "Verify the final field names against the current CC Switch release before importing."
+  ]
+}

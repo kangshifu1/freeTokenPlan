@@ -1,0 +1,46 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "openrouter",
+  "provider_name": "OpenRouter",
+  "official_website": "https://openrouter.ai/",
+  "console_url": "https://openrouter.ai/keys",
+  "registration": {
+    "method": "email_or_social",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "openai_compatible",
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "default_model": "openrouter/auto",
+    "supports_responses_api": false,
+    "supports_chat_completions": true,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Free account can use free models with published rate limits.",
+    "limit_window": "daily_and_per_minute",
+    "reset_rule": "official limits page applies",
+    "expires": "long-term-available"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "auto",
+        "model": "openrouter/auto"
+      },
+      {
+        "label": "free-model-example",
+        "model": "meta-llama/llama-3.3-8b-instruct:free"
+      }
+    ]
+  },
+  "notes": [
+    "Replace the example free model with one confirmed on the current models page.",
+    "Codex-like tools often work better through local routing."
+  ]
+}

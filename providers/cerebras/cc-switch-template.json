@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "cerebras",
+  "provider_name": "Cerebras Inference",
+  "official_website": "https://www.cerebras.ai/",
+  "console_url": "https://inference.cerebras.ai/",
+  "registration": {
+    "method": "email_signup",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "openai_compatible",
+    "base_url": "https://api.cerebras.ai/v1",
+    "api_key_env": "CEREBRAS_API_KEY",
+    "default_model": "llama-3.3-70b",
+    "supports_responses_api": false,
+    "supports_chat_completions": true,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Free API key flow exists; exact quotas should be verified in console.",
+    "limit_window": "account-specific",
+    "reset_rule": "console policy applies",
+    "expires": "check-console"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "default",
+        "model": "llama-3.3-70b"
+      }
+    ]
+  },
+  "notes": [
+    "Good candidate for a high-speed backup provider.",
+    "Confirm current supported model IDs before import."
+  ]
+}

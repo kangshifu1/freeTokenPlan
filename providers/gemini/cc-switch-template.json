@@ -1,0 +1,46 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "gemini",
+  "provider_name": "Google Gemini API",
+  "official_website": "https://ai.google.dev/",
+  "console_url": "https://aistudio.google.com/",
+  "registration": {
+    "method": "google_account",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "gateway_recommended",
+    "base_url": "https://your-openai-compatible-gateway.example.com/v1",
+    "api_key_env": "GEMINI_API_KEY",
+    "default_model": "gemini-2.5-flash",
+    "supports_responses_api": false,
+    "supports_chat_completions": false,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Official long-term Free tier exists and varies by model.",
+    "limit_window": "per-model",
+    "reset_rule": "official rate limits apply",
+    "expires": "long-term-free-tier"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "flash",
+        "model": "gemini-2.5-flash"
+      },
+      {
+        "label": "flash-lite",
+        "model": "gemini-2.5-flash-lite"
+      }
+    ]
+  },
+  "notes": [
+    "Gemini is best connected through a compatible gateway for Codex-like tools.",
+    "Verify current model names in AI Studio before import."
+  ]
+}

@@ -1,0 +1,11 @@
+# Hugging Face
+
+- 官网：[Pricing and Billing](https://huggingface.co/docs/api-inference/pricing)
+- 注册：Hugging Face 账号
+- 免费：每月少量 credits，适合联调
+- 推荐用途：轻量 API 验证、模型探索
+
+目录文件：
+
+- [computer-use.md](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/computer-use.md)
+- [cc-switch-template.json](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/cc-switch-template.json)

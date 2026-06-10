@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "cohere",
+  "provider_name": "Cohere",
+  "official_website": "https://cohere.com/",
+  "console_url": "https://dashboard.cohere.com/api-keys",
+  "registration": {
+    "method": "email_signup",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "gateway_recommended",
+    "base_url": "https://your-openai-compatible-gateway.example.com/v1",
+    "api_key_env": "COHERE_API_KEY",
+    "default_model": "command-a-03-2025",
+    "supports_responses_api": false,
+    "supports_chat_completions": false,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Trial keys are free with published trial rate limits.",
+    "limit_window": "monthly_and_per_minute",
+    "reset_rule": "official account policy applies",
+    "expires": "trial-policy"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "trial-default",
+        "model": "command-a-03-2025"
+      }
+    ]
+  },
+  "notes": [
+    "Use a compatible gateway before importing into tools expecting OpenAI style APIs.",
+    "Verify the current recommended trial model in Cohere docs."
+  ]
+}

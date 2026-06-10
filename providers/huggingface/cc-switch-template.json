@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "huggingface",
+  "provider_name": "Hugging Face Inference Providers",
+  "official_website": "https://huggingface.co/",
+  "console_url": "https://huggingface.co/settings/tokens",
+  "registration": {
+    "method": "email_signup",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "gateway_recommended",
+    "base_url": "https://your-openai-compatible-gateway.example.com/v1",
+    "api_key_env": "HF_TOKEN",
+    "default_model": "meta-llama/Llama-3.1-8B-Instruct",
+    "supports_responses_api": false,
+    "supports_chat_completions": false,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Small monthly credits for free accounts.",
+    "limit_window": "monthly",
+    "reset_rule": "monthly reset",
+    "expires": "recurring-credits"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "provider-default",
+        "model": "meta-llama/Llama-3.1-8B-Instruct"
+      }
+    ]
+  },
+  "notes": [
+    "Best used for lightweight testing rather than daily coding.",
+    "Use a gateway before importing into CC Switch."
+  ]
+}
