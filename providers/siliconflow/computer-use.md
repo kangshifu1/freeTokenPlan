@@ -1,5 +1,7 @@
 # SiliconFlow Computer Use Script
 
+[中文](./computer-use.md) | [English](./computer-use.en.md)
+
 ## 操作脚本
 
 1. 打开 [https://cloud.siliconflow.cn/](https://cloud.siliconflow.cn/)

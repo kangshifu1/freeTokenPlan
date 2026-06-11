@@ -1,5 +1,7 @@
 # Hugging Face
 
+[中文](./README.md) | [English](./README.en.md)
+
 - 官网：[Pricing and Billing](https://huggingface.co/docs/api-inference/pricing)
 - 注册：Hugging Face 账号
 - 免费：每月少量 credits，适合联调

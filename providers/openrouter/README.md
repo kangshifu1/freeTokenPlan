@@ -1,5 +1,7 @@
 # OpenRouter
 
+[中文](./README.md) | [English](./README.en.md)
+
 - 官网：[OpenRouter Quickstart](https://openrouter.ai/docs/quickstart)
 - 注册：邮箱或第三方账号注册后创建 API Key
 - 免费：大量 `:free` 模型，免费账户可直接拿 key

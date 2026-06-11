@@ -1,5 +1,7 @@
 # Cohere
 
+[中文](./README.md) | [English](./README.en.md)
+
 - 官网：[Cohere Rate Limits](https://docs.cohere.com/docs/rate-limits)
 - 注册：Cohere 账号注册后创建试用 key
 - 免费：试用 key 可免费试用

@@ -1,5 +1,7 @@
 # OpenRouter Computer Use Script
 
+[中文](./computer-use.md) | [English](./computer-use.en.md)
+
 ## 目标
 
 1. 注册 OpenRouter

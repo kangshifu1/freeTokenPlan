@@ -1,5 +1,7 @@
 # Mistral Computer Use Script
 
+[中文](./computer-use.md) | [English](./computer-use.en.md)
+
 ## 操作脚本
 
 1. 打开 [https://console.mistral.ai/](https://console.mistral.ai/)

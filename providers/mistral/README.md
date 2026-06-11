@@ -1,5 +1,7 @@
 # Mistral
 
+[中文](./README.md) | [English](./README.en.md)
+
 - 官网：[Mistral Pricing](https://docs.mistral.ai/getting-started/pricing/)
 - 注册：Mistral 平台注册
 - 免费：有 free mode / free 计划能力，细则以当前产品页为准

@@ -1,5 +1,7 @@
 # Provider Template
 
+[中文](./provider-template.md) | [English](./provider-template.en.md)
+
 ## 基本信息
 
 - 名称：

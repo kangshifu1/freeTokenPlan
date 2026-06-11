@@ -1,5 +1,7 @@
 # DashScope / 百炼
 
+[中文](./README.md) | [English](./README.en.md)
+
 - 官网：[模型计费与免费额度](https://help.aliyun.com/zh/model-studio/model-pricing)
 - 注册：阿里云账号开通百炼
 - 免费：新人免费额度与模型活动并存

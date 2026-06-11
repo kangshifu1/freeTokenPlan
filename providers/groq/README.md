@@ -1,5 +1,7 @@
 # Groq
 
+[中文](./README.md) | [English](./README.en.md)
+
 - 官网：[Groq Docs](https://console.groq.com/docs/overview)
 - 注册：Groq Console 注册后创建 API Key
 - 免费：可免费开始，具体限额以控制台为准

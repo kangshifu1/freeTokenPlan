@@ -1,5 +1,7 @@
 # Gemini Computer Use Script
 
+[中文](./computer-use.md) | [English](./computer-use.en.md)
+
 适用对象：让 AI 助手或人工操作员按步骤完成注册、创建 key、填入 CC Switch。
 
 ## 目标
