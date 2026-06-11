@@ -1,6 +1,31 @@
 # AI 免费 Token / 免费额度清单
 
+[![GitHub last commit](https://img.shields.io/github/last-commit/kangshifu1/freeTokenPlan)](https://github.com/kangshifu1/freeTokenPlan/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/kangshifu1/freeTokenPlan)](https://github.com/kangshifu1/freeTokenPlan)
+[![Language](https://img.shields.io/badge/language-ZH%20%7C%20EN-blue)](./README.en.md)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
+
 [中文](./README.md) | [English](./README.en.md)
+
+面向新手的公开索引仓库，用来整理市面上可用于 AI 工具、AI 编程客户端、代理网关的免费额度、试用配额、注册路径、`CC Switch` 导入模板，以及 `Computer Use` 操作脚本。
+
+## 这个仓库有什么
+
+- 免费额度清单：只收录适合接 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端的项目
+- 双语文档：中文与英文并列维护
+- 供应商目录化：每个供应商单独一个目录，方便维护和分享
+- `Computer Use` 脚本：方便 AI 或人工按步骤注册、取 key、录入配置
+- `CC Switch` 模板：方便做标准化导入准备
+
+## 快速导航
+
+- [中文总览](./README.md)
+- [English Overview](./README.en.md)
+- [供应商目录索引](#供应商目录索引)
+- [标准收录格式](#标准收录格式)
+- [如何用-cc-switch-接入](#如何用-cc-switch-接入)
+- [如何在-codex-中使用](#如何在-codex-中使用)
+- [如何在-claude-code-中使用](#如何在-claude-code-中使用)
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 

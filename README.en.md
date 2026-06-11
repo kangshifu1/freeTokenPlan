@@ -1,6 +1,30 @@
 # Free AI Token and Free Tier Catalog
 
+[![GitHub last commit](https://img.shields.io/github/last-commit/kangshifu1/freeTokenPlan)](https://github.com/kangshifu1/freeTokenPlan/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/kangshifu1/freeTokenPlan)](https://github.com/kangshifu1/freeTokenPlan)
+[![Language](https://img.shields.io/badge/language-ZH%20%7C%20EN-blue)](./README.md)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
+
 [中文](./README.md) | [English](./README.en.md)
+
+This is a public repository for beginners who want a practical index of free AI tokens, free tiers, trial quotas, registration flows, `CC Switch` import-prep templates, and `Computer Use` operator scripts for AI coding tools and compatible gateways.
+
+## What This Repo Includes
+
+- Free-tier catalog: focused on providers useful for `Codex`, `Claude Code`, `CC Switch`, and OpenAI-compatible clients
+- Bilingual docs: Chinese and English maintained side by side
+- One directory per provider: easier to maintain and share
+- `Computer Use` scripts: step-by-step operator flow for sign-up, key creation, and setup
+- `CC Switch` templates: normalized provider records for import preparation
+
+## Quick Navigation
+
+- [Chinese Overview](./README.md)
+- [English Overview](./README.en.md)
+- [Provider Index](#provider-index)
+- [Repository Structure](#repository-structure)
+- [About the CC Switch Templates](#about-the-cc-switch-templates)
+- [Official References](#official-references)
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
@@ -108,4 +132,3 @@ Before importing into a live `CC Switch` build, verify field names against your 
 - SiliconFlow
   - [Docs](https://docs.siliconflow.cn/)
   - [Use with Claude Code](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
-
