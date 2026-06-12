@@ -94,8 +94,8 @@ Each provider has its own directory with:
 - Cohere: trial keys remain the correct free testing path, with documented trial rate limits for evaluation and development.
 - Hugging Face: Inference Providers still use small monthly credits for free accounts, so this is best treated as a smoke-test or demo route.
 - Groq: official docs provide OpenAI-compatible access, but current quota and model availability should be checked on the organization-level limits page in the console.
-- Mistral: the public docs now describe a `free experimental tier` for La Plateforme and a free Mistral Code plan, but do not publish a stable signup token amount.
-- Cerebras: the docs still show a free API-key flow and OpenAI SDK usage; current supported model IDs should be checked on the official models page before setting a default.
+- Mistral: the public docs still position the free / low-friction path for evaluation and prototyping, and Mistral Code has a Free plan, but they do not publish a stable signup token amount.
+- Cerebras: the docs still show a free API-key flow and OpenAI SDK usage; the current public production endpoint is `gpt-oss-120b`, with `zai-glm-4.7` marked as preview on the models page.
 - DashScope / Bailian: free quota is regional and activity-based. The official pricing page says mainland China users can claim model free quotas that are valid for `90 days` after activation, with model-specific quota details.
 - SiliconFlow: official docs say free models are available after real-name verification; the docs also include Claude Code and CC Switch integration guides.
 

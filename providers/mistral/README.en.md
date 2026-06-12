@@ -4,7 +4,7 @@
 
 - Website: [Mistral Pricing](https://docs.mistral.ai/getting-started/pricing/)
 - Registration: create a Mistral platform account
-- Free tier: `La Plateforme` has a `free experimental tier`, and Mistral Code has free-plan features; current limits depend on the product page
+- Free tier: the official docs still position the free / low-friction path for evaluation and prototyping, and Mistral Code has free-plan features; current limits depend on the Studio / Console page
 - Recommended for: model-style testing and light development evaluation
 
 Files in this directory:

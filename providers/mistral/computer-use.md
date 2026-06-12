@@ -10,7 +10,7 @@
 4. 新建 key
 5. 复制 key
 6. 本地保存为环境变量：`MISTRAL_API_KEY`
-7. 查看 pricing / models 页面，确认当前 `free experimental tier` 和 Free 计划说明
+7. 查看 Studio / Console 与 pricing / models 页面，确认当前免费模式和 Free 计划说明
 8. 若导入 CC Switch，建议通过统一兼容网关接入
 
 ## 人工接管点
@@ -21,4 +21,4 @@
 ## 完成后核对
 
 - 是否已创建 key
-- 是否记录当前 `free experimental tier` 条件
+- 是否记录当前免费模式条件

@@ -4,7 +4,7 @@
 
 - 官网：[Mistral Pricing](https://docs.mistral.ai/getting-started/pricing/)
 - 注册：Mistral 平台注册
-- 免费：`La Plateforme` 有 `free experimental tier`，`Mistral Code` 有 Free 计划能力，细则以当前产品页为准
+- 免费：官方仍把免费 / 低门槛模式定位为评估与原型验证用途，`Mistral Code` 有 Free 计划能力，细则以 Studio / Console 当前页面为准
 - 推荐用途：模型风格试用、轻量开发测试
 
 目录文件：
