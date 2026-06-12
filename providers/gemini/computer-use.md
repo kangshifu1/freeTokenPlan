@@ -25,13 +25,13 @@
 3. 完成 Google 登录和可能出现的二次验证
 4. 进入 AI Studio 后，打开 `Get API key` 或 `API keys`
 5. 点击 `Create API key`
-6. 若页面要求选择 project，使用默认 project 或新建一个测试 project
+6. 若页面要求选择 project，优先创建 / 使用受限制的 `auth key`；避免使用不受限制的 `standard key`
 7. 生成后立即复制 key
 8. 本地保存为环境变量名：`GEMINI_API_KEY`
 9. 建议默认模型记录为：
    - `gemini-2.5-flash`
    - `gemini-2.5-flash-lite`
-10. 把 key 填入 CC Switch，`Base URL` 如走 OpenAI 兼容网关则填对应网关地址；如果直接走原生 Gemini API，则通常需要先经过兼容代理
+10. 把 key 填入 CC Switch；如走 Gemini 官方 OpenAI compatibility，可记录官方兼容端点；如果下游要求完整 Responses API，仍建议先经兼容代理验证
 
 ## 人工接管点
 
@@ -44,3 +44,4 @@
 - 是否成功拿到 API key
 - 是否记录了创建日期
 - 是否确认了当前 Free tier 模型
+- 是否确认 key 类型不是不受限制的 `standard key`

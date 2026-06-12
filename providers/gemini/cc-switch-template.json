@@ -11,12 +11,12 @@
     "requires_credit_card": false
   },
   "api": {
-    "protocol": "gateway_recommended",
-    "base_url": "https://your-openai-compatible-gateway.example.com/v1",
+    "protocol": "openai_compatible",
+    "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
     "api_key_env": "GEMINI_API_KEY",
     "default_model": "gemini-2.5-flash",
     "supports_responses_api": false,
-    "supports_chat_completions": false,
+    "supports_chat_completions": true,
     "supports_anthropic_compat": false,
     "needs_local_routing": true
   },
@@ -40,7 +40,7 @@
     ]
   },
   "notes": [
-    "Gemini is best connected through a compatible gateway for Codex-like tools.",
+    "Gemini has an official OpenAI compatibility endpoint; use a gateway only when the downstream tool requires unsupported OpenAI API features.",
     "Verify current model names in AI Studio before import."
   ]
 }

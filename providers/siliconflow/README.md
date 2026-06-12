@@ -3,8 +3,9 @@
 [中文](./README.md) | [English](./README.en.md)
 
 - 官网：[SiliconFlow Docs](https://docs.siliconflow.cn/)
-- 注册：注册账号并创建 API Key
-- 免费：部分模型会直接标 `免费`
+- 注册：注册账号，按平台要求完成验证 / 实名认证后创建 API Key
+- 免费：官方文档说明实名认证后可用免费模型，模型广场也会直接标 `免费`
+- 兼容：官方提供 [Claude Code](https://docs.siliconflow.cn/quickstart/use_with_claude_code) 和 [CC Switch](https://docs.siliconflow.cn/cn/userguide/introduction/use-with-cc-switch) 接入说明
 - 推荐用途：中国区多模型试用、接 `Claude Code`
 
 目录文件：

@@ -23,13 +23,13 @@
 3. Complete Google login and any secondary verification
 4. Open `Get API key` or `API keys`
 5. Click `Create API key`
-6. If asked for a project, use the default project or create a small test project
+6. If asked for a project, prefer a restricted `auth key`; avoid using an unrestricted `standard key`
 7. Copy the generated key immediately
 8. Save it locally as `GEMINI_API_KEY`
 9. Record suggested starter models:
    - `gemini-2.5-flash`
    - `gemini-2.5-flash-lite`
-10. For `CC Switch`, use a compatible gateway if your downstream tool expects an OpenAI-style API
+10. For `CC Switch`, record the official Gemini OpenAI compatibility endpoint if you use it; if the downstream tool requires full Responses API behavior, validate through a compatible gateway first
 
 ## Human Takeover Points
 
@@ -42,4 +42,4 @@
 - API key created successfully
 - Creation date recorded
 - Current free-tier model list checked
-
+- Key type is not an unrestricted `standard key`

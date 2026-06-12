@@ -4,7 +4,7 @@
 
 - 官网：[Groq Docs](https://console.groq.com/docs/overview)
 - 注册：Groq Console 注册后创建 API Key
-- 免费：可免费开始，具体限额以控制台为准
+- 免费：可免费开始；官方限流按组织级别生效，具体限额以控制台 `Limits` 页面为准
 - 推荐用途：低延迟交互、命令行问答
 
 目录文件：

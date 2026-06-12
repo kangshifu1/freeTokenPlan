@@ -4,7 +4,7 @@
 
 - Website: [Groq Docs](https://console.groq.com/docs/overview)
 - Registration: create a Groq Console account and generate an API key
-- Free tier: free start available, exact limits depend on the account and current policy
+- Free tier: free start available; official rate limits are organization-level, so check the console `Limits` page for exact current limits
 - Recommended for: low-latency interaction and CLI-style workflows
 
 Files in this directory:

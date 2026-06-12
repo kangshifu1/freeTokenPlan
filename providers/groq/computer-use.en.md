@@ -10,7 +10,7 @@
 4. Create a new key
 5. Copy the key
 6. Save it locally as `GROQ_API_KEY`
-7. Check the models or limits page for current availability
+7. Check the models page and the organization-level `Limits` page for current availability
 8. In `CC Switch`, add:
    - Base URL: `https://api.groq.com/openai/v1`
    - Default model: a currently available model from the console
@@ -23,5 +23,4 @@
 ## Final Checklist
 
 - Key works
-- Current account limits are noted
-
+- Current organization-level limits are noted

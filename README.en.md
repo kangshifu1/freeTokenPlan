@@ -28,7 +28,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-06-11`
+- Updated: `2026-06-12`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -87,6 +87,18 @@ Each provider has its own directory with:
 - [DashScope / Bailian](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.en.md)
 - [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.en.md)
 
+## Current Provider Notes
+
+- Gemini: the Free tier remains model-dependent. AI Studio now steers new keys toward `auth keys`, and Google documents that unrestricted `standard keys` will be rejected from `2026-06-19`. Gemini also has an official OpenAI compatibility endpoint, but it is not a full OpenAI API replacement.
+- OpenRouter: free accounts can still create keys without a credit card and use `:free` models, subject to the published per-minute and daily free-model limits.
+- Cohere: trial keys remain the correct free testing path, with documented trial rate limits for evaluation and development.
+- Hugging Face: Inference Providers still use small monthly credits for free accounts, so this is best treated as a smoke-test or demo route.
+- Groq: official docs provide OpenAI-compatible access, but current quota and model availability should be checked on the organization-level limits page in the console.
+- Mistral: the public docs now describe a `free experimental tier` for La Plateforme and a free Mistral Code plan, but do not publish a stable signup token amount.
+- Cerebras: the docs still show a free API-key flow and OpenAI SDK usage; current supported model IDs should be checked on the official models page before setting a default.
+- DashScope / Bailian: free quota is regional and activity-based. The official pricing page says mainland China users can claim model free quotas that are valid for `90 days` after activation, with model-specific quota details.
+- SiliconFlow: official docs say free models are available after real-name verification; the docs also include Claude Code and CC Switch integration guides.
+
 ## About the CC Switch Templates
 
 All `cc-switch-template.json` files in this repo are **import-prep templates**, not guaranteed official export/import files from the latest `CC Switch` release.
@@ -111,6 +123,8 @@ Before importing into a live `CC Switch` build, verify field names against your 
 - Gemini API
   - [Pricing](https://ai.google.dev/gemini-api/docs/pricing)
   - [Rate limits](https://ai.google.dev/gemini-api/docs/rate-limits)
+  - [API key security](https://ai.google.dev/gemini-api/docs/api-key)
+  - [OpenAI compatibility](https://ai.google.dev/gemini-api/docs/openai)
 - OpenRouter
   - [Quickstart](https://openrouter.ai/docs/quickstart)
   - [Limits](https://openrouter.ai/docs/api-reference/limits)
@@ -121,10 +135,12 @@ Before importing into a live `CC Switch` build, verify field names against your 
 - Groq
   - [Overview](https://console.groq.com/docs/overview)
   - [OpenAI compatibility](https://console.groq.com/docs/openai)
+  - [Rate limits](https://console.groq.com/docs/rate-limits)
 - Mistral
   - [Pricing](https://docs.mistral.ai/getting-started/pricing/)
 - Cerebras
   - [Introduction](https://inference-docs.cerebras.ai/introduction)
+  - [Models](https://inference-docs.cerebras.ai/models)
 - DashScope
   - [Pricing](https://help.aliyun.com/zh/model-studio/model-pricing)
   - [OpenAI Responses compatibility](https://help.aliyun.com/zh/model-studio/openai-responses-api)
@@ -132,3 +148,4 @@ Before importing into a live `CC Switch` build, verify field names against your 
 - SiliconFlow
   - [Docs](https://docs.siliconflow.cn/)
   - [Use with Claude Code](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
+  - [Use with CC Switch](https://docs.siliconflow.cn/cn/userguide/introduction/use-with-cc-switch)

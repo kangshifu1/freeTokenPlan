@@ -29,7 +29,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-06-10`
+- 更新时间：`2026-06-12`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -92,8 +92,9 @@
   - 免费档按模型区分，不是所有模型都有 Free tier
   - 速率限制、上下文长度、是否启用搜索等都按模型单独计算
   - 免费档数据可能会用于 Google 产品改进，付费档默认不会
+  - AI Studio 新建 key 默认更偏向 `auth keys`；官方说明从 `2026-06-19` 开始会拒绝不受限制的 `standard keys`
 - 有效期限：长期免费档，不是一次性赠金
-- OpenAI 兼容：有兼容生态，但原生建议按 Gemini API 用
+- OpenAI 兼容：官方提供 OpenAI compatibility 端点；但功能覆盖不等同于完整 OpenAI API
 - Anthropic 兼容：否
 - 适合接入：`CC Switch`、OpenAI 兼容代理、部分 IDE 网关
 - 优惠策略：
@@ -103,6 +104,8 @@
 - 官方文档：
   - [Pricing](https://ai.google.dev/gemini-api/docs/pricing)
   - [Rate limits](https://ai.google.dev/gemini-api/docs/rate-limits)
+  - [API key security](https://ai.google.dev/gemini-api/docs/api-key)
+  - [OpenAI compatibility](https://ai.google.dev/gemini-api/docs/openai)
 
 ### 2. OpenRouter
 
@@ -189,7 +192,7 @@
   - 官方文档提供 OpenAI 兼容接口
 - 使用限制：
   - 官方没有在统一页面长期公布一个固定“送多少 token”
-  - 实际速率和模型权限更适合以控制台 `limits` / `models` 页面为准
+  - 官方速率限制文档说明限制按组织级别生效，实际速率和模型权限更适合以控制台 `limits` / `models` 页面为准
   - 免费层适合交互式、低延迟场景，不适合默认认为有大批量免费额度
 - 有效期限：持续可用，但具体配额以账号控制台为准
 - OpenAI 兼容：是
@@ -201,6 +204,7 @@
 - 官方文档：
   - [Overview](https://console.groq.com/docs/overview)
   - [OpenAI compatibility](https://console.groq.com/docs/openai)
+  - [Rate limits](https://console.groq.com/docs/rate-limits)
   - [Pricing](https://groq.com/pricing/)
 
 ### 6. Mistral
@@ -211,10 +215,10 @@
 - 是否需要信用卡：看使用路径；评估阶段通常可先试
 - 免费内容：
   - 官方定价页写明 `Mistral Code` 的 `Vibe coding` 在 `Free` 计划中可用
-  - 官方文档也说明 `La Plateforme` 默认有 `free mode`，用于评估与原型验证
+  - 官方文档也说明 `La Plateforme` 默认有 `free experimental tier`，用于评估与原型验证
 - 使用限制：
-  - 文档没有长期公开一个统一的“注册送多少 token”数字
-  - 更像“提供免费试用模式”，不是大额度长期白嫖
+  - 免费实验档适合轻量评估，文档没有长期公开一个统一的“注册送多少 token”数字
+  - 更像“提供免费试用模式”，不是大额度长期免费池
 - 有效期限：以账户和产品当前策略为准
 - OpenAI 兼容：有兼容生态
 - Anthropic 兼容：否
@@ -237,6 +241,7 @@
 - 使用限制：
   - 官方没有在统一页面给出固定的长期免费 token 数字
   - 更适合作为“可试用的高速推理入口”，具体额度看控制台
+  - 官方模型页当前列出的聊天模型为 `gpt-oss-120b`、`llama-4-scout-17b-16e-instruct`、`llama3.1-8b`、`qwen-3-32b` 等，应以模型页为准
 - 有效期限：以控制台和活动策略为准
 - OpenAI 兼容：是
 - Anthropic 兼容：否
@@ -247,6 +252,7 @@
 - 官方文档：
   - [Introduction](https://inference-docs.cerebras.ai/introduction)
   - [OpenAI SDK](https://inference-docs.cerebras.ai/resources/openai)
+  - [Models](https://inference-docs.cerebras.ai/models)
 
 ### 8. DashScope / 阿里云百炼
 
@@ -257,9 +263,10 @@
 - 免费内容：
   - 官方文档明确有“新人免费额度”
   - 部分模型在指定地域下有免费时长或免费 token 配额
-  - 文档里给出了 `30/90 天`、`90 天` 等不同活动窗口
+  - 官方页面说明中国内地用户可领取模型免费额度，开通后 `90 天` 内有效，不同模型额度和活动窗口不同
 - 使用限制：
   - 强依赖模型、地域、活动阶段
+  - 免费额度领取和使用受地域、账号状态、开通时间限制影响
   - 免费策略比国际平台更复杂，必须实际看当前模型页和地域说明
 - 有效期限：新用户活动期 + 模型 / 地域条件
 - OpenAI 兼容：是，官方有 [OpenAI 兼容-Responses](https://help.aliyun.com/zh/model-studio/openai-responses-api) 文档
@@ -281,8 +288,10 @@
 - 是否需要信用卡：通常不需要
 - 免费内容：
   - 官方模型广场会对部分模型标注 `免费`
+  - 官方文档说明实名认证后可使用免费模型
   - 官方还专门写了 [Claude Code 接入教程](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
 - 使用限制：
+  - 需要完成平台要求的账号验证 / 实名认证后再确认可用免费模型
   - 免费额度通常按“具体模型是否免费”来定，不是统一全站赠送
   - 哪些模型免费、免费多久，变化会比较快
 - 有效期限：以模型页实时标注为准
@@ -294,7 +303,9 @@
   - 先挑免费模型练手，再决定是否充值
 - 官方文档：
   - [Docs Home](https://docs.siliconflow.cn/)
+  - [Platform Introduction](https://docs.siliconflow.cn/cn/userguide/introduction)
   - [Use with Claude Code](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
+  - [Use with CC Switch](https://docs.siliconflow.cn/cn/userguide/introduction/use-with-cc-switch)
   - [Models](https://cloud.siliconflow.cn/models)
 
 ## 不要搞混：工具本体和模型供应商不是一回事
@@ -560,6 +571,8 @@ export ANTHROPIC_AUTH_TOKEN=your-token
 - Google Gemini API
   - [Pricing](https://ai.google.dev/gemini-api/docs/pricing)
   - [Rate limits](https://ai.google.dev/gemini-api/docs/rate-limits)
+  - [API key security](https://ai.google.dev/gemini-api/docs/api-key)
+  - [OpenAI compatibility](https://ai.google.dev/gemini-api/docs/openai)
 - OpenRouter
   - [Quickstart](https://openrouter.ai/docs/quickstart)
   - [Rate limits](https://openrouter.ai/docs/api-reference/limits)
@@ -572,12 +585,14 @@ export ANTHROPIC_AUTH_TOKEN=your-token
 - Groq
   - [Overview](https://console.groq.com/docs/overview)
   - [OpenAI compatibility](https://console.groq.com/docs/openai)
+  - [Rate limits](https://console.groq.com/docs/rate-limits)
   - [Pricing](https://groq.com/pricing/)
 - Mistral
   - [Pricing](https://docs.mistral.ai/getting-started/pricing/)
 - Cerebras
   - [Introduction](https://inference-docs.cerebras.ai/introduction)
   - [OpenAI SDK](https://inference-docs.cerebras.ai/resources/openai)
+  - [Models](https://inference-docs.cerebras.ai/models)
 - DashScope / 百炼
   - [Pricing](https://help.aliyun.com/zh/model-studio/model-pricing)
   - [OpenAI Responses compatibility](https://help.aliyun.com/zh/model-studio/openai-responses-api)
@@ -585,6 +600,7 @@ export ANTHROPIC_AUTH_TOKEN=your-token
 - SiliconFlow
   - [Docs](https://docs.siliconflow.cn/)
   - [Use with Claude Code](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
+  - [Use with CC Switch](https://docs.siliconflow.cn/cn/userguide/introduction/use-with-cc-switch)
 - Codex
   - [Config](https://developers.openai.com/codex/config)
   - [Advanced config](https://developers.openai.com/codex/config-advanced)

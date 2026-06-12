@@ -12,7 +12,7 @@
 6. Create an API key
 7. Copy the key
 8. Save it locally as `DASHSCOPE_API_KEY`
-9. Check the current free models, new-user quota, and region notes
+9. Check the current free models, new-user quota, `90-day` validity window, and region notes
 10. Record both OpenAI-compatible and Anthropic-compatible endpoints if needed
 
 ## Human Takeover Points
@@ -24,6 +24,6 @@
 ## Final Checklist
 
 - Free campaign still valid
+- Account is eligible for the mainland China new-user free quota
 - Region and model match the chosen route
 - Compatible endpoints noted
-

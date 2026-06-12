@@ -10,7 +10,7 @@
 4. Create a key
 5. Copy the key
 6. Save it locally as `CEREBRAS_API_KEY`
-7. Check the OpenAI SDK page in the docs
+7. Check the OpenAI SDK page and the official Models page in the docs
 8. Record the compatible routing details for `CC Switch`
 
 ## Human Takeover Points
@@ -22,4 +22,4 @@
 
 - Current model IDs recorded
 - Current free-tier note recorded
-
+- Default model confirmed against the official Models page

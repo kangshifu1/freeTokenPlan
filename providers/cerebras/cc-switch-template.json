@@ -14,7 +14,7 @@
     "protocol": "openai_compatible",
     "base_url": "https://api.cerebras.ai/v1",
     "api_key_env": "CEREBRAS_API_KEY",
-    "default_model": "llama-3.3-70b",
+    "default_model": "gpt-oss-120b",
     "supports_responses_api": false,
     "supports_chat_completions": true,
     "supports_anthropic_compat": false,
@@ -31,12 +31,12 @@
     "model_map": [
       {
         "label": "default",
-        "model": "llama-3.3-70b"
+        "model": "gpt-oss-120b"
       }
     ]
   },
   "notes": [
     "Good candidate for a high-speed backup provider.",
-    "Confirm current supported model IDs before import."
+    "Confirm current supported model IDs on the official Models page before import."
   ]
 }
