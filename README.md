@@ -29,7 +29,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-06-12`
+- 更新时间：`2026-06-13`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -86,7 +86,7 @@
 - 是否需要信用卡：通常不需要先绑卡即可试用 Free tier
 - 免费内容：
   - 官方长期提供 `Free` 档
-  - 文档明确列出多个模型的免费层，例如 `Gemini 2.5 Flash`、`Gemini 2.5 Flash-Lite`、`Gemini Embedding`
+  - 文档明确列出多个模型的免费层，例如 `Gemini 3 Pro`、`Gemini 3 Flash`、`Gemini Embedding`
   - 官方还列出 `Grounding with Google Search` 免费档每天 `500 RPD`
 - 使用限制：
   - 免费档按模型区分，不是所有模型都有 Free tier
@@ -98,7 +98,7 @@
 - Anthropic 兼容：否
 - 适合接入：`CC Switch`、OpenAI 兼容代理、部分 IDE 网关
 - 优惠策略：
-  - 新手优先用 `Flash` 系列，不要一开始就上 `Pro`
+  - 新手优先用当前官方 `Flash` 系列，不要默认把 `Pro` 当作高频免费模型
   - 需要 embedding 时优先用官方免费 embedding 档
   - 搜索 grounding 有单独免费额度，适合做轻量检索 demo
 - 官方文档：

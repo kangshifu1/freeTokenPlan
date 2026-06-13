@@ -27,8 +27,8 @@
 7. Copy the generated key immediately
 8. Save it locally as `GEMINI_API_KEY`
 9. Record suggested starter models:
-   - `gemini-2.5-flash`
-   - `gemini-2.5-flash-lite`
+   - Prefer the current `Flash` family model recommended by AI Studio
+   - The template default remains the previously verified `gemini-2.5-flash`; re-check the official model page before import
 10. For `CC Switch`, record the official Gemini OpenAI compatibility endpoint if you use it; if the downstream tool requires full Responses API behavior, validate through a compatible gateway first
 
 ## Human Takeover Points
