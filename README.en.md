@@ -39,8 +39,10 @@ If you just want to get started fast, start with:
 
 1. [Google Gemini API](https://ai.google.dev/gemini-api/docs/pricing)
 2. [OpenRouter](https://openrouter.ai/docs/quickstart)
-3. [Cohere](https://docs.cohere.com/docs/rate-limits)
-4. [DashScope / Alibaba Cloud Bailian](https://help.aliyun.com/zh/model-studio/model-pricing)
+3. [NVIDIA NIM](https://build.nvidia.com/)
+4. [GitHub Models](https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models)
+5. [Cohere](https://docs.cohere.com/docs/rate-limits)
+6. [DashScope / Alibaba Cloud Bailian](https://help.aliyun.com/zh/model-studio/model-pricing)
 
 Recommended tool path:
 
@@ -70,8 +72,15 @@ Each provider has its own directory with:
 │   ├── groq/
 │   ├── mistral/
 │   ├── cerebras/
+│   ├── nvidia-nim/
+│   ├── github-models/
+│   ├── vercel-ai-gateway/
+│   ├── cloudflare-workers-ai/
 │   ├── dashscope/
-│   └── siliconflow/
+│   ├── siliconflow/
+│   ├── baidu-qianfan/
+│   ├── tencent-hunyuan/
+│   └── volcengine-ark/
 └── templates/
 ```
 
@@ -84,8 +93,15 @@ Each provider has its own directory with:
 - [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.en.md)
 - [Mistral](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/mistral/README.en.md)
 - [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.en.md)
+- [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.en.md)
+- [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.en.md)
+- [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.en.md)
+- [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.en.md)
 - [DashScope / Bailian](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.en.md)
 - [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.en.md)
+- [Baidu Qianfan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.en.md)
+- [Tencent Hunyuan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.en.md)
+- [Volcengine Ark](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.en.md)
 
 ## Current Provider Notes
 
@@ -96,8 +112,15 @@ Each provider has its own directory with:
 - Groq: official docs provide OpenAI-compatible access, but current quota and model availability should be checked on the organization-level limits page in the console.
 - Mistral: the public pricing page still lists Mistral Free with limited Vibe for code access, while API free-mode details remain console-dependent rather than a stable published signup token amount.
 - Cerebras: the docs still show a free API-key flow and OpenAI SDK usage; the current public production endpoint is `gpt-oss-120b`, with `zai-glm-4.7` marked as preview on the models page.
+- NVIDIA NIM: NVIDIA Build exposes free serverless NIM APIs for development and prototyping, with OpenAI-style chat completions at `https://integrate.api.nvidia.com/v1`; production capacity and limits are account/model-page dependent.
+- GitHub Models: free playground and API usage are available with model-tier-specific RPM, RPD, tokens/request, and concurrency limits.
+- Vercel AI Gateway: monthly free AI Gateway credits are available for team accounts, but the rule changes after first paid usage; treat it as a project gateway rather than a generic provider.
+- Cloudflare Workers AI: Workers AI includes a free daily Neurons allocation, and Cloudflare documents OpenAI-compatible endpoints; model Neurons cost should be checked first.
 - DashScope / Bailian: free quota is regional and activity-based. The official pricing page says mainland China users can claim model free quotas that are valid for `90 days` after activation, with model-specific quota details.
 - SiliconFlow: official docs say free models are available after real-name verification; the docs also include Claude Code and CC Switch integration guides.
+- Baidu Qianfan: official new-user free-quota docs list model token grants, commonly valid for about `3 months`, with model scope and campaigns controlled by the current page.
+- Tencent Hunyuan: first-time activation can grant a free resource package, and `Hunyuan-lite` is marked free in official pricing; endpoint details should be checked in current docs.
+- Volcengine Ark: free inference quota, safe-experience mode, and campaign credits may be available; exact model, quota, and endpoint details are console-dependent.
 
 ## About the CC Switch Templates
 
@@ -143,9 +166,28 @@ Before importing into a live `CC Switch` build, verify field names against your 
   - [Models](https://inference-docs.cerebras.ai/models)
 - DashScope
   - [Pricing](https://help.aliyun.com/zh/model-studio/model-pricing)
+  - [New-user free quota](https://help.aliyun.com/zh/model-studio/new-free-quota)
   - [OpenAI Responses compatibility](https://help.aliyun.com/zh/model-studio/openai-responses-api)
   - [Anthropic compatibility](https://help.aliyun.com/zh/model-studio/anthropic-api)
 - SiliconFlow
   - [Docs](https://docs.siliconflow.cn/)
   - [Use with Claude Code](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
   - [Use with CC Switch](https://docs.siliconflow.cn/cn/userguide/introduction/use-with-cc-switch)
+- NVIDIA NIM
+  - [NVIDIA Build](https://build.nvidia.com/)
+  - [NVIDIA NIM](https://developer.nvidia.com/nim)
+- GitHub Models
+  - [Prototyping with AI models](https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models)
+  - [GitHub Models marketplace](https://github.com/marketplace/models)
+- Vercel AI Gateway
+  - [AI Gateway](https://vercel.com/docs/ai-gateway)
+  - [Pricing](https://vercel.com/docs/ai-gateway/pricing)
+- Cloudflare Workers AI
+  - [Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/)
+  - [OpenAI compatible API endpoints](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/)
+- Baidu Qianfan
+  - [New-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
+- Tencent Hunyuan
+  - [Billing overview](https://cloud.tencent.com/document/product/1729/97731)
+- Volcengine Ark
+  - [Docs](https://www.volcengine.com/docs/82379)

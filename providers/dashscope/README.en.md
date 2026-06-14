@@ -5,6 +5,7 @@
 - Website: [Pricing and Free Quota](https://help.aliyun.com/zh/model-studio/model-pricing)
 - Registration: sign in with an Alibaba Cloud account and enable Bailian
 - Free tier: mainland China users can claim new-user model quotas, usually valid for `90 days` after activation; model and region rules still apply
+- Extra reference: [new-user free quota](https://help.aliyun.com/zh/model-studio/new-free-quota) for current claim rules and validity
 - Recommended for: Chinese mainland users, `Codex`, and `Claude Code`
 
 Files in this directory:

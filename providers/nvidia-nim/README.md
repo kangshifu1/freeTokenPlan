@@ -1,0 +1,14 @@
+# NVIDIA NIM
+
+[中文](./README.md) | [English](./README.en.md)
+
+- 官网：[NVIDIA NIM APIs](https://build.nvidia.com/)
+- 注册：NVIDIA Developer / build.nvidia.com 账号登录后生成 API key
+- 免费：官方 Build 页面提供面向开发和原型验证的免费 serverless NIM API；生产使用、速率限制和可用模型以 NVIDIA 当前账号与模型页为准
+- 兼容：NVIDIA NIM API 示例使用 OpenAI 风格的 `chat/completions` 端点，常见 base URL 为 `https://integrate.api.nvidia.com/v1`
+- 推荐用途：快速试用 NVIDIA 托管模型、agent 原型、OpenAI 兼容客户端验证
+
+目录文件：
+
+- [computer-use.md](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/computer-use.md)
+- [cc-switch-template.json](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/cc-switch-template.json)

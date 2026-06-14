@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "volcengine-ark",
+  "provider_name": "Volcengine Ark",
+  "official_website": "https://www.volcengine.com/docs/82379",
+  "console_url": "https://console.volcengine.com/ark/",
+  "registration": {
+    "method": "volcengine_account",
+    "requires_phone": true,
+    "requires_real_name": true,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "openai_compatible",
+    "base_url": "check-current-ark-endpoint",
+    "api_key_env": "ARK_API_KEY",
+    "default_model": "check-current-free-model",
+    "supports_responses_api": false,
+    "supports_chat_completions": true,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Free inference quota, safe-experience mode, and campaign credits may be available; exact scope follows the current console.",
+    "limit_window": "campaign-or-account-specific",
+    "reset_rule": "current Volcengine console applies",
+    "expires": "check-console"
+  },
+  "cc_switch": {
+    "import_mode": "manual_gateway_record",
+    "model_map": [
+      {
+        "label": "current-free-model",
+        "model": "check-current-free-model"
+      }
+    ]
+  },
+  "notes": [
+    "Use safe-experience mode when available to avoid accidental paid overage.",
+    "Verify endpoint, model ID, and free quota in the current Ark console before import."
+  ]
+}

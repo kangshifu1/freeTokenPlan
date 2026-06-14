@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "vercel-ai-gateway",
+  "provider_name": "Vercel AI Gateway",
+  "official_website": "https://vercel.com/docs/ai-gateway",
+  "console_url": "https://vercel.com/dashboard",
+  "registration": {
+    "method": "vercel_account",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "gateway_or_sdk",
+    "base_url": "check-current-vercel-ai-gateway-docs",
+    "api_key_env": "AI_GATEWAY_API_KEY",
+    "default_model": "check-current-project-provider",
+    "supports_responses_api": false,
+    "supports_chat_completions": false,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Monthly AI Gateway credits are available for team accounts, with rules that change after first paid usage.",
+    "limit_window": "monthly-credit",
+    "reset_rule": "current Vercel pricing page applies",
+    "expires": "check-console"
+  },
+  "cc_switch": {
+    "import_mode": "manual_gateway_record",
+    "model_map": [
+      {
+        "label": "project-provider",
+        "model": "check-current-project-provider"
+      }
+    ]
+  },
+  "notes": [
+    "This template is a handoff record until the installed CC Switch version supports the exact AI Gateway route.",
+    "Verify the actual AI Gateway URL and model provider in the Vercel project before import."
+  ]
+}

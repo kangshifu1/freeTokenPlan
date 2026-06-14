@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "github-models",
+  "provider_name": "GitHub Models",
+  "official_website": "https://docs.github.com/en/github-models",
+  "console_url": "https://github.com/marketplace/models",
+  "registration": {
+    "method": "github_account",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "openai_compatible",
+    "base_url": "https://models.github.ai/inference",
+    "api_key_env": "GITHUB_TOKEN",
+    "default_model": "openai/gpt-4.1-mini",
+    "supports_responses_api": false,
+    "supports_chat_completions": true,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Free playground and API usage are available with model-tier-specific RPM, RPD, token, and concurrency limits.",
+    "limit_window": "per-minute-and-daily",
+    "reset_rule": "official GitHub Models limits apply",
+    "expires": "long-term-available"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "starter-example",
+        "model": "openai/gpt-4.1-mini"
+      }
+    ]
+  },
+  "notes": [
+    "Use a current GitHub Models model ID before import.",
+    "Free limits differ by model tier and can change without notice."
+  ]
+}

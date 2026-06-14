@@ -35,15 +35,19 @@
 
 ## 先说结论
 
-如果你只想先跑起来，优先看这 4 个：
+如果你只想先跑起来，优先看这些：
 
 1. [Google AI Studio / Gemini API](https://ai.google.dev/gemini-api/docs/pricing)  
    适合零预算长期试用，官方长期保留 Free tier，很多模型有免费档。
 2. [OpenRouter](https://openrouter.ai/docs/quickstart)  
    适合“一个账号试很多模型”，并且有大量 `:free` 模型。
-3. [Cohere](https://docs.cohere.com/docs/rate-limits)  
+3. [NVIDIA NIM](https://build.nvidia.com/)
+   适合试用 NVIDIA 托管模型和 OpenAI 风格 API，官方 Build 页面提供免费开发调用入口。
+4. [GitHub Models](https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models)
+   适合已有 GitHub 账号的原型验证，免费 API 有明确 rate limit。
+5. [Cohere](https://docs.cohere.com/docs/rate-limits)
    适合轻量测试，官方明确给出试用期速率限制。
-4. [DashScope / 阿里云百炼](https://help.aliyun.com/zh/model-studio/model-pricing)  
+6. [DashScope / 阿里云百炼](https://help.aliyun.com/zh/model-studio/model-pricing)
    适合中国大陆用户，控制台、文档、兼容模式都比较完整。
 
 如果你要把这些额度接入 IDE / agent 工具，优先路线是：
@@ -227,7 +231,7 @@
   - 先用官方免费模式判断模型风格是否合适
   - 真要做日常 coding 主力，通常需要再配一个稳定免费或低价路由
 - 官方文档：
-  - [Pricing](https://docs.mistral.ai/getting-started/pricing/)
+  - [Pricing](https://mistral.ai/pricing)
 
 ### 7. Cerebras Inference
 
@@ -308,6 +312,164 @@
   - [Use with CC Switch](https://docs.siliconflow.cn/cn/userguide/introduction/use-with-cc-switch)
   - [Models](https://cloud.siliconflow.cn/models)
 
+### 10. NVIDIA NIM
+
+- 官网：[NVIDIA Build / NIM APIs](https://build.nvidia.com/)
+- 类型：模型 API / Serverless NIM
+- 注册方式：NVIDIA Developer / build.nvidia.com 账号登录后创建 API Key
+- 是否需要信用卡：开发试用入口通常不需要先绑卡，生产使用以 NVIDIA 当前策略为准
+- 免费内容：
+  - Build 页面提供面向开发和原型验证的免费 serverless NIM API
+  - 模型、速率和可用性按账号与模型页实时变化
+- 使用限制：
+  - 免费路径应视为 development / prototyping，不应当作生产额度
+  - 速率限制、并发和模型名单需要在 build.nvidia.com 当前页面确认
+- 有效期限：以账号和模型页当前策略为准
+- OpenAI 兼容：是，常见 base URL 为 `https://integrate.api.nvidia.com/v1`
+- Anthropic 兼容：否
+- 适合接入：`Codex`、`CC Switch`、OpenAI 兼容客户端
+- 优惠策略：
+  - 用来验证 NVIDIA 托管模型和高性能推理体验
+  - 导入前从当前模型页复制模型 ID，避免模板里的示例模型过期
+- 官方文档：
+  - [NVIDIA Build](https://build.nvidia.com/)
+  - [NVIDIA NIM](https://developer.nvidia.com/nim)
+
+### 11. GitHub Models
+
+- 官网：[GitHub Models](https://docs.github.com/en/github-models)
+- 类型：模型 API / Playground
+- 注册方式：GitHub 账号登录后使用 Models playground 或 API
+- 是否需要信用卡：免费 API 用量通常不需要先绑卡；付费扩容另行开通
+- 免费内容：
+  - 官方文档说明 playground 和 API 有免费使用额度
+  - 免费 API 按模型 tier 限制 RPM、RPD、tokens/request 和并发请求
+- 使用限制：
+  - Low / High / Embedding 等模型 tier 限额不同
+  - 生产级更高限额需要开通 paid usage 或自带 provider key
+- 有效期限：长期可用，但限额可能调整
+- OpenAI 兼容：官方示例可用 OpenAI SDK，base URL 为 `https://models.github.ai/inference`
+- Anthropic 兼容：否
+- 适合接入：`Codex`、`CC Switch`、OpenAI 兼容客户端
+- 优惠策略：
+  - 适合 GitHub 用户低成本试模型
+  - 先用低成本 / 低 tier 模型做连通性测试
+- 官方文档：
+  - [Prototyping with AI models](https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models)
+  - [GitHub Models](https://github.com/marketplace/models)
+
+### 12. Vercel AI Gateway
+
+- 官网：[AI Gateway Pricing](https://vercel.com/docs/ai-gateway/pricing)
+- 类型：AI 网关 / 多 provider 路由
+- 注册方式：Vercel 账号登录后启用 AI Gateway
+- 是否需要信用卡：免费 credits 阶段以 Vercel team / billing 状态为准
+- 免费内容：
+  - 官方定价页显示 team account 有月度免费 AI Gateway credits
+  - 首次付费后，月度免费 credits 规则会变化
+- 使用限制：
+  - 更适合 Vercel AI SDK / 项目内代理，而不是直接当通用 OpenAI 兼容供应商
+  - 具体 provider、模型、URL 以当前项目配置为准
+- 有效期限：按月 credits；付费状态会影响免费规则
+- OpenAI 兼容：以当前 AI Gateway 文档和项目配置为准
+- Anthropic 兼容：以当前 AI Gateway 文档和项目配置为准
+- 适合接入：Vercel 项目、AI SDK、项目内统一网关
+- 优惠策略：
+  - 适合已有 Vercel 项目的前端 / 全栈 demo
+  - 不建议没有 Vercel 项目时优先选择它做 CLI 主力上游
+- 官方文档：
+  - [AI Gateway](https://vercel.com/docs/ai-gateway)
+  - [Pricing](https://vercel.com/docs/ai-gateway/pricing)
+
+### 13. Cloudflare Workers AI
+
+- 官网：[Workers AI Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/)
+- 类型：边缘 AI / 模型 API
+- 注册方式：Cloudflare 账号登录后启用 Workers AI
+- 是否需要信用卡：免费 allocation 阶段通常不需要先绑卡；Workers 计划状态会影响能力边界
+- 免费内容：
+  - 官方定价页说明 Workers AI 基于 Neurons 计费，并提供每日免费 allocation
+  - 不同模型消耗的 Neurons 不同
+- 使用限制：
+  - 更适合 Cloudflare Worker / REST API / 边缘 demo
+  - 如果要接通通用 agent 工具，需要确认当前 OpenAI compatible endpoint
+- 有效期限：每日 allocation，具体规则以当前定价页为准
+- OpenAI 兼容：官方有 OpenAI compatible API endpoints 文档
+- Anthropic 兼容：否
+- 适合接入：Cloudflare Worker、轻量自动化、边缘侧 demo
+- 优惠策略：
+  - 适合已经在 Cloudflare 上部署 Worker 的项目
+  - 先计算目标模型的 Neurons 消耗，再决定是否纳入日常工具链
+- 官方文档：
+  - [Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/)
+  - [OpenAI compatible API endpoints](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/)
+
+### 14. 百度千帆
+
+- 官网：[新用户免费额度](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
+- 类型：模型 API / Agent 平台
+- 注册方式：百度智能云账号开通千帆，按要求完成实名认证
+- 是否需要信用卡：通常不需要信用卡，但需要百度智能云账号与实名体系
+- 免费内容：
+  - 官方新用户免费额度页列出多个模型赠送 tokens
+  - 常见规则为新用户领取、有效期约 `3 个月`
+- 使用限制：
+  - 模型名单、赠送 tokens、有效期受活动页面影响
+  - OpenAI / Anthropic 兼容入口需要按当前模型和工具文档确认
+- 有效期限：以官方新用户免费额度页面为准
+- OpenAI 兼容：需按当前文档确认
+- Anthropic 兼容：需按当前文档确认
+- 适合接入：中国大陆用户、国产模型试用、轻量 agent
+- 优惠策略：
+  - 先领取新人额度，再选当前免费范围内的模型
+  - 需要 CC Switch 时优先通过兼容网关或本地代理适配
+- 官方文档：
+  - [New-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
+
+### 15. 腾讯混元
+
+- 官网：[混元大模型计费概述](https://cloud.tencent.com/document/product/1729/97731)
+- 类型：模型 API
+- 注册方式：腾讯云账号开通混元，按要求完成实名认证
+- 是否需要信用卡：通常不需要信用卡，但需要腾讯云账号与实名体系
+- 免费内容：
+  - 首次开通混元生文服务会发放免费资源包
+  - 官方价格页标注 `Hunyuan-lite` 免费使用
+- 使用限制：
+  - 免费资源包、共享 tokens、有效期和模型范围以当前文档 / 控制台为准
+  - 腾讯云 SecretId / SecretKey 可能需要经过兼容网关转换成工具期望的 bearer key
+- 有效期限：以控制台和当前计费文档为准
+- OpenAI 兼容：官方提供兼容文档，导入前需复核 base URL 和模型名
+- Anthropic 兼容：否
+- 适合接入：中国大陆用户、混元轻量文本生成、OpenAI 兼容客户端
+- 优惠策略：
+  - 用 `Hunyuan-lite` 或资源包内模型先做连通性测试
+  - 注意云账号费用保护，避免超额后自动扣费
+- 官方文档：
+  - [Billing overview](https://cloud.tencent.com/document/product/1729/97731)
+
+### 16. 火山方舟
+
+- 官网：[火山方舟文档](https://www.volcengine.com/docs/82379)
+- 类型：模型 API / Agent Plan / Coding Plan
+- 注册方式：火山引擎账号开通方舟，按要求完成实名认证
+- 是否需要信用卡：以火山引擎账号和活动要求为准
+- 免费内容：
+  - 官方文档和控制台会展示免费推理额度、安心体验模式和活动额度
+  - 具体额度、模型和有效期以当前控制台 / 活动页为准
+- 使用限制：
+  - 方舟活动和套餐规则变化快，必须以控制台为准
+  - 建议启用安心体验模式或明确关闭超额付费风险
+- 有效期限：以当前控制台 / 活动页为准
+- OpenAI 兼容：方舟文档包含 OpenAI 兼容和多种 AI 工具接入说明
+- Anthropic 兼容：以当前工具接入文档为准
+- 适合接入：中国大陆用户、豆包 / DeepSeek 等模型、Coding Plan / Agent Plan 工具
+- 优惠策略：
+  - 先用免费推理额度验证 endpoint 和模型名
+  - Coding / Agent 工具接入优先看官方“接入 AI 工具”文档
+- 官方文档：
+  - [Volcengine Ark docs](https://www.volcengine.com/docs/82379)
+
 ## 不要搞混：工具本体和模型供应商不是一回事
 
 很多新手一开始会把这三类东西混在一起：
@@ -334,7 +496,7 @@
 
 ### 路线 A：新手最省事
 
-`CC Switch` + `OpenRouter` / `Gemini` / `DashScope`
+`CC Switch` + `OpenRouter` / `Gemini` / `NVIDIA NIM` / `DashScope`
 
 适合原因：
 
@@ -348,8 +510,10 @@
 
 1. `Gemini API`
 2. `OpenRouter free models`
-3. `Groq`
-4. `DashScope`
+3. `NVIDIA NIM`
+4. `GitHub Models`
+5. `Groq`
+6. `DashScope`
 
 ### 路线 C：中国大陆网络优先
 
@@ -357,7 +521,10 @@
 
 1. `DashScope / 百炼`
 2. `SiliconFlow`
-3. `OpenRouter`
+3. `百度千帆`
+4. `腾讯混元`
+5. `火山方舟`
+6. `OpenRouter`
 
 ## 如何用 CC Switch 接入
 
@@ -390,6 +557,11 @@ brew install --cask cc-switch
 - `Groq`
 - `DashScope`
 - `SiliconFlow`
+- `NVIDIA NIM`
+- `GitHub Models`
+- `百度千帆`
+- `腾讯混元`
+- `火山方舟`
 
 你需要准备的信息通常只有：
 
@@ -478,8 +650,10 @@ wire_api = "responses"
 
 1. `DashScope`：因为官方明确给了 `OpenAI Responses` 文档
 2. `OpenRouter`：因为免费模型多，但更建议配合适配层
-3. `Groq`：适合低延迟交互
-4. `Gemini`：更适合通过中间层统一接入
+3. `NVIDIA NIM`：适合 OpenAI 风格 chat/completions 原型验证
+4. `GitHub Models`：适合已有 GitHub token 的轻量测试
+5. `Groq`：适合低延迟交互
+6. `Gemini`：更适合通过中间层统一接入
 
 ## 如何在 Claude Code 中使用
 
@@ -524,8 +698,15 @@ export ANTHROPIC_AUTH_TOKEN=your-token
 │   ├── groq/
 │   ├── mistral/
 │   ├── cerebras/
+│   ├── nvidia-nim/
+│   ├── github-models/
+│   ├── vercel-ai-gateway/
+│   ├── cloudflare-workers-ai/
 │   ├── dashscope/
-│   └── siliconflow/
+│   ├── siliconflow/
+│   ├── baidu-qianfan/
+│   ├── tencent-hunyuan/
+│   └── volcengine-ark/
 └── templates/
     ├── provider-template.md
     └── cc-switch-template.json
@@ -547,8 +728,15 @@ export ANTHROPIC_AUTH_TOKEN=your-token
 - [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.md)
 - [Mistral](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/mistral/README.md)
 - [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.md)
+- [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.md)
+- [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.md)
+- [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.md)
+- [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.md)
 - [DashScope / 百炼](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.md)
 - [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.md)
+- [百度千帆](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.md)
+- [腾讯混元](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.md)
+- [火山方舟](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.md)
 
 ## 维护建议
 
@@ -595,12 +783,31 @@ export ANTHROPIC_AUTH_TOKEN=your-token
   - [Models](https://inference-docs.cerebras.ai/models)
 - DashScope / 百炼
   - [Pricing](https://help.aliyun.com/zh/model-studio/model-pricing)
+  - [New-user free quota](https://help.aliyun.com/zh/model-studio/new-free-quota)
   - [OpenAI Responses compatibility](https://help.aliyun.com/zh/model-studio/openai-responses-api)
   - [Anthropic compatibility](https://help.aliyun.com/zh/model-studio/anthropic-api)
 - SiliconFlow
   - [Docs](https://docs.siliconflow.cn/)
   - [Use with Claude Code](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
   - [Use with CC Switch](https://docs.siliconflow.cn/cn/userguide/introduction/use-with-cc-switch)
+- NVIDIA NIM
+  - [NVIDIA Build](https://build.nvidia.com/)
+  - [NVIDIA NIM](https://developer.nvidia.com/nim)
+- GitHub Models
+  - [Prototyping with AI models](https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models)
+  - [GitHub Models marketplace](https://github.com/marketplace/models)
+- Vercel AI Gateway
+  - [AI Gateway](https://vercel.com/docs/ai-gateway)
+  - [Pricing](https://vercel.com/docs/ai-gateway/pricing)
+- Cloudflare Workers AI
+  - [Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/)
+  - [OpenAI compatible API endpoints](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/)
+- 百度千帆
+  - [New-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
+- 腾讯混元
+  - [Billing overview](https://cloud.tencent.com/document/product/1729/97731)
+- 火山方舟
+  - [Docs](https://www.volcengine.com/docs/82379)
 - Codex
   - [Config](https://developers.openai.com/codex/config)
   - [Advanced config](https://developers.openai.com/codex/config-advanced)

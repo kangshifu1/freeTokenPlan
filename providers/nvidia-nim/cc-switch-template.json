@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "nvidia-nim",
+  "provider_name": "NVIDIA NIM",
+  "official_website": "https://build.nvidia.com/",
+  "console_url": "https://build.nvidia.com/",
+  "registration": {
+    "method": "nvidia_developer_account",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "openai_compatible",
+    "base_url": "https://integrate.api.nvidia.com/v1",
+    "api_key_env": "NVIDIA_API_KEY",
+    "default_model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "supports_responses_api": false,
+    "supports_chat_completions": true,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Free serverless NIM API usage is available for development and prototyping; exact limits vary by model and account.",
+    "limit_window": "model-and-account-specific",
+    "reset_rule": "check build.nvidia.com account and model page",
+    "expires": "check-console"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "example-current-build-model",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b"
+      }
+    ]
+  },
+  "notes": [
+    "Replace the example model with the current model ID copied from build.nvidia.com before import.",
+    "Treat the free path as development and prototyping, not production capacity."
+  ]
+}

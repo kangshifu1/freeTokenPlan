@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "cloudflare-workers-ai",
+  "provider_name": "Cloudflare Workers AI",
+  "official_website": "https://developers.cloudflare.com/workers-ai/",
+  "console_url": "https://dash.cloudflare.com/",
+  "registration": {
+    "method": "cloudflare_account",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "openai_compatible_or_rest",
+    "base_url": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1",
+    "api_key_env": "CLOUDFLARE_API_TOKEN",
+    "default_model": "@cf/meta/llama-3.1-8b-instruct",
+    "supports_responses_api": false,
+    "supports_chat_completions": true,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Workers AI includes a free daily Neurons allocation; model costs differ by model.",
+    "limit_window": "daily",
+    "reset_rule": "current Cloudflare pricing page applies",
+    "expires": "long-term-available"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "starter-example",
+        "model": "@cf/meta/llama-3.1-8b-instruct"
+      }
+    ]
+  },
+  "notes": [
+    "Replace {account_id} in the base URL before use.",
+    "Verify the current OpenAI compatibility path and model names in Cloudflare docs."
+  ]
+}

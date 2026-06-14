@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "tencent-hunyuan",
+  "provider_name": "Tencent Hunyuan",
+  "official_website": "https://cloud.tencent.com/document/product/1729/97731",
+  "console_url": "https://console.cloud.tencent.com/hunyuan",
+  "registration": {
+    "method": "tencent_cloud_account",
+    "requires_phone": true,
+    "requires_real_name": true,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "openai_compatible_or_provider_native",
+    "base_url": "check-current-hunyuan-docs",
+    "api_key_env": "TENCENT_SECRET_KEY",
+    "default_model": "hunyuan-lite",
+    "supports_responses_api": false,
+    "supports_chat_completions": true,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "First-time activation can grant a free resource package, and Hunyuan-lite is marked free in official pricing.",
+    "limit_window": "new-user-or-model-specific",
+    "reset_rule": "current Tencent Cloud docs and console apply",
+    "expires": "check-console"
+  },
+  "cc_switch": {
+    "import_mode": "manual_gateway_record",
+    "model_map": [
+      {
+        "label": "free-model-example",
+        "model": "hunyuan-lite"
+      }
+    ]
+  },
+  "notes": [
+    "Tencent Cloud credentials often use SecretId and SecretKey; adapt through a compatible gateway if CC Switch expects a bearer API key.",
+    "Verify current OpenAI-compatible endpoint before import."
+  ]
+}

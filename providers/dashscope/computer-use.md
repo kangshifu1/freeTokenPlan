@@ -12,7 +12,7 @@
 6. 创建 API Key
 7. 复制 key
 8. 本地保存为环境变量：`DASHSCOPE_API_KEY`
-9. 查看当前免费模型、新人免费额度、`90 天` 有效期和地域说明
+9. 查看当前免费模型、新人免费额度、`90 天` 有效期和地域说明；必要时打开 [新人免费额度说明](https://help.aliyun.com/zh/model-studio/new-free-quota) 复核领取规则
 10. 在 CC Switch 中按需要录入：
    - OpenAI 兼容入口
    - Anthropic 兼容入口

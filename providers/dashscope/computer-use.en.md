@@ -12,7 +12,7 @@
 6. Create an API key
 7. Copy the key
 8. Save it locally as `DASHSCOPE_API_KEY`
-9. Check the current free models, new-user quota, `90-day` validity window, and region notes
+9. Check the current free models, new-user quota, `90-day` validity window, and region notes; if needed, open [new-user free quota](https://help.aliyun.com/zh/model-studio/new-free-quota) to verify claim rules
 10. Record both OpenAI-compatible and Anthropic-compatible endpoints if needed
 
 ## Human Takeover Points
