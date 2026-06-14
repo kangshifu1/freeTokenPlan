@@ -17,6 +17,27 @@ This is a public repository for beginners who want a practical index of free AI 
 - `Computer Use` scripts: step-by-step operator flow for sign-up, key creation, and setup
 - `CC Switch` templates: normalized provider records for import preparation
 
+## Provider List
+
+| Provider | Free type | Best fit |
+|---|---|---|
+| [Gemini](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/gemini/README.en.md) | Long-term model-dependent Free tier | `CC Switch` / OpenAI-compatible gateway |
+| [OpenRouter](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/openrouter/README.en.md) | `:free` models with minute / daily limits | `Codex` / `CC Switch` |
+| [Cohere](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cohere/README.en.md) | Trial-key monthly call quota | Lightweight tests / prompt validation |
+| [Hugging Face](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/README.en.md) | Monthly Inference Providers credits | API checks / demos |
+| [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.en.md) | Free start, console-defined limits | Low-latency OpenAI-compatible calls |
+| [Mistral](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/mistral/README.en.md) | Free plan / evaluation mode | Model-style testing |
+| [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.en.md) | Free API-key flow, console-defined limits | High-speed inference trials |
+| [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.en.md) | Free serverless NIM development calls | OpenAI-style prototypes |
+| [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.en.md) | Free playground / API limits | GitHub-account prototypes |
+| [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.en.md) | Monthly AI Gateway credits | Vercel / AI SDK projects |
+| [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.en.md) | Daily Neurons allocation | Workers / edge demos |
+| [DashScope / Bailian](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.en.md) | New-user model free quota | Mainland China / `Codex` / `Claude Code` |
+| [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.en.md) | Free models after verification | China-region multi-model trials |
+| [Baidu Qianfan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.en.md) | New-user model token grants | Domestic models / lightweight agents |
+| [Tencent Hunyuan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.en.md) | First-activation package / `Hunyuan-lite` | Hunyuan text generation |
+| [Volcengine Ark](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.en.md) | Free inference / campaign quota | Doubao / DeepSeek / Coding Plan |
+
 ## Quick Navigation
 
 - [Chinese Overview](./README.md)

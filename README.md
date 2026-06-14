@@ -17,6 +17,27 @@
 - `Computer Use` 脚本：方便 AI 或人工按步骤注册、取 key、录入配置
 - `CC Switch` 模板：方便做标准化导入准备
 
+## 顶部清单
+
+| 供应商 | 免费类型 | 适合接入 |
+|---|---|---|
+| [Gemini](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/gemini/README.md) | 长期 Free tier，按模型限额 | `CC Switch` / OpenAI 兼容代理 |
+| [OpenRouter](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/openrouter/README.md) | `:free` 模型，按分钟 / 每日限流 | `Codex` / `CC Switch` |
+| [Cohere](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cohere/README.md) | Trial key 月度调用额度 | 轻量测试 / prompt 验证 |
+| [Hugging Face](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/README.md) | Inference Providers 月度 credits | API 联调 / demo |
+| [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.md) | 免费开始，额度看控制台 | 低延迟 OpenAI 兼容调用 |
+| [Mistral](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/mistral/README.md) | Free 计划 / 评估模式 | 模型风格试用 |
+| [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.md) | 免费 API key 流程，额度看控制台 | 高速推理试用 |
+| [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.md) | 免费 serverless NIM 开发调用 | OpenAI 风格原型验证 |
+| [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.md) | 免费 playground / API 限额 | GitHub 账号原型测试 |
+| [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.md) | 月度 AI Gateway credits | Vercel / AI SDK 项目 |
+| [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.md) | 每日 Neurons allocation | Workers / 边缘 demo |
+| [DashScope / 百炼](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.md) | 新人模型免费额度 | 中国大陆 / `Codex` / `Claude Code` |
+| [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.md) | 实名后免费模型 | 中国区多模型试用 |
+| [百度千帆](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.md) | 新用户模型 token 赠送 | 国产模型 / 轻量 agent |
+| [腾讯混元](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.md) | 首次开通资源包 / `Hunyuan-lite` | 混元文本生成 |
+| [火山方舟](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度 | 豆包 / DeepSeek / Coding Plan |
+
 ## 快速导航
 
 - [中文总览](./README.md)
