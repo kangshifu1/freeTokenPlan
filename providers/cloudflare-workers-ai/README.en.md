@@ -4,7 +4,7 @@
 
 - Website: [Workers AI Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/)
 - Registration: sign in with a Cloudflare account and enable Workers AI
-- Free tier: the official pricing page says Workers AI is priced in Neurons and includes a free daily allocation
+- Free tier: the official pricing page says Workers AI is priced in Neurons and includes a free daily allocation of `10,000` Neurons; usage above that requires Workers Paid
 - Compatibility: Cloudflare documents Workers bindings, REST API, and OpenAI-compatible API endpoints
 - Recommended for: Cloudflare Worker calls, edge AI demos, and lightweight automation
 

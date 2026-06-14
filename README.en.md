@@ -30,8 +30,8 @@ This is a public repository for beginners who want a practical index of free AI 
 | [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.en.md) | Free API-key flow, console-defined limits | High-speed inference trials |
 | [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.en.md) | Free serverless NIM development calls | OpenAI-style prototypes |
 | [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.en.md) | Free playground / API limits | GitHub-account prototypes |
-| [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.en.md) | Monthly AI Gateway credits | Vercel / AI SDK projects |
-| [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.en.md) | Daily Neurons allocation | Workers / edge demos |
+| [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.en.md) | Free-tier `$5/month` AI Gateway credits | Vercel / AI SDK projects |
+| [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.en.md) | Daily `10,000` Neurons free allocation | Workers / edge demos |
 | [DashScope / Bailian](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.en.md) | New-user model free quota | Mainland China / `Codex` / `Claude Code` |
 | [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.en.md) | Free models after verification | China-region multi-model trials |
 | [Baidu Qianfan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.en.md) | New-user model token grants | Domestic models / lightweight agents |
@@ -135,8 +135,8 @@ Each provider has its own directory with:
 - Cerebras: the docs still show a free API-key flow and OpenAI SDK usage; the current public production endpoint is `gpt-oss-120b`, with `zai-glm-4.7` marked as preview on the models page.
 - NVIDIA NIM: NVIDIA Build exposes free serverless NIM APIs for development and prototyping, with OpenAI-style chat completions at `https://integrate.api.nvidia.com/v1`; production capacity and limits are account/model-page dependent.
 - GitHub Models: free playground and API usage are available with model-tier-specific RPM, RPD, tokens/request, and concurrency limits.
-- Vercel AI Gateway: monthly free AI Gateway credits are available for team accounts, but the rule changes after first paid usage; treat it as a project gateway rather than a generic provider.
-- Cloudflare Workers AI: Workers AI includes a free daily Neurons allocation, and Cloudflare documents OpenAI-compatible endpoints; model Neurons cost should be checked first.
+- Vercel AI Gateway: team accounts get a free tier with `$5/month` AI Gateway credits. Credits start on the first AI Gateway request, and the monthly free credit no longer applies after purchasing credits; treat it as a project gateway rather than a generic provider.
+- Cloudflare Workers AI: Workers AI includes a free daily allocation of `10,000` Neurons, resetting daily at `00:00 UTC`. Cloudflare also documents OpenAI-compatible endpoints; model Neurons cost should be checked first.
 - DashScope / Bailian: free quota is regional and activity-based. The official pricing page says mainland China users can claim model free quotas that are valid for `90 days` after activation, with model-specific quota details.
 - SiliconFlow: official docs say free models are available after real-name verification; the docs also include Claude Code and CC Switch integration guides.
 - Baidu Qianfan: official new-user free-quota docs list model token grants, commonly valid for about `3 months`, with model scope and campaigns controlled by the current page.

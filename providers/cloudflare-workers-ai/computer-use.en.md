@@ -10,7 +10,7 @@
 4. Create an API token, or configure an AI binding in a Worker project
 5. Save the account ID locally as `CLOUDFLARE_ACCOUNT_ID`
 6. Save the token locally as `CLOUDFLARE_API_TOKEN`
-7. Open [Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/) and confirm the current free daily Neurons allocation
+7. Open [Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/) and confirm whether the free daily allocation is still `10,000` Neurons
 8. For OpenAI-compatible calls, open [OpenAI compatible API endpoints](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/) and verify the current base URL
 
 ## Human Takeover Points
@@ -21,6 +21,6 @@
 
 ## Final Checklist
 
-- Free allocation is still available
+- Daily `10,000` Neurons free allocation is still available
 - Model Neurons cost fits the intended usage
 - Call path is REST API, Workers binding, or OpenAI-compatible endpoint

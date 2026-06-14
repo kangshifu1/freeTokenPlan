@@ -30,8 +30,8 @@
 | [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.md) | 免费 API key 流程，额度看控制台 | 高速推理试用 |
 | [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.md) | 免费 serverless NIM 开发调用 | OpenAI 风格原型验证 |
 | [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.md) | 免费 playground / API 限额 | GitHub 账号原型测试 |
-| [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.md) | 月度 AI Gateway credits | Vercel / AI SDK 项目 |
-| [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.md) | 每日 Neurons allocation | Workers / 边缘 demo |
+| [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits | Vercel / AI SDK 项目 |
+| [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation | Workers / 边缘 demo |
 | [DashScope / 百炼](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.md) | 新人模型免费额度 | 中国大陆 / `Codex` / `Claude Code` |
 | [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.md) | 实名后免费模型 | 中国区多模型试用 |
 | [百度千帆](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.md) | 新用户模型 token 赠送 | 国产模型 / 轻量 agent |
@@ -386,12 +386,12 @@
 - 注册方式：Vercel 账号登录后启用 AI Gateway
 - 是否需要信用卡：免费 credits 阶段以 Vercel team / billing 状态为准
 - 免费内容：
-  - 官方定价页显示 team account 有月度免费 AI Gateway credits
-  - 首次付费后，月度免费 credits 规则会变化
+  - 官方定价页显示每个 team account 的免费档包含 `$5/month` AI Gateway credits
+  - credits 从首次 AI Gateway 请求开始；购买 credits 后，月度免费 credits 不再适用
 - 使用限制：
   - 更适合 Vercel AI SDK / 项目内代理，而不是直接当通用 OpenAI 兼容供应商
   - 具体 provider、模型、URL 以当前项目配置为准
-- 有效期限：按月 credits；付费状态会影响免费规则
+- 有效期限：按月 credits；购买 credits 后会影响免费规则
 - OpenAI 兼容：以当前 AI Gateway 文档和项目配置为准
 - Anthropic 兼容：以当前 AI Gateway 文档和项目配置为准
 - 适合接入：Vercel 项目、AI SDK、项目内统一网关
@@ -409,12 +409,13 @@
 - 注册方式：Cloudflare 账号登录后启用 Workers AI
 - 是否需要信用卡：免费 allocation 阶段通常不需要先绑卡；Workers 计划状态会影响能力边界
 - 免费内容：
-  - 官方定价页说明 Workers AI 基于 Neurons 计费，并提供每日免费 allocation
+  - 官方定价页说明 Workers AI 基于 Neurons 计费，并提供每日 `10,000` Neurons 免费 allocation
   - 不同模型消耗的 Neurons 不同
+  - 超过免费 allocation 后需要 Workers Paid plan
 - 使用限制：
   - 更适合 Cloudflare Worker / REST API / 边缘 demo
   - 如果要接通通用 agent 工具，需要确认当前 OpenAI compatible endpoint
-- 有效期限：每日 allocation，具体规则以当前定价页为准
+- 有效期限：每日 allocation，官方说明在 `00:00 UTC` 重置
 - OpenAI 兼容：官方有 OpenAI compatible API endpoints 文档
 - Anthropic 兼容：否
 - 适合接入：Cloudflare Worker、轻量自动化、边缘侧 demo
