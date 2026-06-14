@@ -42,4 +42,4 @@
 - API key created successfully
 - Creation date recorded
 - Current free-tier model list checked
-- Key type is not an unrestricted `standard key`
+- Key type is not an unrestricted `standard key`, and the setup does not depend on an older `standard key` planned for shutdown in `2026-09`

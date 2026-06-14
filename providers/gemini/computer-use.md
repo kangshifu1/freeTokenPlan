@@ -44,4 +44,4 @@
 - 是否成功拿到 API key
 - 是否记录了创建日期
 - 是否确认了当前 Free tier 模型
-- 是否确认 key 类型不是不受限制的 `standard key`
+- 是否确认 key 类型不是不受限制的 `standard key`，且没有依赖即将在 `2026-09` 停用的旧 `standard key`

@@ -10,7 +10,7 @@
 4. Create a key
 5. Copy the key
 6. Save it locally as `MISTRAL_API_KEY`
-7. Check the Studio / Console page and the pricing or models page for the current free-mode wording
+7. Check Studio / Console and the [Mistral Pricing](https://mistral.ai/pricing) page for current API free-mode wording and the Mistral Free / Vibe for code plan
 8. For `CC Switch`, prefer a compatible gateway before import
 
 ## Human Takeover Points

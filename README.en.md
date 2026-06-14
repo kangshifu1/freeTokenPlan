@@ -28,7 +28,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-06-13`
+- Updated: `2026-06-14`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -89,12 +89,12 @@ Each provider has its own directory with:
 
 ## Current Provider Notes
 
-- Gemini: the Free tier remains model-dependent, with current public pricing examples now led by Gemini 3.x models. AI Studio now steers new keys toward `auth keys`, and Google documents that unrestricted `standard keys` will be rejected from `2026-06-19`. Gemini also has an official OpenAI compatibility endpoint, but it is not a full OpenAI API replacement.
+- Gemini: the Free tier remains model-dependent, with current public pricing examples now led by Gemini 3.5 models. AI Studio now steers new keys toward `auth keys`, and Google documents that unrestricted `standard keys` will be rejected from `2026-06-19`, with all `standard keys` planned for shutdown in `2026-09`. Gemini also has an official OpenAI compatibility endpoint, but it is not a full OpenAI API replacement.
 - OpenRouter: free accounts can still create keys without a credit card and use `:free` models, subject to the published per-minute and daily free-model limits.
 - Cohere: trial keys remain the correct free testing path, with documented trial rate limits for evaluation and development.
-- Hugging Face: Inference Providers still use small monthly credits for free accounts, so this is best treated as a smoke-test or demo route.
+- Hugging Face: Inference Providers still use small monthly credits for free accounts, and the official pricing docs now live under the Inference Providers docs, so this is best treated as a smoke-test or demo route.
 - Groq: official docs provide OpenAI-compatible access, but current quota and model availability should be checked on the organization-level limits page in the console.
-- Mistral: the public docs still position the free / low-friction path for evaluation and prototyping, and Mistral Code has a Free plan, but they do not publish a stable signup token amount.
+- Mistral: the public pricing page still lists Mistral Free with limited Vibe for code access, while API free-mode details remain console-dependent rather than a stable published signup token amount.
 - Cerebras: the docs still show a free API-key flow and OpenAI SDK usage; the current public production endpoint is `gpt-oss-120b`, with `zai-glm-4.7` marked as preview on the models page.
 - DashScope / Bailian: free quota is regional and activity-based. The official pricing page says mainland China users can claim model free quotas that are valid for `90 days` after activation, with model-specific quota details.
 - SiliconFlow: official docs say free models are available after real-name verification; the docs also include Claude Code and CC Switch integration guides.
@@ -131,13 +131,13 @@ Before importing into a live `CC Switch` build, verify field names against your 
 - Cohere
   - [Rate limits](https://docs.cohere.com/docs/rate-limits)
 - Hugging Face
-  - [Pricing and Billing](https://huggingface.co/docs/api-inference/pricing)
+  - [Pricing and Billing](https://huggingface.co/docs/inference-providers/pricing)
 - Groq
   - [Overview](https://console.groq.com/docs/overview)
   - [OpenAI compatibility](https://console.groq.com/docs/openai)
   - [Rate limits](https://console.groq.com/docs/rate-limits)
 - Mistral
-  - [Pricing](https://docs.mistral.ai/getting-started/pricing/)
+  - [Pricing](https://mistral.ai/pricing)
 - Cerebras
   - [Introduction](https://inference-docs.cerebras.ai/introduction)
   - [Models](https://inference-docs.cerebras.ai/models)

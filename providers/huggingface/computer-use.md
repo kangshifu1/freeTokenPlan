@@ -11,7 +11,7 @@
 5. 创建一个新 token
 6. 复制 token
 7. 本地保存为环境变量：`HF_TOKEN`
-8. 打开推理 provider 文档，确认准备接哪个 provider
+8. 打开 [Inference Providers 计费文档](https://huggingface.co/docs/inference-providers/pricing)，确认准备接哪个 provider 以及本月 credits
 9. 如果要接入 CC Switch，建议通过统一网关先转换为 OpenAI 兼容接口
 
 ## 人工接管点

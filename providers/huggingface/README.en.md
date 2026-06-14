@@ -2,9 +2,9 @@
 
 [中文](./README.md) | [English](./README.en.md)
 
-- Website: [Pricing and Billing](https://huggingface.co/docs/api-inference/pricing)
+- Website: [Inference Providers Pricing and Billing](https://huggingface.co/docs/inference-providers/pricing)
 - Registration: create a Hugging Face account
-- Free tier: small monthly credits for inference providers
+- Free tier: small monthly credits for inference providers; the official billing docs now live under the Inference Providers docs path
 - Recommended for: lightweight API checks and model exploration
 
 Files in this directory:

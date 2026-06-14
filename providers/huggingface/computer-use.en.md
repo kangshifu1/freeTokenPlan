@@ -11,7 +11,7 @@
 5. Create a new token
 6. Copy the token
 7. Save it locally as `HF_TOKEN`
-8. Check which inference provider or model route you plan to use
+8. Open the [Inference Providers billing docs](https://huggingface.co/docs/inference-providers/pricing), then check which provider or model route you plan to use and the current monthly credits
 9. For `CC Switch`, prefer a compatible gateway before import
 
 ## Human Takeover Points
@@ -23,4 +23,3 @@
 
 - Token scopes are not overly broad
 - Remaining monthly credits are noted if needed
-

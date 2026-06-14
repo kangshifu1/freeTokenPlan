@@ -29,7 +29,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-06-13`
+- 更新时间：`2026-06-14`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -86,13 +86,13 @@
 - 是否需要信用卡：通常不需要先绑卡即可试用 Free tier
 - 免费内容：
   - 官方长期提供 `Free` 档
-  - 文档明确列出多个模型的免费层，例如 `Gemini 3 Pro`、`Gemini 3 Flash`、`Gemini Embedding`
-  - 官方还列出 `Grounding with Google Search` 免费档每天 `500 RPD`
+  - 文档明确列出多个模型的免费层，当前公开定价示例已推进到 `Gemini 3.5 Flash`、`Gemini 3.5 Live Translate`、`Gemini 3.1`、`Gemini 2.5`、`Gemini Embedding` 等模型
+  - `Grounding with Google Search` 免费额度按模型分列；例如部分 `Gemini 2.5 Flash / Flash-Lite` 路径仍显示免费档每天 `500 RPD`，Gemini 3.x 相关行则需要逐模型确认
 - 使用限制：
   - 免费档按模型区分，不是所有模型都有 Free tier
   - 速率限制、上下文长度、是否启用搜索等都按模型单独计算
   - 免费档数据可能会用于 Google 产品改进，付费档默认不会
-  - AI Studio 新建 key 默认更偏向 `auth keys`；官方说明从 `2026-06-19` 开始会拒绝不受限制的 `standard keys`
+  - AI Studio 新建 key 默认更偏向 `auth keys`；官方说明从 `2026-06-19` 开始会拒绝不受限制的 `standard keys`，并计划在 `2026-09` 停用所有 `standard keys`
 - 有效期限：长期免费档，不是一次性赠金
 - OpenAI 兼容：官方提供 OpenAI compatibility 端点；但功能覆盖不等同于完整 OpenAI API
 - Anthropic 兼容：否
@@ -160,7 +160,7 @@
 
 ### 4. Hugging Face Inference Providers
 
-- 官网：[Pricing and Billing](https://huggingface.co/docs/api-inference/pricing)
+- 官网：[Inference Providers Pricing and Billing](https://huggingface.co/docs/inference-providers/pricing)
 - 类型：模型聚合 / 托管推理
 - 注册方式：Hugging Face 账号登录
 - 是否需要信用卡：免费额度阶段通常不需要
@@ -179,7 +179,7 @@
   - 用于“验证某模型能否跑通”最划算
   - 不建议把它当主力编程模型源
 - 官方文档：
-  - [Pricing and Billing](https://huggingface.co/docs/api-inference/pricing)
+  - [Pricing and Billing](https://huggingface.co/docs/inference-providers/pricing)
 
 ### 5. Groq
 
@@ -209,13 +209,13 @@
 
 ### 6. Mistral
 
-- 官网：[Mistral Pricing](https://docs.mistral.ai/getting-started/pricing/)
+- 官网：[Mistral Pricing](https://mistral.ai/pricing)
 - 类型：模型 API / 开发工具
 - 注册方式：Mistral 平台注册
 - 是否需要信用卡：看使用路径；评估阶段通常可先试
 - 免费内容：
-  - 官方定价页写明 `Mistral Code` 的 `Vibe` 在 `Free` 计划中可用
-  - 官方文档仍把免费 / 低门槛试用定位为评估与原型验证用途，具体 API key 与额度状态以 Studio / Console 当前页面为准
+  - 官方定价页继续列出 `Mistral Free` 计划，并说明包含有限的 `Vibe for code` 能力
+  - 官方文档仍把免费 / 低门槛试用定位为评估与原型验证用途，具体 API key、模型与额度状态以 Studio / Console 当前页面为准
 - 使用限制：
   - 免费模式适合轻量评估，文档没有长期公开一个统一的“注册送多少 token”数字
   - 更像“提供免费试用模式”，不是大额度长期免费池
@@ -581,14 +581,14 @@ export ANTHROPIC_AUTH_TOKEN=your-token
   - [Rate limits](https://docs.cohere.com/docs/rate-limits)
   - [Models](https://docs.cohere.com/docs/models)
 - Hugging Face
-  - [Pricing and Billing](https://huggingface.co/docs/api-inference/pricing)
+  - [Pricing and Billing](https://huggingface.co/docs/inference-providers/pricing)
 - Groq
   - [Overview](https://console.groq.com/docs/overview)
   - [OpenAI compatibility](https://console.groq.com/docs/openai)
   - [Rate limits](https://console.groq.com/docs/rate-limits)
   - [Pricing](https://groq.com/pricing/)
 - Mistral
-  - [Pricing](https://docs.mistral.ai/getting-started/pricing/)
+  - [Pricing](https://mistral.ai/pricing)
 - Cerebras
   - [Introduction](https://inference-docs.cerebras.ai/introduction)
   - [OpenAI SDK](https://inference-docs.cerebras.ai/resources/openai)
