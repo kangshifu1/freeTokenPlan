@@ -50,7 +50,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-06-14`
+- 更新时间：`2026-06-15`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -167,7 +167,8 @@
 - 是否需要信用卡：试用通常不需要先绑卡
 - 免费内容：
   - 官方文档明确：`trial keys` 可免费试用
-  - 对常见聊天模型，试用 key 的限制是 `1000 API calls/month`、`20 calls/minute`
+  - 试用 key 以及部分较新的 Chat 模型生产 key 受 `1000 API calls/month` 限制
+  - 当前 Chat API 试用限制通常为 `20 req/min`；`Embed` 为 `2,000 inputs/min`，`Rerank` 为 `10 req/min`
   - 模型目录页中也有“free until rate limit reached”描述
 - 使用限制：
   - 主要面向评估和开发，不适合直接当高并发生产额度
@@ -240,10 +241,11 @@
 - 是否需要信用卡：看使用路径；评估阶段通常可先试
 - 免费内容：
   - 官方定价页继续列出 `Mistral Free` 计划，并说明包含有限的 `Vibe for code` 能力
-  - 官方文档仍把免费 / 低门槛试用定位为评估与原型验证用途，具体 API key、模型与额度状态以 Studio / Console 当前页面为准
+  - 官方 tier 文档说明 API `Free mode` 默认启用，带有限 rate limit，面向评估与原型验证
 - 使用限制：
   - 免费模式适合轻量评估，文档没有长期公开一个统一的“注册送多少 token”数字
   - 更像“提供免费试用模式”，不是大额度长期免费池
+  - 需要更高限额时升级到 `Scale` 计划，随后按累计账单进入更高 usage tier
 - 有效期限：以账户和产品当前策略为准
 - OpenAI 兼容：有兼容生态
 - Anthropic 兼容：否
@@ -365,6 +367,9 @@
 - 免费内容：
   - 官方文档说明 playground 和 API 有免费使用额度
   - 免费 API 按模型 tier 限制 RPM、RPD、tokens/request 和并发请求
+  - Copilot Free 下普通 `Low` 模型当前免费 API 限制为 `15 RPM`、`150 RPD`、`8000 input / 4000 output tokens per request`、`5` 并发请求
+  - Copilot Free 下 `High` 模型当前免费 API 限制为 `10 RPM`、`50 RPD`、`8000 input / 4000 output tokens per request`、`2` 并发请求
+  - Copilot Free 下 `Embedding` 模型当前免费 API 限制为 `15 RPM`、`150 RPD`、`64000 tokens/request`、`5` 并发请求
 - 使用限制：
   - Low / High / Embedding 等模型 tier 限额不同
   - 生产级更高限额需要开通 paid usage 或自带 provider key

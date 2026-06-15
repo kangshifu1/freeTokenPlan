@@ -4,7 +4,8 @@
 
 - Website: [Mistral Pricing](https://mistral.ai/pricing)
 - Registration: create a Mistral platform account
-- Free tier: the public pricing page still lists Mistral Free with limited Vibe for code access; API free / low-friction usage remains best treated as evaluation and prototyping, with current limits depending on Studio / Console
+- Free tier: the public pricing page still lists Mistral Free with limited Vibe for code access; the tier docs say API `Free mode` is enabled by default with limited rate limits for evaluation and prototyping
+- Upgrade path: move to the `Scale` plan for higher limits, then usage tiers increase with cumulative billed usage
 - Recommended for: model-style testing and light development evaluation
 
 Files in this directory:

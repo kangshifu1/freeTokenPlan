@@ -12,16 +12,16 @@
 6. Save it locally as `GITHUB_TOKEN`
 7. Record the endpoint: `https://models.github.ai/inference`
 8. Record the default model ID, for example `openai/gpt-4.1-mini` or the current page recommendation
-9. Before importing into CC Switch, re-check the model's current free API limits
+9. Before importing into CC Switch, re-check the model's current free API limits; under Copilot Free, use `Low=15 RPM/150 RPD/5 concurrent`, `High=10 RPM/50 RPD/2 concurrent`, and `Embedding=15 RPM/150 RPD/5 concurrent` as a conservative starting record
 
 ## Human Takeover Points
 
 - GitHub login and 2FA
-- Personal access token creation and scope review
+- Personal access token creation and scope review; local API calls need `models:read`
 - Organization policies that may restrict GitHub Models usage
 
 ## Final Checklist
 
 - Token scopes are sufficient but not excessive
 - Model ID was copied from the current GitHub Models page
-- Free API RPM / RPD / tokens/request / concurrency limits are recorded
+- Free API RPM / RPD / tokens/request / concurrency limits are recorded for the current account type

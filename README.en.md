@@ -49,7 +49,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-06-14`
+- Updated: `2026-06-15`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -128,13 +128,13 @@ Each provider has its own directory with:
 
 - Gemini: the Free tier remains model-dependent, with current public pricing examples now led by Gemini 3.5 models. AI Studio now steers new keys toward `auth keys`, and Google documents that unrestricted `standard keys` will be rejected from `2026-06-19`, with all `standard keys` planned for shutdown in `2026-09`. Gemini also has an official OpenAI compatibility endpoint, but it is not a full OpenAI API replacement.
 - OpenRouter: free accounts can still create keys without a credit card and use `:free` models, subject to the published per-minute and daily free-model limits.
-- Cohere: trial keys remain the correct free testing path, with documented trial rate limits for evaluation and development.
+- Cohere: trial keys remain the correct free testing path, with a documented `1,000 API calls/month` cap and per-endpoint limits such as `20 req/min` for current Chat models, `2,000 inputs/min` for Embed, and `10 req/min` for Rerank.
 - Hugging Face: Inference Providers still use small monthly credits for free accounts, and the official pricing docs now live under the Inference Providers docs, so this is best treated as a smoke-test or demo route.
 - Groq: official docs provide OpenAI-compatible access, but current quota and model availability should be checked on the organization-level limits page in the console.
-- Mistral: the public pricing page still lists Mistral Free with limited Vibe for code access, while API free-mode details remain console-dependent rather than a stable published signup token amount.
+- Mistral: the public pricing page still lists Mistral Free with limited Vibe for code access, and the tier docs say API Free mode is enabled by default with limited limits for evaluation and prototyping.
 - Cerebras: the docs still show a free API-key flow and OpenAI SDK usage; the current public production endpoint is `gpt-oss-120b`, with `zai-glm-4.7` marked as preview on the models page.
 - NVIDIA NIM: NVIDIA Build exposes free serverless NIM APIs for development and prototyping, with OpenAI-style chat completions at `https://integrate.api.nvidia.com/v1`; production capacity and limits are account/model-page dependent.
-- GitHub Models: free playground and API usage are available with model-tier-specific RPM, RPD, tokens/request, and concurrency limits.
+- GitHub Models: free playground and API usage are available with model-tier-specific limits. Under Copilot Free, current free API limits are `15 RPM / 150 RPD / 5 concurrent` for Low models, `10 RPM / 50 RPD / 2 concurrent` for High models, and `15 RPM / 150 RPD / 5 concurrent` for Embedding models, with per-request token caps published in the GitHub docs.
 - Vercel AI Gateway: team accounts get a free tier with `$5/month` AI Gateway credits. Credits start on the first AI Gateway request, and the monthly free credit no longer applies after purchasing credits; treat it as a project gateway rather than a generic provider.
 - Cloudflare Workers AI: Workers AI includes a free daily allocation of `10,000` Neurons, resetting daily at `00:00 UTC`. Cloudflare also documents OpenAI-compatible endpoints; model Neurons cost should be checked first.
 - DashScope / Bailian: free quota is regional and activity-based. The official pricing page says mainland China users can claim model free quotas that are valid for `90 days` after activation, with model-specific quota details.
