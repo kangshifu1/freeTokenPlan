@@ -32,11 +32,11 @@
 | [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.md) | 免费 playground / API 限额 | GitHub 账号原型测试 |
 | [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits | Vercel / AI SDK 项目 |
 | [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation | Workers / 边缘 demo |
-| [DashScope / 百炼](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.md) | 新人模型免费额度 | 中国大陆 / `Codex` / `Claude Code` |
+| [DashScope / 百炼](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.md) | 新人实时推理免费额度，支持用完即停 | 中国大陆 / `Codex` / `Claude Code` |
 | [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.md) | 实名后免费模型 | 中国区多模型试用 |
 | [百度千帆](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.md) | 新用户模型 token 赠送 | 国产模型 / 轻量 agent |
 | [腾讯混元](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.md) | 首次开通资源包 / `Hunyuan-lite` | 混元文本生成 |
-| [火山方舟](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度 | 豆包 / DeepSeek / Coding Plan |
+| [火山方舟](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度 / Agent Plan | 豆包 / DeepSeek / Coding Plan |
 
 ## 快速导航
 
@@ -50,7 +50,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-06-15`
+- 更新时间：`2026-06-16`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 

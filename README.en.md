@@ -32,11 +32,11 @@ This is a public repository for beginners who want a practical index of free AI 
 | [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.en.md) | Free playground / API limits | GitHub-account prototypes |
 | [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.en.md) | Free-tier `$5/month` AI Gateway credits | Vercel / AI SDK projects |
 | [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.en.md) | Daily `10,000` Neurons free allocation | Workers / edge demos |
-| [DashScope / Bailian](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.en.md) | New-user model free quota | Mainland China / `Codex` / `Claude Code` |
+| [DashScope / Bailian](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.en.md) | New-user realtime inference quota with stop-after-free control | Mainland China / `Codex` / `Claude Code` |
 | [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.en.md) | Free models after verification | China-region multi-model trials |
 | [Baidu Qianfan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.en.md) | New-user model token grants | Domestic models / lightweight agents |
 | [Tencent Hunyuan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.en.md) | First-activation package / `Hunyuan-lite` | Hunyuan text generation |
-| [Volcengine Ark](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.en.md) | Free inference / campaign quota | Doubao / DeepSeek / Coding Plan |
+| [Volcengine Ark](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.en.md) | Free inference / campaign quota / Agent Plan | Doubao / DeepSeek / Coding Plan |
 
 ## Quick Navigation
 
@@ -49,7 +49,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-06-15`
+- Updated: `2026-06-16`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
