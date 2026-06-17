@@ -34,7 +34,7 @@
 | [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation | Workers / 边缘 demo |
 | [DashScope / 百炼](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.md) | 新人实时推理免费额度，支持用完即停 | 中国大陆 / `Codex` / `Claude Code` |
 | [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.md) | 实名后免费模型 | 中国区多模型试用 |
-| [百度千帆](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.md) | 新用户模型 token 赠送 | 国产模型 / 轻量 agent |
+| [百度千帆](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月` | 国产模型 / OpenAI 兼容 agent |
 | [腾讯混元](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.md) | 首次开通资源包 / `Hunyuan-lite` | 混元文本生成 |
 | [火山方舟](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度 / Agent Plan | 豆包 / DeepSeek / Coding Plan |
 
@@ -50,7 +50,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-06-16`
+- 更新时间：`2026-06-17`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -438,20 +438,23 @@
 - 注册方式：百度智能云账号开通千帆，按要求完成实名认证
 - 是否需要信用卡：通常不需要信用卡，但需要百度智能云账号与实名体系
 - 免费内容：
-  - 官方新用户免费额度页列出多个模型赠送 tokens
-  - 常见规则为新用户领取、有效期约 `3 个月`
+  - 官方新用户免费额度页说明，`2025-10-24 00:00:00` 后首次开通千帆用户会自动领取适用模型的免费额度
+  - 当前页面列出多款模型各 `100万 Tokens`，有效期 `3 个月`
+  - 免费额度有效期从用户首次开通千帆之日算起；支持模型、tokens 和活动规则以官方页面为准
 - 使用限制：
-  - 模型名单、赠送 tokens、有效期受活动页面影响
-  - OpenAI / Anthropic 兼容入口需要按当前模型和工具文档确认
+  - 免费额度只覆盖官方页面列出的模型和服务范围
+  - 模型名单、赠送 tokens、有效期和是否仍在活动窗口内受官方页面影响
+  - 通过 OpenAI 兼容入口接入时，仍需按当前模型确认名称、上下文和工具能力
 - 有效期限：以官方新用户免费额度页面为准
-- OpenAI 兼容：需按当前文档确认
+- OpenAI 兼容：是，官方 V2 兼容模式 base URL 为 `https://qianfan.baidubce.com/v2`
 - Anthropic 兼容：需按当前文档确认
 - 适合接入：中国大陆用户、国产模型试用、轻量 agent
 - 优惠策略：
-  - 先领取新人额度，再选当前免费范围内的模型
-  - 需要 CC Switch 时优先通过兼容网关或本地代理适配
+  - 先开通千帆并确认免费额度已自动到账，再选当前免费范围内的模型
+  - 需要 CC Switch 时优先记录官方 OpenAI 兼容 base URL，并把默认模型设为当前账号免费额度覆盖的模型
 - 官方文档：
   - [New-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
+  - [OpenAI SDK compatibility](https://cloud.baidu.com/doc/qianfan/s/Hmh4suq26)
 
 ### 15. 腾讯混元
 
@@ -831,6 +834,7 @@ export ANTHROPIC_AUTH_TOKEN=your-token
   - [OpenAI compatible API endpoints](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/)
 - 百度千帆
   - [New-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
+  - [OpenAI SDK compatibility](https://cloud.baidu.com/doc/qianfan/s/Hmh4suq26)
 - 腾讯混元
   - [Billing overview](https://cloud.tencent.com/document/product/1729/97731)
 - 火山方舟

@@ -11,8 +11,9 @@
 5. Open the API key / security credential page
 6. Create and copy the API key / secret
 7. Save it locally as `QIANFAN_API_KEY`; if required, also save `QIANFAN_SECRET_KEY`
-8. Open [new-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg), then record available models, token grants, and validity
-9. For CC Switch, first confirm whether the current model exposes an OpenAI-compatible route or needs a local proxy
+8. Open [new-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg), confirm whether the free quota was issued automatically, then record covered models, token grants, and validity
+9. For CC Switch, open the [OpenAI SDK compatibility](https://cloud.baidu.com/doc/qianfan/s/Hmh4suq26) guide and record the base URL: `https://qianfan.baidubce.com/v2`
+10. Set the default model to a model covered by the current account's free quota; if the target tool needs Anthropic protocol behavior, confirm whether a local proxy is still required
 
 ## Human Takeover Points
 
@@ -25,4 +26,4 @@
 - Free quota claimed
 - Validity period recorded from the current page
 - Default model is within the current account's free quota
-- Compatibility endpoint comes from current official docs
+- OpenAI-compatible base URL recorded from current official docs

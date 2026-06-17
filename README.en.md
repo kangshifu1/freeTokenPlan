@@ -34,7 +34,7 @@ This is a public repository for beginners who want a practical index of free AI 
 | [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.en.md) | Daily `10,000` Neurons free allocation | Workers / edge demos |
 | [DashScope / Bailian](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.en.md) | New-user realtime inference quota with stop-after-free control | Mainland China / `Codex` / `Claude Code` |
 | [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.en.md) | Free models after verification | China-region multi-model trials |
-| [Baidu Qianfan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.en.md) | New-user model token grants | Domestic models / lightweight agents |
+| [Baidu Qianfan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.en.md) | New-user model token grants, commonly `1M tokens / 3 months` | Domestic models / OpenAI-compatible agents |
 | [Tencent Hunyuan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.en.md) | First-activation package / `Hunyuan-lite` | Hunyuan text generation |
 | [Volcengine Ark](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.en.md) | Free inference / campaign quota / Agent Plan | Doubao / DeepSeek / Coding Plan |
 
@@ -49,7 +49,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-06-16`
+- Updated: `2026-06-17`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -139,7 +139,7 @@ Each provider has its own directory with:
 - Cloudflare Workers AI: Workers AI includes a free daily allocation of `10,000` Neurons, resetting daily at `00:00 UTC`. Cloudflare also documents OpenAI-compatible endpoints; model Neurons cost should be checked first.
 - DashScope / Bailian: free quota is regional and activity-based. The official pricing page says mainland China users can claim model free quotas that are valid for `90 days` after activation, with model-specific quota details.
 - SiliconFlow: official docs say free models are available after real-name verification; the docs also include Claude Code and CC Switch integration guides.
-- Baidu Qianfan: official new-user free-quota docs list model token grants, commonly valid for about `3 months`, with model scope and campaigns controlled by the current page.
+- Baidu Qianfan: official new-user free-quota docs now say first-time Qianfan activations after `2025-10-24 00:00:00` automatically receive eligible model quotas. The current page lists multiple models at `1M tokens` valid for `3 months`, and Baidu documents an OpenAI-compatible V2 base URL at `https://qianfan.baidubce.com/v2`.
 - Tencent Hunyuan: first-time activation can grant a free resource package, and `Hunyuan-lite` is marked free in official pricing; endpoint details should be checked in current docs.
 - Volcengine Ark: free inference quota, safe-experience mode, and campaign credits may be available; exact model, quota, and endpoint details are console-dependent.
 
@@ -208,6 +208,7 @@ Before importing into a live `CC Switch` build, verify field names against your 
   - [OpenAI compatible API endpoints](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/)
 - Baidu Qianfan
   - [New-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
+  - [OpenAI SDK compatibility](https://cloud.baidu.com/doc/qianfan/s/Hmh4suq26)
 - Tencent Hunyuan
   - [Billing overview](https://cloud.tencent.com/document/product/1729/97731)
 - Volcengine Ark

@@ -11,23 +11,23 @@
     "requires_credit_card": false
   },
   "api": {
-    "protocol": "provider_native_or_compatible_gateway",
-    "base_url": "check-current-qianfan-docs",
+    "protocol": "openai_compatible",
+    "base_url": "https://qianfan.baidubce.com/v2",
     "api_key_env": "QIANFAN_API_KEY",
     "default_model": "check-current-free-model",
     "supports_responses_api": false,
-    "supports_chat_completions": false,
+    "supports_chat_completions": true,
     "supports_anthropic_compat": false,
     "needs_local_routing": true
   },
   "free_tier": {
-    "summary": "New-user token grants are available for multiple models; exact models and validity follow the official Qianfan free-quota page.",
+    "summary": "First-time Qianfan activations after 2025-10-24 00:00:00 automatically receive eligible new-user model quotas; current docs list multiple models at 1M tokens for 3 months.",
     "limit_window": "new-user-campaign",
     "reset_rule": "campaign rules apply",
-    "expires": "about-3-months-or-current-page"
+    "expires": "3-months-from-first-qianfan-activation-or-current-page"
   },
   "cc_switch": {
-    "import_mode": "manual_gateway_record",
+    "import_mode": "openai_compatible_provider",
     "model_map": [
       {
         "label": "current-free-model",
@@ -37,6 +37,7 @@
   },
   "notes": [
     "Complete real-name verification before assuming the free quota is available.",
-    "Verify current model compatibility and endpoint before importing into CC Switch."
+    "Verify the current free-quota model list before choosing the default model.",
+    "Use the official OpenAI-compatible V2 base URL unless Baidu updates the compatibility docs."
   ]
 }

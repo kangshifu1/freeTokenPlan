@@ -4,9 +4,10 @@
 
 - Website: [Qianfan new-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
 - Registration: create a Baidu Cloud account, enable Qianfan, and complete required real-name verification
-- Free tier: the official new-user free-quota page lists token grants for multiple models, commonly new-user grants valid for about `3 months`; exact models, quotas, and campaign windows follow the official page
-- Compatibility: Qianfan provides model-service APIs and multiple AI-tool integration docs; OpenAI / Anthropic compatibility should be verified against current model and tool docs
-- Recommended for: mainland China users testing domestic models, DeepSeek/Kimi/Qwen-style aggregated models, and lightweight agent integration
+- Free tier: the official new-user free-quota page says users who enable Qianfan for the first time after `2025-10-24 00:00:00` automatically receive eligible model quotas; the current page lists multiple models at `1M tokens` valid for `3 months`
+- Limits: validity starts from the first Qianfan activation date; exact models, token grants, campaign windows, and availability follow the official page
+- Compatibility: Qianfan documents [OpenAI SDK compatibility](https://cloud.baidu.com/doc/qianfan/s/Hmh4suq26), with V2 base URL `https://qianfan.baidubce.com/v2`; Anthropic compatibility should be verified against current tool docs
+- Recommended for: mainland China users testing domestic models, DeepSeek/Kimi/Qwen-style aggregated models, and OpenAI-compatible agent integration
 
 Files in this directory:
 

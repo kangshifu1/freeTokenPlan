@@ -11,8 +11,9 @@
 5. 打开 API Key / 安全认证相关页面
 6. 创建并复制 API key / secret
 7. 本地保存为环境变量：`QIANFAN_API_KEY`，如页面要求也保存 `QIANFAN_SECRET_KEY`
-8. 打开 [新用户免费额度](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)，记录当前账号可领取模型、tokens 和有效期
-9. 如果要接入 CC Switch，先确认当前模型是否有 OpenAI 兼容入口或需要本地代理转换
+8. 打开 [新用户免费额度](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)，确认免费额度是否已自动到账，并记录当前账号覆盖的模型、tokens 和有效期
+9. 如果要接入 CC Switch，打开 [OpenAI SDK 兼容说明](https://cloud.baidu.com/doc/qianfan/s/Hmh4suq26)，记录 base URL：`https://qianfan.baidubce.com/v2`
+10. 将默认模型设置为当前账号免费额度覆盖的模型；如工具需要 Anthropic 协议，再确认是否需要本地代理转换
 
 ## 人工接管点
 
@@ -25,4 +26,4 @@
 - 免费额度是否已领取
 - 有效期是否记录为当前页面显示值
 - 默认模型是否在当前账号免费额度范围内
-- 兼容入口是否来自官方当前文档
+- OpenAI 兼容 base URL 是否记录为官方当前文档值
