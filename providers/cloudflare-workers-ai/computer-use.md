@@ -11,7 +11,8 @@
 5. 本地保存账号 ID：`CLOUDFLARE_ACCOUNT_ID`
 6. 本地保存 token：`CLOUDFLARE_API_TOKEN`
 7. 打开 [Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/) 确认当前每日免费 allocation 是否仍为 `10,000` Neurons
-8. 如果需要 OpenAI 兼容调用，打开 [OpenAI compatible API endpoints](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/) 复核当前 base URL
+8. 在 Pricing 页查目标模型的示例 Neurons 成本，记录输入、输出或推理量如何换算，避免把 `10,000` Neurons 当作固定请求数
+9. 如果需要 OpenAI 兼容调用，打开 [OpenAI compatible API endpoints](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/) 复核当前 base URL
 
 ## 人工接管点
 
@@ -22,5 +23,5 @@
 ## 完成后核对
 
 - 每日 `10,000` Neurons 免费 allocation 是否仍可用
-- 模型消耗的 Neurons 是否适合当前用量
+- 模型消耗的 Neurons 是否适合当前用量，且已按目标模型重新估算请求量
 - 是否使用 REST API、Workers binding，还是 OpenAI compatible endpoint
