@@ -25,7 +25,7 @@ This is a public repository for beginners who want a practical index of free AI 
 | [OpenRouter](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/openrouter/README.en.md) | `:free` models with minute / daily limits | `Codex` / `CC Switch` |
 | [Cohere](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cohere/README.en.md) | Trial-key monthly call quota | Lightweight tests / prompt validation |
 | [Hugging Face](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/README.en.md) | Monthly Inference Providers credits | API checks / demos |
-| [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.en.md) | Free start, console-defined limits | Low-latency OpenAI-compatible calls |
+| [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.en.md) | Free Plan RPM/RPD/TPM/TPD limits by model | Low-latency OpenAI-compatible calls |
 | [Mistral](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/mistral/README.en.md) | Free plan / evaluation mode | Model-style testing |
 | [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.en.md) | Free API-key flow, console-defined limits | High-speed inference trials |
 | [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.en.md) | Free serverless NIM development calls | OpenAI-style prototypes |
@@ -130,7 +130,7 @@ Each provider has its own directory with:
 - OpenRouter: free accounts can still create keys without a credit card and use `:free` models, subject to the published per-minute and daily free-model limits.
 - Cohere: trial keys remain the correct free testing path, with a documented `1,000 API calls/month` cap and per-endpoint limits such as `20 req/min` for current Chat models, `2,000 inputs/min` for Embed, and `10 req/min` for Rerank.
 - Hugging Face: Inference Providers still use small monthly credits for free accounts, and the official pricing docs now live under the Inference Providers docs, so this is best treated as a smoke-test or demo route.
-- Groq: official docs provide OpenAI-compatible access, but current quota and model availability should be checked on the organization-level limits page in the console.
+- Groq: official docs provide OpenAI-compatible access and now publish a Free Plan Limits table by model. Example Free Plan limits include `30 RPM / 14.4K RPD / 6K TPM / 500K TPD` for `llama-3.1-8b-instant`, `30 RPM / 1K RPD / 12K TPM / 100K TPD` for `llama-3.3-70b-versatile`, and `30 RPM / 1K RPD / 8K TPM / 200K TPD` for the current `openai/gpt-oss-*` models; exact account limits still belong on the console Limits page.
 - Mistral: the public pricing page still lists Mistral Free with limited Vibe for code access, and the tier docs say API Free mode is enabled by default with limited limits for evaluation and prototyping.
 - Cerebras: the docs still show a free API-key flow and OpenAI SDK usage; the current public production endpoint is `gpt-oss-120b`, with `zai-glm-4.7` marked as preview on the models page.
 - NVIDIA NIM: NVIDIA Build exposes free serverless NIM APIs for development and prototyping, with OpenAI-style chat completions at `https://integrate.api.nvidia.com/v1`; production capacity and limits are account/model-page dependent.

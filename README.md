@@ -25,7 +25,7 @@
 | [OpenRouter](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/openrouter/README.md) | `:free` 模型，按分钟 / 每日限流 | `Codex` / `CC Switch` |
 | [Cohere](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cohere/README.md) | Trial key 月度调用额度 | 轻量测试 / prompt 验证 |
 | [Hugging Face](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/README.md) | Inference Providers 月度 credits | API 联调 / demo |
-| [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.md) | 免费开始，额度看控制台 | 低延迟 OpenAI 兼容调用 |
+| [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.md) | Free Plan 按模型 RPM/RPD/TPM/TPD 限流 | 低延迟 OpenAI 兼容调用 |
 | [Mistral](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/mistral/README.md) | Free 计划 / 评估模式 | 模型风格试用 |
 | [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.md) | 免费 API key 流程，额度看控制台 | 高速推理试用 |
 | [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.md) | 免费 serverless NIM 开发调用 | OpenAI 风格原型验证 |
@@ -216,11 +216,15 @@
 - 免费内容：
   - 官方定价页写明可以“Get started free”
   - 官方文档提供 OpenAI 兼容接口
+  - 官方 Rate Limits 页面现在直接列出 `Free Plan Limits` 表，按模型给出 `RPM`、`RPD`、`TPM`、`TPD`
 - 使用限制：
-  - 官方没有在统一页面长期公布一个固定“送多少 token”
-  - 官方速率限制文档说明限制按组织级别生效，实际速率和模型权限更适合以控制台 `limits` / `models` 页面为准
+  - 官方速率限制文档说明限制按组织级别生效，可能先触发请求数或 token 数任一维度
+  - 当前免费计划示例：`llama-3.1-8b-instant` 为 `30 RPM` / `14.4K RPD` / `6K TPM` / `500K TPD`
+  - 当前免费计划示例：`llama-3.3-70b-versatile` 为 `30 RPM` / `1K RPD` / `12K TPM` / `100K TPD`
+  - 当前免费计划示例：`openai/gpt-oss-120b` 和 `openai/gpt-oss-20b` 均为 `30 RPM` / `1K RPD` / `8K TPM` / `200K TPD`
+  - 官方说明该表是高层摘要，账号的精确当前限额仍应以控制台 `Limits` 页面为准
   - 免费层适合交互式、低延迟场景，不适合默认认为有大批量免费额度
-- 有效期限：持续可用，但具体配额以账号控制台为准
+- 有效期限：持续可用，但模型和配额以官方 Rate Limits / 控制台为准
 - OpenAI 兼容：是
 - Anthropic 兼容：否
 - 适合接入：`Codex`、`CC Switch`、OpenAI 兼容客户端
