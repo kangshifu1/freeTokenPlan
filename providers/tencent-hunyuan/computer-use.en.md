@@ -11,8 +11,10 @@
 5. Complete real-name verification, security checks, or service authorization
 6. Create API credentials / SecretId / SecretKey
 7. Save them locally as `TENCENT_SECRET_ID` and `TENCENT_SECRET_KEY`
-8. Open [Hunyuan billing overview](https://cloud.tencent.com/document/product/1729/97731), then record free resource package, validity, and `Hunyuan-lite` free status
-9. If using OpenAI compatibility, open the official compatibility docs and verify the base URL and model name
+8. Open [Hunyuan billing overview](https://cloud.tencent.com/document/product/1729/97731), then confirm whether the current entry point has moved to `TokenHub`
+9. Record the free package, shared model scope, validity, and whether `Hunyuan-lite` is excluded from the shared package
+10. Check the console postpaid setting and confirm whether usage can continue after free / paid packages are exhausted
+11. If using OpenAI compatibility, open the official compatibility docs and verify the base URL and model name
 
 ## Human Takeover Points
 
@@ -24,5 +26,6 @@
 
 - Free resource package is issued
 - Validity matches the console
-- Default model is still free or covered by the package
+- Target model is covered by the shared package or needs to be opened separately in `TokenHub`
+- Exhausted or expired packages still do not automatically roll into postpaid
 - OpenAI-compatible configuration comes from current official docs

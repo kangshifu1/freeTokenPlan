@@ -35,7 +35,7 @@ This is a public repository for beginners who want a practical index of free AI 
 | [DashScope / Bailian](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.en.md) | New-user realtime inference quota with stop-after-free control | Mainland China / `Codex` / `Claude Code` |
 | [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.en.md) | Free models after verification | China-region multi-model trials |
 | [Baidu Qianfan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.en.md) | New-user model token grants, commonly `1M tokens / 3 months` | Domestic models / OpenAI-compatible agents |
-| [Tencent Hunyuan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.en.md) | First-activation package / `Hunyuan-lite` | Hunyuan text generation |
+| [Tencent Hunyuan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.en.md) | First-activation shared `1M tokens / 1 year` package, moving to TokenHub | Hunyuan text generation |
 | [Volcengine Ark](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.en.md) | Free inference / campaign quota / Agent Plan | Doubao / DeepSeek / Coding Plan |
 
 ## Quick Navigation
@@ -49,7 +49,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-06-20`
+- Updated: `2026-06-22`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -140,7 +140,7 @@ Each provider has its own directory with:
 - DashScope / Bailian: free quota is regional and activity-based. The official pricing page says mainland China users can claim model free quotas that are valid for `90 days` after activation, with model-specific quota details.
 - SiliconFlow: official docs say free models are available after real-name verification; the docs also include Claude Code and CC Switch integration guides.
 - Baidu Qianfan: official new-user free-quota docs now say first-time Qianfan activations after `2025-10-24 00:00:00` automatically receive eligible model quotas. The current page lists multiple models at `1M tokens` valid for `3 months`, and Baidu documents an OpenAI-compatible V2 base URL at `https://qianfan.baidubce.com/v2`.
-- Tencent Hunyuan: first-time activation can grant a free resource package, and `Hunyuan-lite` is marked free in official pricing; endpoint details should be checked in current docs.
+- Tencent Hunyuan: the current billing overview says Hunyuan capabilities are gradually moving to TokenHub. First-time activation after real-name verification can issue a one-time shared `1M tokens` package valid for `1 year` across listed Hunyuan text and multimodal models, excluding `Hunyuan-lite`; free packages are consumed before paid packages and postpaid billing, and exhausted or expired packages do not automatically roll into postpaid unless the user enables postpaid.
 - Volcengine Ark: free inference quota, safe-experience mode, and campaign credits may be available; exact model, quota, and endpoint details are console-dependent.
 
 ## About the CC Switch Templates
