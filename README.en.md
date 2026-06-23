@@ -49,7 +49,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-06-22`
+- Updated: `2026-06-23`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -137,7 +137,7 @@ Each provider has its own directory with:
 - GitHub Models: free playground and API usage are available with model-tier-specific limits. Under Copilot Free, current free API limits are `15 RPM / 150 RPD / 5 concurrent` for Low models, `10 RPM / 50 RPD / 2 concurrent` for High models, and `15 RPM / 150 RPD / 5 concurrent` for Embedding models, with per-request token caps published in the GitHub docs.
 - Vercel AI Gateway: team accounts get a free tier with `$5/month` AI Gateway credits. Credits start on the first AI Gateway request, and the monthly free credit no longer applies after purchasing credits; treat it as a project gateway rather than a generic provider.
 - Cloudflare Workers AI: Workers AI still includes a free daily allocation of `10,000` Neurons, resetting daily at `00:00 UTC`. Cloudflare's current pricing page explains that model-specific input/output and related usage are converted into Neurons and shows example costs by model, so check the target model's Neurons cost before treating the free allocation as usable volume.
-- DashScope / Bailian: free quota is regional and activity-based. The official pricing page says mainland China users can claim model free quotas that are valid for `90 days` after activation, with model-specific quota details.
+- DashScope / Bailian: free quota is regional and activity-based. The official new-user free-quota FAQ says first activation automatically issues eligible model quotas, limited to China North `2` (Beijing) and China mainland deployment scope. Current validity is `30-90 days`, with first-time activations from `2025-09-08 11:00` onward receiving `90-day` validity.
 - SiliconFlow: official docs say free models are available after real-name verification; the docs also include Claude Code and CC Switch integration guides.
 - Baidu Qianfan: official new-user free-quota docs now say first-time Qianfan activations after `2025-10-24 00:00:00` automatically receive eligible model quotas. The current page lists multiple models at `1M tokens` valid for `3 months`, and Baidu documents an OpenAI-compatible V2 base URL at `https://qianfan.baidubce.com/v2`.
 - Tencent Hunyuan: the current billing overview says Hunyuan capabilities are gradually moving to TokenHub. First-time activation after real-name verification can issue a one-time shared `1M tokens` package valid for `1 year` across listed Hunyuan text and multimodal models, excluding `Hunyuan-lite`; free packages are consumed before paid packages and postpaid billing, and exhausted or expired packages do not automatically roll into postpaid unless the user enables postpaid.
