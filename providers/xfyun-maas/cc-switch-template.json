@@ -1,0 +1,46 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "xfyun-maas",
+  "provider_name": "iFlytek Astron MaaS",
+  "official_website": "https://maas.xfyun.cn/modelSquare",
+  "console_url": "https://maas.xfyun.cn/packageSubscription",
+  "registration": {
+    "method": "iflytek_account",
+    "requires_phone": true,
+    "requires_real_name": true,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "openai_compatible",
+    "base_url": "https://maas-coding-api.cn-huabei-1.xf-yun.com/v2",
+    "api_key_env": "XFYUN_MAAS_API_KEY",
+    "default_model": "astron-code-latest",
+    "supports_responses_api": false,
+    "supports_chat_completions": true,
+    "supports_anthropic_compat": true,
+    "needs_local_routing": false
+  },
+  "free_tier": {
+    "summary": "Public coding-tool docs currently focus on Token Plan and Coding Plan rather than a stable global free API grant.",
+    "limit_window": "plan-specific",
+    "reset_rule": "plan-and-console-specific",
+    "expires": "check-console"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "astron-code-latest",
+        "model": "astron-code-latest"
+      },
+      {
+        "label": "token-plan-check-console",
+        "model": "check-console"
+      }
+    ]
+  },
+  "notes": [
+    "Token Plan and Coding Plan use different dedicated base URLs and API keys.",
+    "If you use Coding Plan, the official default model identifier is astron-code-latest unless current docs say otherwise."
+  ]
+}

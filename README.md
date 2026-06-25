@@ -34,7 +34,9 @@
 | [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算 | Workers / 边缘 demo |
 | [DashScope / 百炼](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.md) | 新人实时推理免费额度，支持用完即停 | 中国大陆 / `Codex` / `Claude Code` |
 | [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.md) | 实名后免费模型 | 中国区多模型试用 |
+| [Agnes AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 |
 | [百度千帆](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月` | 国产模型 / OpenAI 兼容 agent |
+| [讯飞星辰 MaaS](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/xfyun-maas/README.md) | 模型广场 + `Token Plan` / `Coding Plan` 套餐接入 | 中国大陆编程工具接入 |
 | [腾讯混元](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.md) | 首次开通共享 `100万 tokens / 1年` 资源包，迁移至 TokenHub | 混元文本生成 |
 | [火山方舟](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度 / Agent Plan | 豆包 / DeepSeek / Coding Plan |
 
@@ -50,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-06-23`
+- 更新时间：`2026-06-25`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -461,7 +463,61 @@
   - [New-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
   - [OpenAI SDK compatibility](https://cloud.baidu.com/doc/qianfan/s/Hmh4suq26)
 
-### 15. 腾讯混元
+### 15. Agnes AI
+
+- 官网：[Agnes AI](https://agnes-ai.com/)
+- 类型：AI gateway / 模型 API 平台
+- 注册方式：官网注册并进入平台创建 API Key
+- 是否需要信用卡：官网首页公开文案未要求绑卡；具体以当前控制台为准
+- 免费内容：
+  - 官网首页明确宣传 `free AI API credits`
+  - 官网首页明确宣传可创建 `free AI API key`
+  - 官网首页明确宣传提供 `free AI API tokens` 和 `free AI API models`
+- 使用限制：
+  - 当前官网公开文案足以确认“有免费 API 入口”，但没有在公开首页稳定列出统一额度数字
+  - 具体模型、额度、协议、base URL 和重置规则应以 quick start / dashboard 为准
+  - 导入 `CC Switch` 前不应凭首页营销文案猜测完整 OpenAI 兼容细节
+- 有效期限：以当前控制台和开发者文档为准
+- OpenAI 兼容：待按当前开发者文档复核
+- Anthropic 兼容：待按当前开发者文档复核
+- 适合接入：海外多模型试用、轻量原型、统一 API gateway 测试
+- 优惠策略：
+  - 先确认免费 credits 是否已到账，再复制当前免费模型与接口配置
+  - 若只看到首页营销文案但未看到开发者接口细节，模板先保留 `check-console`
+- 官方文档：
+  - [Homepage](https://agnes-ai.com/)
+  - [Quick start](https://agnes-ai.com/doc/quick-start)
+
+### 16. 讯飞星辰 MaaS
+
+- 官网：[讯飞星辰 MaaS 模型广场](https://maas.xfyun.cn/modelSquare)
+- 类型：模型 API / 模型广场 / 编程工具套餐接入
+- 注册方式：讯飞账号登录后进入星辰 MaaS 平台，按页面要求完成认证与套餐开通
+- 是否需要信用卡：通常不需要信用卡，但可能需要手机号、实名或企业账号体系
+- 免费内容：
+  - 模型广场可浏览当前模型与平台能力
+  - 当前公开、可稳定复核的编程工具接入文档重点是 `Astron Token Plan` 与 `Astron Coding Plan`
+  - 这两类文档强调的是套餐接入与兼容协议，不应被误写成“长期全站免费 API”
+- 使用限制：
+  - `Token Plan` 和 `Coding Plan` 各有独立 API Key 与独立 base URL，不能和常规 `maas-api` 混用
+  - `Token Plan` 当前 OpenAI 兼容 base URL 为 `https://maas-token-api.cn-huabei-1.xf-yun.com/v2`，Anthropic 兼容为 `https://maas-token-api.cn-huabei-1.xf-yun.com/anthropic`
+  - `Coding Plan` 当前 OpenAI 兼容 base URL 为 `https://maas-coding-api.cn-huabei-1.xf-yun.com/v2`，Anthropic 兼容为 `https://maas-coding-api.cn-huabei-1.xf-yun.com/anthropic`
+  - `Coding Plan` 官方当前默认模型标识为 `astron-code-latest`
+  - `Coding Plan` 官方文档明确限制在 Claude Code、OpenCode、Cursor、OpenClaw 等交互式编程工具场景中使用，不适合自建后端或批量脚本
+- 有效期限：以当前套餐、订阅周期和控制台规则为准
+- OpenAI 兼容：是
+- Anthropic 兼容：是
+- 适合接入：中国大陆用户、`Claude Code`、`Cursor`、`OpenCode`、OpenAI / Anthropic 兼容客户端
+- 优惠策略：
+  - 如果目标是编程工具接入，优先看 `Coding Plan`
+  - 如果目标是多模型切换，优先核对 `Token Plan` 当前支持的 `modelId`
+  - 导入前先明确自己接的是普通推理、`Token Plan` 还是 `Coding Plan`
+- 官方文档：
+  - [Model square](https://maas.xfyun.cn/modelSquare)
+  - [Token Plan](https://www.xfyun.cn/doc/spark/TokenPlan.html)
+  - [Coding Plan](https://www.xfyun.cn/doc/spark/CodingPlan.html)
+
+### 17. 腾讯混元
 
 - 官网：[混元大模型计费概述](https://cloud.tencent.com/document/product/1729/97731)
 - 类型：模型 API
@@ -486,7 +542,7 @@
 - 官方文档：
   - [Billing overview](https://cloud.tencent.com/document/product/1729/97731)
 
-### 16. 火山方舟
+### 18. 火山方舟
 
 - 官网：[火山方舟文档](https://www.volcengine.com/docs/82379)
 - 类型：模型 API / Agent Plan / Coding Plan
@@ -772,7 +828,9 @@ export ANTHROPIC_AUTH_TOKEN=your-token
 - [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.md)
 - [DashScope / 百炼](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.md)
 - [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.md)
+- [Agnes AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/agnes-ai/README.md)
 - [百度千帆](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.md)
+- [讯飞星辰 MaaS](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/xfyun-maas/README.md)
 - [腾讯混元](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.md)
 - [火山方舟](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.md)
 
@@ -828,6 +886,9 @@ export ANTHROPIC_AUTH_TOKEN=your-token
   - [Docs](https://docs.siliconflow.cn/)
   - [Use with Claude Code](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
   - [Use with CC Switch](https://docs.siliconflow.cn/cn/userguide/introduction/use-with-cc-switch)
+- Agnes AI
+  - [Homepage](https://agnes-ai.com/)
+  - [Quick start](https://agnes-ai.com/doc/quick-start)
 - NVIDIA NIM
   - [NVIDIA Build](https://build.nvidia.com/)
   - [NVIDIA NIM](https://developer.nvidia.com/nim)
@@ -843,6 +904,10 @@ export ANTHROPIC_AUTH_TOKEN=your-token
 - 百度千帆
   - [New-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
   - [OpenAI SDK compatibility](https://cloud.baidu.com/doc/qianfan/s/Hmh4suq26)
+- 讯飞星辰 MaaS
+  - [Model square](https://maas.xfyun.cn/modelSquare)
+  - [Token Plan](https://www.xfyun.cn/doc/spark/TokenPlan.html)
+  - [Coding Plan](https://www.xfyun.cn/doc/spark/CodingPlan.html)
 - 腾讯混元
   - [Billing overview](https://cloud.tencent.com/document/product/1729/97731)
 - 火山方舟

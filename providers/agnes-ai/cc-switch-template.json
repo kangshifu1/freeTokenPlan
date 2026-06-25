@@ -1,0 +1,42 @@
+{
+  "schema_version": "free-token-plan/v1",
+  "provider_key": "agnes-ai",
+  "provider_name": "Agnes AI",
+  "official_website": "https://agnes-ai.com/",
+  "console_url": "https://agnes-ai.com/",
+  "registration": {
+    "method": "email_or_social",
+    "requires_phone": false,
+    "requires_real_name": false,
+    "requires_credit_card": false
+  },
+  "api": {
+    "protocol": "check-console",
+    "base_url": "check-console",
+    "api_key_env": "AGNES_AI_API_KEY",
+    "default_model": "check-console",
+    "supports_responses_api": false,
+    "supports_chat_completions": true,
+    "supports_anthropic_compat": false,
+    "needs_local_routing": true
+  },
+  "free_tier": {
+    "summary": "Homepage advertises free AI API credits, key, tokens, and models.",
+    "limit_window": "check-console",
+    "reset_rule": "check-console",
+    "expires": "check-console"
+  },
+  "cc_switch": {
+    "import_mode": "universal_provider",
+    "model_map": [
+      {
+        "label": "check-console",
+        "model": "check-console"
+      }
+    ]
+  },
+  "notes": [
+    "Use the current developer quick start or dashboard as the source of truth for protocol and model IDs.",
+    "Do not assume OpenAI compatibility until the current official docs confirm the exact base URL."
+  ]
+}
