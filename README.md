@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-06-25`
+- 更新时间：`2026-06-26`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -445,8 +445,8 @@
 - 注册方式：百度智能云账号开通千帆，按要求完成实名认证
 - 是否需要信用卡：通常不需要信用卡，但需要百度智能云账号与实名体系
 - 免费内容：
-  - 官方新用户免费额度页说明，`2025-10-24 00:00:00` 后首次开通千帆用户会自动领取适用模型的免费额度
-  - 当前页面列出多款模型各 `100万 Tokens`，有效期 `3 个月`
+  - 官方新用户免费额度页说明，`2025年10月24日 0 点起` 首次开通千帆的用户会自动领取适用模型的免费额度
+  - 当前页面列出多款模型各 `100万 Tokens`，有效期 `3 个月`，示例包括 `ERNIE-4.5-Turbo` 系列、`DeepSeek-R1`、`DeepSeek-V3.1`、`Kimi-K2-Instruct`、`Qwen3` / `Qwen3-Coder` 系列等
   - 免费额度有效期从用户首次开通千帆之日算起；支持模型、tokens 和活动规则以官方页面为准
 - 使用限制：
   - 免费额度只覆盖官方页面列出的模型和服务范围
@@ -497,13 +497,14 @@
 - 免费内容：
   - 模型广场可浏览当前模型与平台能力
   - 当前公开、可稳定复核的编程工具接入文档重点是 `Astron Token Plan` 与 `Astron Coding Plan`
+  - `Coding Plan` 页面当前展示 `首月版` 与 `焕新版` 等套餐/活动入口，应按购买页确认当期价格、额度和有效期
   - 这两类文档强调的是套餐接入与兼容协议，不应被误写成“长期全站免费 API”
 - 使用限制：
   - `Token Plan` 和 `Coding Plan` 各有独立 API Key 与独立 base URL，不能和常规 `maas-api` 混用
   - `Token Plan` 当前 OpenAI 兼容 base URL 为 `https://maas-token-api.cn-huabei-1.xf-yun.com/v2`，Anthropic 兼容为 `https://maas-token-api.cn-huabei-1.xf-yun.com/anthropic`
   - `Coding Plan` 当前 OpenAI 兼容 base URL 为 `https://maas-coding-api.cn-huabei-1.xf-yun.com/v2`，Anthropic 兼容为 `https://maas-coding-api.cn-huabei-1.xf-yun.com/anthropic`
   - `Coding Plan` 官方当前默认模型标识为 `astron-code-latest`
-  - `Coding Plan` 官方文档明确限制在 Claude Code、OpenCode、Cursor、OpenClaw 等交互式编程工具场景中使用，不适合自建后端或批量脚本
+  - `Coding Plan` 官方文档明确覆盖 Claude Code、OpenCode、Cursor、OpenClaw 等交互式编程工具接入；不要把套餐 API Key 当成普通后端批量调用 key 使用
 - 有效期限：以当前套餐、订阅周期和控制台规则为准
 - OpenAI 兼容：是
 - Anthropic 兼容：是

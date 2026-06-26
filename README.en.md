@@ -51,7 +51,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-06-25`
+- Updated: `2026-06-26`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -101,7 +101,9 @@ Each provider has its own directory with:
 │   ├── cloudflare-workers-ai/
 │   ├── dashscope/
 │   ├── siliconflow/
+│   ├── agnes-ai/
 │   ├── baidu-qianfan/
+│   ├── xfyun-maas/
 │   ├── tencent-hunyuan/
 │   └── volcengine-ark/
 └── templates/
@@ -144,8 +146,8 @@ Each provider has its own directory with:
 - DashScope / Bailian: free quota is regional and activity-based. The official new-user free-quota FAQ says first activation automatically issues eligible model quotas, limited to China North `2` (Beijing) and China mainland deployment scope. Current validity is `30-90 days`, with first-time activations from `2025-09-08 11:00` onward receiving `90-day` validity.
 - SiliconFlow: official docs say free models are available after real-name verification; the docs also include Claude Code and CC Switch integration guides.
 - Agnes AI: the official homepage now explicitly markets free AI API credits, a free API key, free API tokens, and free API models. That is enough to include it as a tracked provider, but exact quota, model list, and protocol details should still be treated as dashboard- or quickstart-dependent until the developer docs expose a stable public reference.
-- Baidu Qianfan: official new-user free-quota docs now say first-time Qianfan activations after `2025-10-24 00:00:00` automatically receive eligible model quotas. The current page lists multiple models at `1M tokens` valid for `3 months`, and Baidu documents an OpenAI-compatible V2 base URL at `https://qianfan.baidubce.com/v2`.
-- iFlytek Astron MaaS: the public model square is the discovery entry, but the current coding-tool path is documented through separate `Token Plan` and `Coding Plan` products. Both publish OpenAI- and Anthropic-compatible endpoints, use dedicated plan-specific API keys, and should not be confused with the regular MaaS inference base URL. `Coding Plan` currently uses `astron-code-latest` as the official default model identifier and is explicitly limited to interactive coding-tool scenarios.
+- Baidu Qianfan: official new-user free-quota docs now say first-time Qianfan activations from `2025-10-24 00:00:00` automatically receive eligible model quotas. The current page lists multiple models at `1M tokens` valid for `3 months`, including examples from `ERNIE-4.5-Turbo`, `DeepSeek-R1`, `DeepSeek-V3.1`, `Kimi-K2-Instruct`, and `Qwen3` / `Qwen3-Coder` families. Baidu documents an OpenAI-compatible V2 base URL at `https://qianfan.baidubce.com/v2`.
+- iFlytek Astron MaaS: the public model square is the discovery entry, but the current coding-tool path is documented through separate `Token Plan` and `Coding Plan` products. Both publish OpenAI- and Anthropic-compatible endpoints, use dedicated plan-specific API keys, and should not be confused with the regular MaaS inference base URL. `Coding Plan` currently uses `astron-code-latest` as the official default model identifier and shows plan / campaign entries such as `first-month` and renewed-version offers, so pricing, quota, and validity need current purchase-page confirmation.
 - Tencent Hunyuan: the current billing overview says Hunyuan capabilities are gradually moving to TokenHub. First-time activation after real-name verification can issue a one-time shared `1M tokens` package valid for `1 year` across listed Hunyuan text and multimodal models, excluding `Hunyuan-lite`; free packages are consumed before paid packages and postpaid billing, and exhausted or expired packages do not automatically roll into postpaid unless the user enables postpaid.
 - Volcengine Ark: free inference quota, safe-experience mode, and campaign credits may be available; exact model, quota, and endpoint details are console-dependent.
 
