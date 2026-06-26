@@ -12,7 +12,7 @@
 6. Save it locally as `GITHUB_TOKEN`
 7. Record the endpoint: `https://models.github.ai/inference`
 8. Record the default model ID, for example `openai/gpt-4.1-mini` or the current page recommendation
-9. Before importing into CC Switch, re-check the model's current free API limits; under Copilot Free, use `Low=15 RPM/150 RPD/5 concurrent`, `High=10 RPM/50 RPD/2 concurrent`, and `Embedding=15 RPM/150 RPD/5 concurrent` as a conservative starting record
+9. Before importing into CC Switch, re-check the model's current free API limits; under Copilot Free, common tiers can start from `Low=15 RPM/150 RPD/5 concurrent`, `High=10 RPM/50 RPD/2 concurrent`, and `Embedding=15 RPM/150 RPD/5 concurrent`, but models such as `DeepSeek-R1` and `xAI Grok-3` have lower model-specific limits and must be confirmed against the current official table
 
 ## Human Takeover Points
 
