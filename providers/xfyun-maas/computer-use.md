@@ -17,7 +17,7 @@
    - Anthropic Base URL：`https://maas-coding-api.cn-huabei-1.xf-yun.com/anthropic`
 8. 本地保存环境变量：`XFYUN_MAAS_API_KEY`
 9. 如果使用 `Coding Plan`，默认模型先记录为 `astron-code-latest`；如果使用 `Token Plan`，按当前套餐支持模型记录具体 `modelId`
-10. 导入 `CC Switch` 前，再核对当前套餐版本（如 `首月版` / `焕新版`）、有效期、剩余额度、支持模型和使用场景限制
+10. 导入 `CC Switch` 前，再核对当前套餐版本（如已下架的 `首月版`、季度 `焕新版`、企业版 `Token Plan`）、有效期、剩余额度、支持模型和使用场景限制
 
 ## 人工接管点
 
@@ -30,4 +30,4 @@
 - API Key 是否来自正确的订阅页面
 - Base URL 是否与所选套餐一致，没有误用普通 `maas-api`
 - `Coding Plan` 是否仍要求使用 `astron-code-latest`
-- 当前套餐版本、有效期和额度是否允许目标工具和目标使用场景
+- 当前套餐版本、有效期和额度是否允许目标工具和目标使用场景，尤其确认 `首月版` 是否仍可购买、`焕新版` 是否按季度套餐执行

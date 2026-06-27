@@ -17,7 +17,7 @@
    - Anthropic Base URL: `https://maas-coding-api.cn-huabei-1.xf-yun.com/anthropic`
 8. Save the key locally as `XFYUN_MAAS_API_KEY`
 9. If you use `Coding Plan`, record `astron-code-latest` as the default model first; if you use `Token Plan`, record the supported current `modelId`
-10. Before importing into `CC Switch`, re-check the current plan version, such as first-month or renewed-version offers, plus validity, remaining quota, supported models, and the allowed usage scenario
+10. Before importing into `CC Switch`, re-check the current plan version, such as the discontinued first-month plan, quarterly renewed-version offers, or enterprise `Token Plan`, plus validity, remaining quota, supported models, and the allowed usage scenario
 
 ## Human Takeover Points
 
@@ -30,4 +30,4 @@
 - API key came from the correct subscription page
 - Base URL matches the selected plan and is not confused with the regular `maas-api`
 - `Coding Plan` still uses `astron-code-latest` if that plan is selected
-- The current plan version, validity, and quota allow the intended tool and usage scenario
+- The current plan version, validity, and quota allow the intended tool and usage scenario, especially whether the first-month plan is still purchasable and whether the renewed-version offer is a quarterly package

@@ -36,7 +36,7 @@ This is a public repository for beginners who want a practical index of free AI 
 | [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.en.md) | Free models after verification | China-region multi-model trials |
 | [Agnes AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/agnes-ai/README.en.md) | Homepage-promoted free API credits / key / tokens / models | Overseas multi-model API prototypes |
 | [Baidu Qianfan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.en.md) | New-user model token grants, commonly `1M tokens / 3 months` | Domestic models / OpenAI-compatible agents |
-| [iFlytek Astron MaaS](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/xfyun-maas/README.en.md) | Model square plus `Token Plan` / `Coding Plan` access | Mainland China coding-tool integration |
+| [iFlytek Astron MaaS](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/xfyun-maas/README.en.md) | Model square plus enterprise `Token Plan` / `Coding Plan` access | Mainland China coding-tool integration |
 | [Tencent Hunyuan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.en.md) | First-activation shared `1M tokens / 1 year` package, moving to TokenHub | Hunyuan text generation |
 | [Volcengine Ark](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.en.md) | Free inference / campaign quota / Agent Plan | Doubao / DeepSeek / Coding Plan |
 
@@ -51,7 +51,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-06-26`
+- Updated: `2026-06-27`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -147,7 +147,7 @@ Each provider has its own directory with:
 - SiliconFlow: official docs say free models are available after real-name verification; the docs also include Claude Code and CC Switch integration guides.
 - Agnes AI: the official homepage now explicitly markets free AI API credits, a free API key, free API tokens, and free API models. That is enough to include it as a tracked provider, but exact quota, model list, and protocol details should still be treated as dashboard- or quickstart-dependent until the developer docs expose a stable public reference.
 - Baidu Qianfan: official new-user free-quota docs now say first-time Qianfan activations from `2025-10-24 00:00:00` automatically receive eligible model quotas. The current page lists multiple models at `1M tokens` valid for `3 months`, including examples from `ERNIE-4.5-Turbo`, `DeepSeek-R1`, `DeepSeek-V3.1`, `Kimi-K2-Instruct`, and `Qwen3` / `Qwen3-Coder` families. Baidu documents an OpenAI-compatible V2 base URL at `https://qianfan.baidubce.com/v2`.
-- iFlytek Astron MaaS: the public model square is the discovery entry, but the current coding-tool path is documented through separate `Token Plan` and `Coding Plan` products. Both publish OpenAI- and Anthropic-compatible endpoints, use dedicated plan-specific API keys, and should not be confused with the regular MaaS inference base URL. `Coding Plan` currently uses `astron-code-latest` as the official default model identifier and shows plan / campaign entries such as `first-month` and renewed-version offers, so pricing, quota, and validity need current purchase-page confirmation.
+- iFlytek Astron MaaS: the public model square is the discovery entry, but the current coding-tool path is documented through separate enterprise `Token Plan` and `Coding Plan` products. Both publish OpenAI- and Anthropic-compatible endpoints, use dedicated plan-specific API keys, and should not be confused with the regular MaaS inference base URL. `Token Plan` now describes enterprise / team access and current model examples such as `Kimi-K2`, `DeepSeek-V4`, `GLM-5.1`, `Qwen3.6`, and `Claude-Sonnet-4.5`. `Coding Plan` still uses `astron-code-latest` as the official default model identifier, lists a refreshed model pool, and now marks the first-month plan unavailable for purchase from `2026-04-09 00:00` while adding a `2026-06-15` quarterly renewed-version offer; pricing, quota, and validity still need current purchase-page confirmation.
 - Tencent Hunyuan: the current billing overview says Hunyuan capabilities are gradually moving to TokenHub. First-time activation after real-name verification can issue a one-time shared `1M tokens` package valid for `1 year` across listed Hunyuan text and multimodal models, excluding `Hunyuan-lite`; free packages are consumed before paid packages and postpaid billing, and exhausted or expired packages do not automatically roll into postpaid unless the user enables postpaid.
 - Volcengine Ark: free inference quota, safe-experience mode, and campaign credits may be available; exact model, quota, and endpoint details are console-dependent.
 
