@@ -12,7 +12,7 @@
 6. 本地保存为环境变量：`GITHUB_TOKEN`
 7. 记录端点：`https://models.github.ai/inference`
 8. 记录默认模型 ID，例如 `openai/gpt-4.1-mini` 或当前页面推荐模型
-9. 导入 CC Switch 前，复核该模型当前免费 API 限制；Copilot Free 下常见 tier 可先按 `Low=15 RPM/150 RPD/5 并发`、`High=10 RPM/50 RPD/2 并发`、`Embedding=15 RPM/150 RPD/5 并发` 作为保守记录，但 `DeepSeek-R1`、`xAI Grok-3` 等模型有更低的独立限制，必须按当前官方表逐模型确认
+9. 导入 CC Switch 前，复核该模型当前免费 API 限制；Copilot Free 下常见 tier 可先按 `Low=15 RPM/150 RPD/5 并发`、`High=10 RPM/50 RPD/2 并发`、`Embedding=15 RPM/150 RPD/5 并发` 作为保守记录，但 `DeepSeek-R1`、`xAI Grok-3` 等模型有更低的独立限制，必须按当前官方表逐模型确认；`Azure OpenAI Global Standard`、`Azure OpenAI Data Zone Standard`、`o1` 等更高层级行在 Copilot Free 下不适用
 
 ## 人工接管点
 

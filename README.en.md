@@ -51,7 +51,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-06-27`
+- Updated: `2026-06-29`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -140,8 +140,8 @@ Each provider has its own directory with:
 - Mistral: the public pricing page still lists Mistral Free with limited Vibe for code access, and the tier docs say API Free mode is enabled by default with limited limits for evaluation and prototyping.
 - Cerebras: the docs still show a free API-key flow and OpenAI SDK usage; the current public production endpoint is `gpt-oss-120b`, with `zai-glm-4.7` marked as preview on the models page.
 - NVIDIA NIM: NVIDIA Build exposes free serverless NIM APIs for development and prototyping, with OpenAI-style chat completions at `https://integrate.api.nvidia.com/v1`; production capacity and limits are account/model-page dependent.
-- GitHub Models: free playground and API usage are available with model-tier-specific limits. Under Copilot Free, common free API tiers include `15 RPM / 150 RPD / 5 concurrent` for Low models, `10 RPM / 50 RPD / 2 concurrent` for High models, and `15 RPM / 150 RPD / 5 concurrent` for Embedding models; some named models such as `DeepSeek-R1` and `xAI Grok-3` have lower model-specific limits in the official table.
-- Vercel AI Gateway: team accounts get a free tier with `$5/month` AI Gateway credits. Credits start on the first AI Gateway request, and the monthly free credit no longer applies after purchasing credits; treat it as a project gateway rather than a generic provider.
+- GitHub Models: free playground and API usage are available with model-tier-specific limits. Under Copilot Free, common free API tiers include `15 RPM / 150 RPD / 5 concurrent` for Low models, `10 RPM / 50 RPD / 2 concurrent` for High models, and `15 RPM / 150 RPD / 5 concurrent` for Embedding models; some named models such as `DeepSeek-R1` and `xAI Grok-3` have lower model-specific limits in the official table. Higher-tier rows such as `Azure OpenAI Global Standard`, `Azure OpenAI Data Zone Standard`, and `o1` are marked not applicable to Copilot Free.
+- Vercel AI Gateway: team accounts get a free tier with `$5/month` AI Gateway credits. Credits start on the first AI Gateway request, and the monthly free credit no longer applies after purchasing credits; free credits only apply to eligible models, and BYOK provider keys are a paid feature, so treat it as a project gateway rather than a generic provider.
 - Cloudflare Workers AI: Workers AI still includes a free daily allocation of `10,000` Neurons, resetting daily at `00:00 UTC`. Cloudflare's current pricing page explains that model-specific input/output and related usage are converted into Neurons and shows example costs by model, so check the target model's Neurons cost before treating the free allocation as usable volume.
 - DashScope / Bailian: free quota is regional and activity-based. The official new-user free-quota FAQ says first activation automatically issues eligible model quotas, limited to China North `2` (Beijing) and China mainland deployment scope. Current validity is `30-90 days`, with first-time activations from `2025-09-08 11:00` onward receiving `90-day` validity.
 - SiliconFlow: official docs say free models are available after real-name verification; the docs also include Claude Code and CC Switch integration guides.

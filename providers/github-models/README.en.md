@@ -11,6 +11,7 @@
   - `Embedding` models: `15 RPM`, `150 RPD`, `64000 tokens/request`, `5` concurrent requests
   - `DeepSeek-R1` / `DeepSeek-R1-0528` / `MAI-DS-R1`: `1 RPM`, `8 RPD`, `4000 input / 4000 output tokens/request`, `1` concurrent request
   - `xAI Grok-3`: `1 RPM`, `15 RPD`, `4000 input / 4000 output tokens/request`, `1` concurrent request; `xAI Grok-3-Mini`: `2 RPM`, `30 RPD`, `4000 input / 8000 output tokens/request`, `1` concurrent request
+- Important: the official rate-limit table also lists higher-tier rows such as `Azure OpenAI Global Standard`, `Azure OpenAI Data Zone Standard`, and `o1`; those rows are marked not applicable for `Copilot Free` and should not be treated as free-account quota
 - Note: each model page shows its rate-limit tier; GitHub says these limits may change, so re-check before production use
 - Compatibility: official API examples can use the OpenAI SDK with the `https://models.github.ai/inference` endpoint
 - Recommended for: GitHub-user prototypes, model evaluation, and lightweight scripts

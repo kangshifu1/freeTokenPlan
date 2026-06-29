@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-06-27`
+- 更新时间：`2026-06-29`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -377,6 +377,7 @@
   - Copilot Free 下 `High` 模型当前免费 API 限制为 `10 RPM`、`50 RPD`、`8000 input / 4000 output tokens per request`、`2` 并发请求
   - Copilot Free 下 `Embedding` 模型当前免费 API 限制为 `15 RPM`、`150 RPD`、`64000 tokens/request`、`5` 并发请求
   - Copilot Free 下 `DeepSeek-R1` / `DeepSeek-R1-0528` / `MAI-DS-R1` 当前限制为 `1 RPM`、`8 RPD`、`4000 input / 4000 output tokens/request`、`1` 并发；`xAI Grok-3` 当前限制为 `1 RPM`、`15 RPD`、`1` 并发
+  - `Azure OpenAI Global Standard`、`Azure OpenAI Data Zone Standard`、`o1` 等更高层级行在官方表中对 Copilot Free 标为不适用，不能当作免费账户额度
 - 使用限制：
   - Low / High / Embedding 以及部分具名模型的 tier 限额不同
   - 生产级更高限额需要开通 paid usage 或自带 provider key
@@ -400,9 +401,11 @@
 - 免费内容：
   - 官方定价页显示每个 team account 的免费档包含 `$5/month` AI Gateway credits
   - credits 从首次 AI Gateway 请求开始；购买 credits 后，月度免费 credits 不再适用
+  - 免费 credits 仅适用于 Vercel 当前标记的 eligible models
 - 使用限制：
   - 更适合 Vercel AI SDK / 项目内代理，而不是直接当通用 OpenAI 兼容供应商
   - 具体 provider、模型、URL 以当前项目配置为准
+  - BYOK provider keys 属于付费功能，免费档不应默认记录为可用
 - 有效期限：按月 credits；购买 credits 后会影响免费规则
 - OpenAI 兼容：以当前 AI Gateway 文档和项目配置为准
 - Anthropic 兼容：以当前 AI Gateway 文档和项目配置为准
