@@ -377,7 +377,7 @@
   - Copilot Free 下 `High` 模型当前免费 API 限制为 `10 RPM`、`50 RPD`、`8000 input / 4000 output tokens per request`、`2` 并发请求
   - Copilot Free 下 `Embedding` 模型当前免费 API 限制为 `15 RPM`、`150 RPD`、`64000 tokens/request`、`5` 并发请求
   - Copilot Free 下 `DeepSeek-R1` / `DeepSeek-R1-0528` / `MAI-DS-R1` 当前限制为 `1 RPM`、`8 RPD`、`4000 input / 4000 output tokens/request`、`1` 并发；`xAI Grok-3` 当前限制为 `1 RPM`、`15 RPD`、`1` 并发
-  - `Azure OpenAI Global Standard`、`Azure OpenAI Data Zone Standard`、`o1` 等更高层级行在官方表中对 Copilot Free 标为不适用，不能当作免费账户额度
+  - `Azure OpenAI Global Standard`、`Azure OpenAI Data Zone Standard`、`o1` / `o3` / `gpt-5` 系列等更高层级行在官方表中对 Copilot Free 标为不适用，不能当作免费账户额度
 - 使用限制：
   - Low / High / Embedding 以及部分具名模型的 tier 限额不同
   - 生产级更高限额需要开通 paid usage 或自带 provider key
