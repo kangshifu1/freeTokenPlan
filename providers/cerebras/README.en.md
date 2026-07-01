@@ -4,8 +4,8 @@
 
 - Website: [Cerebras Inference Docs](https://inference-docs.cerebras.ai/introduction)
 - Registration: sign up and create a free API key
-- Free tier: free API key flow is documented, exact quotas depend on the console
-- Models: check the official [Models](https://inference-docs.cerebras.ai/models) page for current model IDs; the public production endpoint is `gpt-oss-120b`, while `zai-glm-4.7` is marked as preview
+- Free tier: the official models page says public endpoints are free to use, subject to rate limits; actual account limits still depend on the console and current docs
+- Models: check the official [Models](https://inference-docs.cerebras.ai/models) page for current model IDs; the public production endpoint is `gpt-oss-120b`, while `gemma-4-31b` and `zai-glm-4.7` are marked as preview
 - Recommended for: fast inference backup routes
 
 Files in this directory:

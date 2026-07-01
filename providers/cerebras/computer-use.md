@@ -10,7 +10,7 @@
 4. 创建 key
 5. 复制 key
 6. 本地保存为环境变量：`CEREBRAS_API_KEY`
-7. 查看 docs 中的 OpenAI SDK 页面和官方 Models 页面
+7. 查看 docs 中的 OpenAI SDK 页面和官方 Models 页面，确认公开端点是否仍标注为 free to use subject to rate limits
 8. 在 CC Switch 中录入兼容信息
 
 ## 人工接管点
@@ -21,5 +21,5 @@
 ## 完成后核对
 
 - 是否记录了当前控制台可用模型
-- 是否记录了免费额度说明
-- 是否从官方 Models 页面确认默认模型仍可用
+- 是否记录了公开端点免费使用和速率限制说明
+- 是否从官方 Models 页面确认默认模型、生产 / 预览状态仍可用

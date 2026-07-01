@@ -27,7 +27,7 @@
 | [Hugging Face](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/README.md) | Inference Providers 月度 credits | API 联调 / demo |
 | [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.md) | Free Plan 按模型 RPM/RPD/TPM/TPD 限流 | 低延迟 OpenAI 兼容调用 |
 | [Mistral](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/mistral/README.md) | Free 计划 / 评估模式 | 模型风格试用 |
-| [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.md) | 免费 API key 流程，额度看控制台 | 高速推理试用 |
+| [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.md) | 公开端点免费使用，受速率限制约束 | 高速推理试用 |
 | [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.md) | 免费 serverless NIM 开发调用 | OpenAI 风格原型验证 |
 | [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.md) | 免费 playground / API 限额 | GitHub 账号原型测试 |
 | [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits | Vercel / AI SDK 项目 |
@@ -269,12 +269,12 @@
 - 注册方式：注册后创建 API Key
 - 是否需要信用卡：通常可先试用
 - 免费内容：
-  - 官方文档明确提供“免费 API key”获取流程
+  - 官方模型页说明公开端点可免费使用，但受速率限制约束
   - 官方提供 OpenAI SDK / OpenAI compatible 用法
 - 使用限制：
   - 官方没有在统一页面给出固定的长期免费 token 数字
   - 更适合作为“可试用的高速推理入口”，具体额度看控制台
-  - 官方模型页当前列出公开生产端点 `gpt-oss-120b`，并标注 `zai-glm-4.7` 为预览模型；默认模型应以模型页为准
+  - 官方模型页当前列出公开生产端点 `gpt-oss-120b`，并标注 `gemma-4-31b` 与 `zai-glm-4.7` 为预览模型；默认模型应以模型页为准
 - 有效期限：以控制台和活动策略为准
 - OpenAI 兼容：是
 - Anthropic 兼容：否
