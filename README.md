@@ -33,7 +33,7 @@
 | [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits | Vercel / AI SDK 项目 |
 | [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算 | Workers / 边缘 demo |
 | [DashScope / 百炼](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.md) | 新人实时推理免费额度，支持用完即停 | 中国大陆 / `Codex` / `Claude Code` |
-| [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.md) | 实名后免费模型 | 中国区多模型试用 |
+| [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.md) | 实名认证后免费模型，CC Switch 注册路径提示 `16元` 赠送余额 | 中国区多模型试用 |
 | [Agnes AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 |
 | [百度千帆](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月` | 国产模型 / OpenAI 兼容 agent |
 | [讯飞星辰 MaaS](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/xfyun-maas/README.md) | 模型广场 + 企业 `Token Plan` / `Coding Plan` 套餐接入 | 中国大陆编程工具接入 |
@@ -322,10 +322,12 @@
 - 免费内容：
   - 官方模型广场会对部分模型标注 `免费`
   - 官方文档说明实名认证后可使用免费模型
+  - 官方 `CC Switch` 接入教程当前提示：通过其注册链接注册并完成实名认证后可获 `16元` 赠送余额
   - 官方还专门写了 [Claude Code 接入教程](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
 - 使用限制：
-  - 需要完成平台要求的账号验证 / 实名认证后再确认可用免费模型
+  - 官方公告说明从 `2026-05-15` 起，未完成实名认证用户无法使用平台功能，且余额会被冻结，需完成实名认证后恢复
   - 免费额度通常按“具体模型是否免费”来定，不是统一全站赠送
+  - `16元` 赠送余额属于官方 `CC Switch` 注册路径说明，是否到账仍需以当前注册页面和账户后台为准
   - 哪些模型免费、免费多久，变化会比较快
 - 有效期限：以模型页实时标注为准
 - OpenAI 兼容：是
@@ -339,6 +341,7 @@
   - [Platform Introduction](https://docs.siliconflow.cn/cn/userguide/introduction)
   - [Use with Claude Code](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
   - [Use with CC Switch](https://docs.siliconflow.cn/cn/userguide/introduction/use-with-cc-switch)
+  - [Updates](https://docs.siliconflow.cn/cn/updates/20250515)
   - [Models](https://cloud.siliconflow.cn/models)
 
 ### 10. NVIDIA NIM
