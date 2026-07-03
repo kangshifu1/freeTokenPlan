@@ -24,7 +24,7 @@
 | [Gemini](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/gemini/README.md) | 长期 Free tier，按模型限额 | `CC Switch` / OpenAI 兼容代理 |
 | [OpenRouter](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/openrouter/README.md) | `:free` 模型，按分钟 / 每日限流 | `Codex` / `CC Switch` |
 | [Cohere](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cohere/README.md) | Trial key 月度调用额度 | 轻量测试 / prompt 验证 |
-| [Hugging Face](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/README.md) | Inference Providers 月度 credits | API 联调 / demo |
+| [Hugging Face](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits | API 联调 / demo |
 | [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.md) | Free Plan 按模型 RPM/RPD/TPM/TPD 限流 | 低延迟 OpenAI 兼容调用 |
 | [Mistral](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/mistral/README.md) | Free 计划 / 评估模式 | 模型风格试用 |
 | [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.md) | 公开端点免费使用，受速率限制约束 | 高速推理试用 |
@@ -195,6 +195,7 @@
 - 免费内容：
   - 官方文档明确：免费用户每月有 `$0.10` credits
   - `PRO` 用户每月有 `$2.00` credits
+  - 免费额度只适用于通过 Hugging Face 路由的 serverless Inference Providers 请求；自带第三方 provider key 的请求不会消耗这些 monthly credits
   - 自托管 endpoint 不在这类免费额度范围内
 - 使用限制：
   - 金额不大，只适合 API 联调、样例、页面 demo

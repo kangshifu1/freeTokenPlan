@@ -4,7 +4,7 @@
 
 - Website: [Inference Providers Pricing and Billing](https://huggingface.co/docs/inference-providers/pricing)
 - Registration: create a Hugging Face account
-- Free tier: small monthly credits for inference providers; the official billing docs now live under the Inference Providers docs path
+- Free tier: the official billing docs say Free users receive `$0.10` monthly credits; those credits apply to serverless Inference Providers calls routed through Hugging Face and are not used when you bring a custom third-party provider key
 - Recommended for: lightweight API checks and model exploration
 
 Files in this directory:
