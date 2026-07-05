@@ -15,9 +15,12 @@
 7. For `Coding Plan`:
    - OpenAI Base URL: `https://maas-coding-api.cn-huabei-1.xf-yun.com/v2`
    - Anthropic Base URL: `https://maas-coding-api.cn-huabei-1.xf-yun.com/anthropic`
+   - Responses Base URL: `https://maas-coding-api.cn-huabei-1.xf-yun.com/v1/responses`
 8. Save the key locally as `XFYUN_MAAS_API_KEY`
-9. If you use `Coding Plan`, record `astron-code-latest` as the default model first; if you use `Token Plan`, record the supported current `modelId`
-10. Before importing into `CC Switch`, re-check the current plan version, such as the discontinued first-month plan, quarterly renewed-version offers, or enterprise `Token Plan`, plus validity, remaining quota, supported models, and the allowed usage scenario
+9. If you use `Coding Plan`, record `astron-code-latest` as the default model first; you can also switch to an official underlying `modelId`, such as `xopglm52`, `xopdeepseekv4pro`, `xopdeepseekv4flash`, `xopkimik26`, or `xopqwen36v35b`
+10. Before importing into `CC Switch`, re-check the current plan version, such as the discontinued first-month plan, monthly / quarterly renewed-version offers, or enterprise / team `Token Plan`, plus validity, remaining quota, supported models, and the allowed usage scenario
+11. If you use `Coding Plan`, confirm the task is an interactive coding-tool scenario such as Claude Code, OpenCode, Cursor, OpenClaw, or Codex; do not use it for automation scripts, batch jobs, or self-hosted backend workloads
+12. If using off-peak windows at night, on weekends, or on holidays, confirm whether the current `0.8` coefficient still applies to request limits / point usage
 
 ## Human Takeover Points
 
@@ -29,5 +32,6 @@
 
 - API key came from the correct subscription page
 - Base URL matches the selected plan and is not confused with the regular `maas-api`
-- `Coding Plan` still uses `astron-code-latest` if that plan is selected
-- The current plan version, validity, and quota allow the intended tool and usage scenario, especially whether the first-month plan is still purchasable and whether the renewed-version offer is a quarterly package
+- `Coding Plan` still uses `astron-code-latest` or the currently configured underlying model
+- The Responses-compatible endpoint is used only for the `Coding Plan` route
+- The current plan version, validity, and quota allow the intended tool and usage scenario, especially whether the first-month plan is still unavailable and whether the renewed-version offer is monthly or quarterly

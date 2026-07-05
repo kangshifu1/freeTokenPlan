@@ -36,7 +36,7 @@
 | [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.md) | 实名认证后免费模型，CC Switch 注册路径提示 `16元` 赠送余额 | 中国区多模型试用 |
 | [Agnes AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 |
 | [百度千帆](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月` | 国产模型 / OpenAI 兼容 agent |
-| [讯飞星辰 MaaS](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/xfyun-maas/README.md) | 模型广场 + 企业 `Token Plan` / `Coding Plan` 套餐接入 | 中国大陆编程工具接入 |
+| [讯飞星辰 MaaS](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/xfyun-maas/README.md) | 模型广场 + `Token Plan` / `Coding Plan` 订阅接入 | 中国大陆编程工具接入 |
 | [腾讯混元](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.md) | 首次开通共享 `100万 tokens / 1年` 资源包，迁移至 TokenHub | 混元文本生成 |
 | [火山方舟](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度 / Agent Plan | 豆包 / DeepSeek / Coding Plan |
 
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-06-29`
+- 更新时间：`2026-07-05`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -504,16 +504,17 @@
 - 是否需要信用卡：通常不需要信用卡，但可能需要手机号、实名或企业账号体系
 - 免费内容：
   - 模型广场可浏览当前模型与平台能力
-  - 当前公开、可稳定复核的编程工具接入文档重点是企业版 `Astron Token Plan` 与 `Astron Coding Plan`
-  - `Token Plan` 文档当前面向企业 / 团队场景，给出独立套餐 API Key，并列出 `Kimi-K2`、`DeepSeek-V4`、`GLM-5.1`、`Qwen3.6`、`Claude-Sonnet-4.5` 等可切换模型示例
-  - `Coding Plan` 页面当前仍列出 `首月版` 与 `焕新版` 路径，但说明 `首月版` 自 `2026-04-09 00:00` 起不再支持购买；`焕新版` 增加 `2026-06-15` 起生效的季度套餐说明，应按购买页确认当期价格、额度和有效期
+  - 当前公开、可稳定复核的编程工具接入文档重点是 `Astron Token Plan` 与 `Astron Coding Plan`
+  - `Token Plan` 文档当前面向企业 / 团队场景，给出独立套餐 API Key，并列出 `GLM-5.2`、`DeepSeek-V4-Pro`、`DeepSeek-V4-Flash`、`Kimi-K2.6`、`Qwen3.6` 等可切换模型示例；计量按积分消耗，并有工作日非高峰、周末等 `0.8` 时段系数
+  - `Coding Plan` 页面当前仍列出 `首月版` 与 `焕新版` 路径，但说明 `首月版` 自 `2026-04-09 00:00` 起不再支持购买；`焕新版` 自 `2026-04-09` 起按月订购、自 `2026-06-15` 起支持按季订购，应按购买页确认当期价格、额度和有效期
+  - `Coding Plan` 自 `2026-06-18` 起上线波谷系数：工作日 `08:00-22:00` 系数 `1.0`，夜间、周末和节假日系数 `0.8`，请求流控按该系数折算
   - 这两类文档强调的是套餐接入与兼容协议，不应被误写成“长期全站免费 API”
 - 使用限制：
   - `Token Plan` 和 `Coding Plan` 各有独立 API Key 与独立 base URL，不能和常规 `maas-api` 混用
   - `Token Plan` 当前 OpenAI 兼容 base URL 为 `https://maas-token-api.cn-huabei-1.xf-yun.com/v2`，Anthropic 兼容为 `https://maas-token-api.cn-huabei-1.xf-yun.com/anthropic`
-  - `Coding Plan` 当前 OpenAI 兼容 base URL 为 `https://maas-coding-api.cn-huabei-1.xf-yun.com/v2`，Anthropic 兼容为 `https://maas-coding-api.cn-huabei-1.xf-yun.com/anthropic`
-  - `Coding Plan` 官方当前默认模型标识为 `astron-code-latest`，并列出 `DeepSeek-V4`、`GLM-5.1`、`Kimi-K2`、`Qwen3.6`、`MiniMax-M2` 等当前模型池示例
-  - `Coding Plan` 官方文档明确覆盖 Claude Code、OpenCode、Cursor、OpenClaw 等交互式编程工具接入；不要把套餐 API Key 当成普通后端批量调用 key 使用
+  - `Coding Plan` 当前 OpenAI 兼容 base URL 为 `https://maas-coding-api.cn-huabei-1.xf-yun.com/v2`，Anthropic 兼容为 `https://maas-coding-api.cn-huabei-1.xf-yun.com/anthropic`，Responses 兼容为 `https://maas-coding-api.cn-huabei-1.xf-yun.com/v1/responses`
+  - `Coding Plan` 官方当前默认模型标识为 `astron-code-latest`，并列出 `Spark X2`、`GLM-5.2`、`DeepSeek-V4-Pro`、`DeepSeek-V4-Flash`、`Kimi-K2.6`、`MiniMax-M2.5`、`Qwen3.6` 等当前模型池示例
+  - `Coding Plan` 官方文档明确覆盖 Claude Code、OpenCode、Cursor、OpenClaw、Codex 等交互式编程工具接入；不要把套餐 API Key 当成自动化脚本、批量任务或自建应用后端 key 使用
 - 有效期限：以当前套餐、订阅周期和控制台规则为准
 - OpenAI 兼容：是
 - Anthropic 兼容：是
