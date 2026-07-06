@@ -22,7 +22,7 @@
 | 供应商 | 免费类型 | 适合接入 |
 |---|---|---|
 | [Gemini](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/gemini/README.md) | 长期 Free tier，按模型限额 | `CC Switch` / OpenAI 兼容代理 |
-| [OpenRouter](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/openrouter/README.md) | `:free` 模型，按分钟 / 每日限流 | `Codex` / `CC Switch` |
+| [OpenRouter](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/openrouter/README.md) | `:free` 模型：`20 RPM`，低于 `$10` credits 时 `50/日`，达到后 `1000/日` | `Codex` / `CC Switch` |
 | [Cohere](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cohere/README.md) | Trial key 月度调用额度 | 轻量测试 / prompt 验证 |
 | [Hugging Face](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits | API 联调 / demo |
 | [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.md) | Free Plan 按模型 RPM/RPD/TPM/TPD 限流 | 低延迟 OpenAI 兼容调用 |

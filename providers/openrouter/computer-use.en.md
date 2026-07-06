@@ -19,8 +19,8 @@
 6. Name the key, for example `cc-switch-test`
 7. Copy the key
 8. Save it locally as `OPENROUTER_API_KEY`
-9. Open the models page and filter for `free`
-10. Record 1 to 3 currently available free models
+9. Open the models page and filter for `free`, or open the official `Free Models Router` docs to decide whether `openrouter/free` fits this low-volume test
+10. Record 1 to 3 currently available free models and note the official free-model limits: `20 requests/min`, `50 requests/day` before `$10` purchased credits, and `1000 requests/day` after `$10`
 11. In `CC Switch`, add:
    - Name: `OpenRouter`
    - Base URL: `https://openrouter.ai/api/v1`
@@ -36,5 +36,4 @@
 
 - API key created
 - Current default free model recorded
-- Daily and per-minute limits noted if needed
-
+- Daily and per-minute limits noted from the current official limits page

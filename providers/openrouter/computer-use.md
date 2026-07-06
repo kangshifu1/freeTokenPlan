@@ -19,8 +19,8 @@
 6. 给 key 起名，例如 `cc-switch-test`
 7. 复制生成的 key
 8. 本地保存为环境变量名：`OPENROUTER_API_KEY`
-9. 打开模型页，筛选 `free`
-10. 记录 1 到 3 个当前可用免费模型
+9. 打开模型页，筛选 `free`，或打开官方 `Free Models Router` 文档确认 `openrouter/free` 是否适合本次低量测试
+10. 记录 1 到 3 个当前可用免费模型，并备注官方免费模型限制：`20 requests/min`、低于 `$10` 已购 credits 时 `50 requests/day`、达到 `$10` 后 `1000 requests/day`
 11. 在 CC Switch 新增供应商：
    - 名称：`OpenRouter`
    - Base URL：`https://openrouter.ai/api/v1`
@@ -36,4 +36,4 @@
 
 - `Key` 是否可见
 - 默认模型是否仍为 `free`
-- 每日 / 每分钟限制是否需要单独备注
+- 每日 / 每分钟限制已按当前官方限制页备注
