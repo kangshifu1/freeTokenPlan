@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-07-05`
+- 更新时间：`2026-07-07`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -78,6 +78,7 @@
 1. `CC Switch` 统一管理供应商和模型
 2. `Codex` 走 OpenAI 兼容入口
 3. `Claude Code` 走 Anthropic gateway 或 CC Switch 提供的路由
+4. 如果你想把多家供应商、免费额度、fallback 和压缩放到一个本地网关里统一跑，可以评估 [OmniRoute](https://github.com/diegosouzapw/OmniRoute)
 
 ## 标准收录格式
 
@@ -597,6 +598,13 @@
 - 它本身不送 token，但能显著降低切换成本
 - GitHub 项目页：[cc-switch](https://github.com/farion1231/cc-switch)
 
+### 4. OmniRoute
+
+- `OmniRoute` 是本地 AI gateway / smart router，不是单独的免费 token 供应商
+- 官方 README 当前定位是通过一个本地 endpoint 连接 `Claude Code`、`Codex`、`Cursor`、`Cline` 等工具，并聚合多家 provider、fallback、token 压缩和 dashboard
+- 它适合已经有多组 key、想统一路由、fallback、额度观察和成本控制的人；如果你只是第一次领免费额度，仍然先按上面的 provider 目录逐家注册
+- GitHub 项目页：[OmniRoute](https://github.com/diegosouzapw/OmniRoute)
+
 ## 推荐接入方式
 
 ### 路线 A：新手最省事
@@ -630,6 +638,16 @@
 4. `腾讯混元`
 5. `火山方舟`
 6. `OpenRouter`
+
+### 路线 D：想统一多供应商和 fallback
+
+可以把 `OmniRoute` 放在 `CC Switch` / 手写 provider 配置之前做本地网关：
+
+1. 先按本仓库 provider 目录准备各家的 API key
+2. 在 `OmniRoute` 里接入多个 provider，并启用自动 fallback / 压缩 / dashboard
+3. 再让 `Codex`、`Claude Code`、`Cursor` 等工具指向 OmniRoute 暴露的兼容 endpoint
+
+注意：`OmniRoute` 的免费额度统计来自它聚合的上游供应商和项目自身算法，真实可用量仍要以各上游官方控制台、服务条款和当前账号状态为准。
 
 ## 如何用 CC Switch 接入
 
@@ -932,3 +950,5 @@ export ANTHROPIC_AUTH_TOKEN=your-token
 - CC Switch
   - [GitHub](https://github.com/farion1231/cc-switch)
   - [README_ZH](https://github.com/farion1231/cc-switch/blob/main/README_ZH.md)
+- OmniRoute
+  - [GitHub](https://github.com/diegosouzapw/OmniRoute)

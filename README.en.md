@@ -51,7 +51,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-07-05`
+- Updated: `2026-07-07`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -72,6 +72,12 @@ Recommended tool path:
 1. Use `CC Switch` to manage providers and models
 2. Connect `Codex` through an OpenAI-compatible route
 3. Connect `Claude Code` through an Anthropic-compatible gateway or a compatible route
+4. If you want one local gateway for multiple providers, free-tier tracking, fallback, and compression, evaluate [OmniRoute](https://github.com/diegosouzapw/OmniRoute)
+
+Gateway recommendation:
+
+- `CC Switch`: best first stop for managing provider/model config and syncing common coding tools.
+- `OmniRoute`: local AI gateway / smart router. Its README currently positions it as one endpoint for tools such as `Claude Code`, `Codex`, `Cursor`, and `Cline`, with multi-provider routing, fallback, token compression, and a dashboard. Treat it as a routing layer over upstream providers, not as a standalone free-token provider; real available quota still depends on each upstream provider account and terms.
 
 ## Repository Structure
 
@@ -229,3 +235,5 @@ Before importing into a live `CC Switch` build, verify field names against your 
   - [Billing overview](https://cloud.tencent.com/document/product/1729/97731)
 - Volcengine Ark
   - [Docs](https://www.volcengine.com/docs/82379)
+- OmniRoute
+  - [GitHub](https://github.com/diegosouzapw/OmniRoute)
