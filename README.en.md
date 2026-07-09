@@ -21,24 +21,24 @@ This is a public repository for beginners who want a practical index of free AI 
 
 | Provider | Free type | Best fit | Registration required | Registration URL |
 |---|---|---|---|---|
-| [Gemini](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/gemini/README.en.md) | Long-term model-dependent Free tier | `CC Switch` / OpenAI-compatible gateway | Yes | [AI Studio](https://aistudio.google.com/) |
-| [OpenRouter](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/openrouter/README.en.md) | `:free` models: `20 RPM`, `50/day` before `$10` credits, `1000/day` after | `Codex` / `CC Switch` | Yes | [OpenRouter Keys](https://openrouter.ai/keys) |
-| [Cohere](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cohere/README.en.md) | Trial-key monthly call quota | Lightweight tests / prompt validation | Yes | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
-| [Hugging Face](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/README.en.md) | `$0.10/month` Inference Providers credits for free users | API checks / demos | Yes | [User Access Tokens](https://huggingface.co/settings/tokens) |
-| [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.en.md) | Free Plan RPM/RPD/TPM/TPD limits by model | Low-latency OpenAI-compatible calls | Yes | [Groq Console](https://console.groq.com/keys) |
-| [Mistral](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/mistral/README.en.md) | Free plan / evaluation mode | Model-style testing | Yes | [Mistral Console](https://console.mistral.ai/) |
-| [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.en.md) | Public endpoints free to use, subject to rate limits | High-speed inference trials | Yes | [Cerebras Inference](https://inference.cerebras.ai/) |
-| [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.en.md) | Free serverless NIM development calls | OpenAI-style prototypes | Yes | [NVIDIA Build](https://build.nvidia.com/) |
-| [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.en.md) | Free playground / API limits | GitHub-account prototypes | Yes | [GitHub Models](https://github.com/marketplace/models) |
-| [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.en.md) | Free-tier `$5/month` AI Gateway credits | Vercel / AI SDK projects | Yes | [Vercel Dashboard](https://vercel.com/dashboard) |
-| [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.en.md) | Daily `10,000` Neurons free allocation, model-cost dependent | Workers / edge demos | Yes | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
-| [DashScope / Bailian](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.en.md) | New-user realtime inference quota with stop-after-free control | Mainland China / `Codex` / `Claude Code` | Yes | [DashScope Console](https://dashscope.console.aliyun.com/) |
-| [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.en.md) | Free models after real-name verification, with `CNY 16` reward noted on the CC Switch signup path | China-region multi-model trials | Yes | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
-| [Agnes AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/agnes-ai/README.en.md) | Homepage-promoted free API credits / key / tokens / models | Overseas multi-model API prototypes | Yes | [Agnes AI](https://agnes-ai.com/) |
-| [Baidu Qianfan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.en.md) | New-user model token grants, commonly `1M tokens / 3 months` | Domestic models / OpenAI-compatible agents | Yes | [Qianfan Console](https://console.bce.baidu.com/qianfan/) |
-| [iFlytek Astron MaaS](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/xfyun-maas/README.en.md) | Model square plus `Token Plan` / `Coding Plan` subscription access | Mainland China coding-tool integration | Yes | [Package Subscription](https://maas.xfyun.cn/packageSubscription) |
-| [Tencent Hunyuan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.en.md) | First-activation shared `1M tokens / 1 year` package, moving to TokenHub | Hunyuan text generation | Yes | [Hunyuan Console](https://console.cloud.tencent.com/hunyuan) |
-| [Volcengine Ark](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.en.md) | Free inference / campaign quota / Agent Plan | Doubao / DeepSeek / Coding Plan | Yes | [Ark Console](https://console.volcengine.com/ark/) |
+| [Gemini](providers/gemini/README.en.md) | Long-term model-dependent Free tier | `CC Switch` / OpenAI-compatible gateway | Yes | [AI Studio](https://aistudio.google.com/) |
+| [OpenRouter](providers/openrouter/README.en.md) | `:free` models: `20 RPM`, `50/day` before `$10` credits, `1000/day` after | `Codex` / `CC Switch` | Yes | [OpenRouter Keys](https://openrouter.ai/keys) |
+| [Cohere](providers/cohere/README.en.md) | Trial-key monthly call quota | Lightweight tests / prompt validation | Yes | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
+| [Hugging Face](providers/huggingface/README.en.md) | `$0.10/month` Inference Providers credits for free users | API checks / demos | Yes | [User Access Tokens](https://huggingface.co/settings/tokens) |
+| [Groq](providers/groq/README.en.md) | Free Plan RPM/RPD/TPM/TPD limits by model | Low-latency OpenAI-compatible calls | Yes | [Groq Console](https://console.groq.com/keys) |
+| [Mistral](providers/mistral/README.en.md) | Free plan / evaluation mode | Model-style testing | Yes | [Mistral Console](https://console.mistral.ai/) |
+| [Cerebras](providers/cerebras/README.en.md) | Public endpoints free to use, subject to rate limits | High-speed inference trials | Yes | [Cerebras Inference](https://inference.cerebras.ai/) |
+| [NVIDIA NIM](providers/nvidia-nim/README.en.md) | Free serverless NIM development calls | OpenAI-style prototypes | Yes | [NVIDIA Build](https://build.nvidia.com/) |
+| [GitHub Models](providers/github-models/README.en.md) | Free playground / API limits | GitHub-account prototypes | Yes | [GitHub Models](https://github.com/marketplace/models) |
+| [Vercel AI Gateway](providers/vercel-ai-gateway/README.en.md) | Free-tier `$5/month` AI Gateway credits | Vercel / AI SDK projects | Yes | [Vercel Dashboard](https://vercel.com/dashboard) |
+| [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.en.md) | Daily `10,000` Neurons free allocation, model-cost dependent | Workers / edge demos | Yes | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
+| [DashScope / Bailian](providers/dashscope/README.en.md) | New-user realtime inference quota with stop-after-free control | Mainland China / `Codex` / `Claude Code` | Yes | [DashScope Console](https://dashscope.console.aliyun.com/) |
+| [SiliconFlow](providers/siliconflow/README.en.md) | Free models after real-name verification, with `CNY 16` reward noted on the CC Switch signup path | China-region multi-model trials | Yes | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
+| [Agnes AI](providers/agnes-ai/README.en.md) | Homepage-promoted free API credits / key / tokens / models | Overseas multi-model API prototypes | Yes | [Agnes AI](https://agnes-ai.com/) |
+| [Baidu Qianfan](providers/baidu-qianfan/README.en.md) | New-user model token grants, commonly `1M tokens / 3 months` | Domestic models / OpenAI-compatible agents | Yes | [Qianfan Console](https://console.bce.baidu.com/qianfan/) |
+| [iFlytek Astron MaaS](providers/xfyun-maas/README.en.md) | Model square plus `Token Plan` / `Coding Plan` subscription access | Mainland China coding-tool integration | Yes | [Package Subscription](https://maas.xfyun.cn/packageSubscription) |
+| [Tencent Hunyuan](providers/tencent-hunyuan/README.en.md) | First-activation shared `1M tokens / 1 year` package, moving to TokenHub | Hunyuan text generation | Yes | [Hunyuan Console](https://console.cloud.tencent.com/hunyuan) |
+| [Volcengine Ark](providers/volcengine-ark/README.en.md) | Free inference / campaign quota / Agent Plan | Doubao / DeepSeek / Coding Plan | Yes | [Ark Console](https://console.volcengine.com/ark/) |
 
 ## Quick Navigation
 
@@ -51,7 +51,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-07-07`
+- Updated: `2026-07-09`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -117,24 +117,24 @@ Each provider has its own directory with:
 
 ## Provider Index
 
-- [Gemini](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/gemini/README.en.md)
-- [OpenRouter](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/openrouter/README.en.md)
-- [Cohere](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cohere/README.en.md)
-- [Hugging Face](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/README.en.md)
-- [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.en.md)
-- [Mistral](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/mistral/README.en.md)
-- [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.en.md)
-- [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.en.md)
-- [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.en.md)
-- [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.en.md)
-- [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.en.md)
-- [DashScope / Bailian](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.en.md)
-- [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.en.md)
-- [Agnes AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/agnes-ai/README.en.md)
-- [Baidu Qianfan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.en.md)
-- [iFlytek Astron MaaS](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/xfyun-maas/README.en.md)
-- [Tencent Hunyuan](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.en.md)
-- [Volcengine Ark](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.en.md)
+- [Gemini](providers/gemini/README.en.md)
+- [OpenRouter](providers/openrouter/README.en.md)
+- [Cohere](providers/cohere/README.en.md)
+- [Hugging Face](providers/huggingface/README.en.md)
+- [Groq](providers/groq/README.en.md)
+- [Mistral](providers/mistral/README.en.md)
+- [Cerebras](providers/cerebras/README.en.md)
+- [NVIDIA NIM](providers/nvidia-nim/README.en.md)
+- [GitHub Models](providers/github-models/README.en.md)
+- [Vercel AI Gateway](providers/vercel-ai-gateway/README.en.md)
+- [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.en.md)
+- [DashScope / Bailian](providers/dashscope/README.en.md)
+- [SiliconFlow](providers/siliconflow/README.en.md)
+- [Agnes AI](providers/agnes-ai/README.en.md)
+- [Baidu Qianfan](providers/baidu-qianfan/README.en.md)
+- [iFlytek Astron MaaS](providers/xfyun-maas/README.en.md)
+- [Tencent Hunyuan](providers/tencent-hunyuan/README.en.md)
+- [Volcengine Ark](providers/volcengine-ark/README.en.md)
 
 ## Current Provider Notes
 

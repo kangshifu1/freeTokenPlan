@@ -21,24 +21,24 @@
 
 | 供应商 | 免费类型 | 适合接入 | 是否需要注册 | 注册地址 |
 |---|---|---|---|---|
-| [Gemini](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/gemini/README.md) | 长期 Free tier，按模型限额 | `CC Switch` / OpenAI 兼容代理 | 需要 | [AI Studio](https://aistudio.google.com/) |
-| [OpenRouter](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/openrouter/README.md) | `:free` 模型：`20 RPM`，低于 `$10` credits 时 `50/日`，达到后 `1000/日` | `Codex` / `CC Switch` | 需要 | [OpenRouter Keys](https://openrouter.ai/keys) |
-| [Cohere](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cohere/README.md) | Trial key 月度调用额度 | 轻量测试 / prompt 验证 | 需要 | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
-| [Hugging Face](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits | API 联调 / demo | 需要 | [User Access Tokens](https://huggingface.co/settings/tokens) |
-| [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.md) | Free Plan 按模型 RPM/RPD/TPM/TPD 限流 | 低延迟 OpenAI 兼容调用 | 需要 | [Groq Console](https://console.groq.com/keys) |
-| [Mistral](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/mistral/README.md) | Free 计划 / 评估模式 | 模型风格试用 | 需要 | [Mistral Console](https://console.mistral.ai/) |
-| [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.md) | 公开端点免费使用，受速率限制约束 | 高速推理试用 | 需要 | [Cerebras Inference](https://inference.cerebras.ai/) |
-| [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.md) | 免费 serverless NIM 开发调用 | OpenAI 风格原型验证 | 需要 | [NVIDIA Build](https://build.nvidia.com/) |
-| [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.md) | 免费 playground / API 限额 | GitHub 账号原型测试 | 需要 | [GitHub Models](https://github.com/marketplace/models) |
-| [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits | Vercel / AI SDK 项目 | 需要 | [Vercel Dashboard](https://vercel.com/dashboard) |
-| [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
-| [DashScope / 百炼](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.md) | 新人实时推理免费额度，支持用完即停 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
-| [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.md) | 实名认证后免费模型，CC Switch 注册路径提示 `16元` 赠送余额 | 中国区多模型试用 | 需要 | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
-| [Agnes AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
-| [百度千帆](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月` | 国产模型 / OpenAI 兼容 agent | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
-| [讯飞星辰 MaaS](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/xfyun-maas/README.md) | 模型广场 + `Token Plan` / `Coding Plan` 订阅接入 | 中国大陆编程工具接入 | 需要 | [套餐订阅](https://maas.xfyun.cn/packageSubscription) |
-| [腾讯混元](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.md) | 首次开通共享 `100万 tokens / 1年` 资源包，迁移至 TokenHub | 混元文本生成 | 需要 | [混元控制台](https://console.cloud.tencent.com/hunyuan) |
-| [火山方舟](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度 / Agent Plan | 豆包 / DeepSeek / Coding Plan | 需要 | [火山方舟控制台](https://console.volcengine.com/ark/) |
+| [Gemini](providers/gemini/README.md) | 长期 Free tier，按模型限额 | `CC Switch` / OpenAI 兼容代理 | 需要 | [AI Studio](https://aistudio.google.com/) |
+| [OpenRouter](providers/openrouter/README.md) | `:free` 模型：`20 RPM`，低于 `$10` credits 时 `50/日`，达到后 `1000/日` | `Codex` / `CC Switch` | 需要 | [OpenRouter Keys](https://openrouter.ai/keys) |
+| [Cohere](providers/cohere/README.md) | Trial key 月度调用额度 | 轻量测试 / prompt 验证 | 需要 | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
+| [Hugging Face](providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits | API 联调 / demo | 需要 | [User Access Tokens](https://huggingface.co/settings/tokens) |
+| [Groq](providers/groq/README.md) | Free Plan 按模型 RPM/RPD/TPM/TPD 限流 | 低延迟 OpenAI 兼容调用 | 需要 | [Groq Console](https://console.groq.com/keys) |
+| [Mistral](providers/mistral/README.md) | Free 计划 / 评估模式 | 模型风格试用 | 需要 | [Mistral Console](https://console.mistral.ai/) |
+| [Cerebras](providers/cerebras/README.md) | 公开端点免费使用，受速率限制约束 | 高速推理试用 | 需要 | [Cerebras Inference](https://inference.cerebras.ai/) |
+| [NVIDIA NIM](providers/nvidia-nim/README.md) | 免费 serverless NIM 开发调用 | OpenAI 风格原型验证 | 需要 | [NVIDIA Build](https://build.nvidia.com/) |
+| [GitHub Models](providers/github-models/README.md) | 免费 playground / API 限额 | GitHub 账号原型测试 | 需要 | [GitHub Models](https://github.com/marketplace/models) |
+| [Vercel AI Gateway](providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits | Vercel / AI SDK 项目 | 需要 | [Vercel Dashboard](https://vercel.com/dashboard) |
+| [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
+| [DashScope / 百炼](providers/dashscope/README.md) | 新人实时推理免费额度，支持用完即停 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
+| [SiliconFlow](providers/siliconflow/README.md) | 实名认证后免费模型，CC Switch 注册路径提示 `16元` 赠送余额 | 中国区多模型试用 | 需要 | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
+| [Agnes AI](providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
+| [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月` | 国产模型 / OpenAI 兼容 agent | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
+| [讯飞星辰 MaaS](providers/xfyun-maas/README.md) | 模型广场 + `Token Plan` / `Coding Plan` 订阅接入 | 中国大陆编程工具接入 | 需要 | [套餐订阅](https://maas.xfyun.cn/packageSubscription) |
+| [腾讯混元](providers/tencent-hunyuan/README.md) | 首次开通共享 `100万 tokens / 1年` 资源包，迁移至 TokenHub | 混元文本生成 | 需要 | [混元控制台](https://console.cloud.tencent.com/hunyuan) |
+| [火山方舟](providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度 / Agent Plan | 豆包 / DeepSeek / Coding Plan | 需要 | [火山方舟控制台](https://console.volcengine.com/ark/) |
 
 ## 快速导航
 
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-07-07`
+- 更新时间：`2026-07-09`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -844,24 +844,24 @@ export ANTHROPIC_AUTH_TOKEN=your-token
 
 ## 供应商目录索引
 
-- [Gemini](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/gemini/README.md)
-- [OpenRouter](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/openrouter/README.md)
-- [Cohere](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cohere/README.md)
-- [Hugging Face](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/README.md)
-- [Groq](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/groq/README.md)
-- [Mistral](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/mistral/README.md)
-- [Cerebras](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cerebras/README.md)
-- [NVIDIA NIM](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/nvidia-nim/README.md)
-- [GitHub Models](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/github-models/README.md)
-- [Vercel AI Gateway](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/vercel-ai-gateway/README.md)
-- [Cloudflare Workers AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/README.md)
-- [DashScope / 百炼](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/dashscope/README.md)
-- [SiliconFlow](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/siliconflow/README.md)
-- [Agnes AI](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/agnes-ai/README.md)
-- [百度千帆](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/baidu-qianfan/README.md)
-- [讯飞星辰 MaaS](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/xfyun-maas/README.md)
-- [腾讯混元](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/tencent-hunyuan/README.md)
-- [火山方舟](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/volcengine-ark/README.md)
+- [Gemini](providers/gemini/README.md)
+- [OpenRouter](providers/openrouter/README.md)
+- [Cohere](providers/cohere/README.md)
+- [Hugging Face](providers/huggingface/README.md)
+- [Groq](providers/groq/README.md)
+- [Mistral](providers/mistral/README.md)
+- [Cerebras](providers/cerebras/README.md)
+- [NVIDIA NIM](providers/nvidia-nim/README.md)
+- [GitHub Models](providers/github-models/README.md)
+- [Vercel AI Gateway](providers/vercel-ai-gateway/README.md)
+- [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md)
+- [DashScope / 百炼](providers/dashscope/README.md)
+- [SiliconFlow](providers/siliconflow/README.md)
+- [Agnes AI](providers/agnes-ai/README.md)
+- [百度千帆](providers/baidu-qianfan/README.md)
+- [讯飞星辰 MaaS](providers/xfyun-maas/README.md)
+- [腾讯混元](providers/tencent-hunyuan/README.md)
+- [火山方舟](providers/volcengine-ark/README.md)
 
 ## 维护建议
 

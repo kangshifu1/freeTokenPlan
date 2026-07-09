@@ -9,5 +9,5 @@
 
 目录文件：
 
-- [computer-use.md](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/computer-use.md)
-- [cc-switch-template.json](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/huggingface/cc-switch-template.json)
+- [computer-use.md](computer-use.md)
+- [cc-switch-template.json](cc-switch-template.json)

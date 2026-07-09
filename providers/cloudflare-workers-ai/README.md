@@ -11,5 +11,5 @@
 
 目录文件：
 
-- [computer-use.md](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/computer-use.md)
-- [cc-switch-template.json](/Users/kangxiaolin/projects/AI/freeTokenPlan/providers/cloudflare-workers-ai/cc-switch-template.json)
+- [computer-use.md](computer-use.md)
+- [cc-switch-template.json](cc-switch-template.json)
