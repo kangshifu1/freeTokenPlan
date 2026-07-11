@@ -37,7 +37,7 @@
 | [Agnes AI](providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
 | [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月` | 国产模型 / OpenAI 兼容 agent | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
 | [讯飞星辰 MaaS](providers/xfyun-maas/README.md) | 模型广场 + `Token Plan` / `Coding Plan` 订阅接入 | 中国大陆编程工具接入 | 需要 | [套餐订阅](https://maas.xfyun.cn/packageSubscription) |
-| [腾讯混元](providers/tencent-hunyuan/README.md) | 首次开通共享 `100万 tokens / 1年` 资源包，迁移至 TokenHub | 混元文本生成 | 需要 | [混元控制台](https://console.cloud.tencent.com/hunyuan) |
+| [腾讯混元 / TokenHub](providers/tencent-hunyuan/README.md) | 混元存量入口共享 `100万 tokens / 1年` 资源包；新增能力需核对 TokenHub | 混元文本生成 / TokenHub 模型 | 需要 | [TokenHub](https://console.cloud.tencent.com/tokenhub) |
 | [火山方舟](providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度 / Agent Plan | 豆包 / DeepSeek / Coding Plan | 需要 | [火山方舟控制台](https://console.volcengine.com/ark/) |
 
 ## 快速导航
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-07-09`
+- 更新时间：`2026-07-11`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -531,9 +531,9 @@
 
 ### 17. 腾讯混元
 
-- 官网：[混元大模型计费概述](https://cloud.tencent.com/document/product/1729/97731)
+- 官网：[混元大模型计费概述](https://cloud.tencent.com/document/product/1729/97731) / [TokenHub](https://console.cloud.tencent.com/tokenhub)
 - 类型：模型 API
-- 注册方式：腾讯云账号开通混元，按要求完成实名认证
+- 注册方式：腾讯云账号开通混元或 TokenHub，按要求完成实名认证
 - 是否需要信用卡：通常不需要信用卡，但需要腾讯云账号与实名体系
 - 免费内容：
   - 官方计费页说明混元大模型相关能力将逐步迁移至 `TokenHub`，新增模型服务或更多模型能力应前往 TokenHub 开通
@@ -541,7 +541,7 @@
   - 当前混元生文免费额度为一次性共享资源包：列出的混元生文（不含 `Hunyuan-lite`）与混元多模态模型共享 `100万 tokens`，自开通日起 `1 年` 内有效
   - `Hunyuan-embedding` 单独列出 `100万 tokens / 1 年`
 - 使用限制：
-  - 免费资源包、共享 tokens、有效期、模型范围和 TokenHub 入口以当前文档 / 控制台为准
+  - 免费资源包、共享 tokens、有效期、模型范围和 TokenHub 入口以当前文档 / 控制台为准；新增能力不要默认沿用旧混元入口
   - 扣费顺序为“免费资源包 > 付费资源包 > 按量后付费”；资源包耗尽或到期后不会自动转入后付费，需要主动开通
   - 腾讯云 SecretId / SecretKey 可能需要经过兼容网关转换成工具期望的 bearer key
 - 有效期限：当前文档列出的生文 / 多模态共享资源包为 `1 年`
@@ -553,6 +553,7 @@
   - 注意云账号费用保护；如果需要超出资源包继续调用，再主动开通后付费
 - 官方文档：
   - [Billing overview](https://cloud.tencent.com/document/product/1729/97731)
+  - [TokenHub Console](https://console.cloud.tencent.com/tokenhub)
 
 ### 18. 火山方舟
 
