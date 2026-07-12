@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-07-11`
+- 更新时间：`2026-07-12`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -506,7 +506,7 @@
 - 免费内容：
   - 模型广场可浏览当前模型与平台能力
   - 当前公开、可稳定复核的编程工具接入文档重点是 `Astron Token Plan` 与 `Astron Coding Plan`
-  - `Token Plan` 文档当前面向企业 / 团队场景，给出独立套餐 API Key，并列出 `GLM-5.2`、`DeepSeek-V4-Pro`、`DeepSeek-V4-Flash`、`Kimi-K2.6`、`Qwen3.6` 等可切换模型示例；计量按积分消耗，并有工作日非高峰、周末等 `0.8` 时段系数
+  - `Token Plan` 文档当前面向企业 / 团队场景，给出独立套餐 API Key，并列出 `GLM-5.2` / `GLM-5.1` / `GLM-5`、`DeepSeek-V4-Pro`、`DeepSeek-V4-Flash`、`DeepSeek-V3.2`、`Kimi-K2.6`、`Kimi-K2.5`、`MiniMax-M2.5`、`Qwen3.5` / `Qwen3.6`、`Qwen3-Coder-Next-FP8`、`GLM-4.7-Flash` 等可切换模型示例；计量按积分消耗，并有工作日非高峰、周末等 `0.8` 时段系数
   - `Coding Plan` 页面当前仍列出 `首月版` 与 `焕新版` 路径，但说明 `首月版` 自 `2026-04-09 00:00` 起不再支持购买；`焕新版` 自 `2026-04-09` 起按月订购、自 `2026-06-15` 起支持按季订购，应按购买页确认当期价格、额度和有效期
   - `Coding Plan` 自 `2026-06-18` 起上线波谷系数：工作日 `08:00-22:00` 系数 `1.0`，夜间、周末和节假日系数 `0.8`，请求流控按该系数折算
   - 这两类文档强调的是套餐接入与兼容协议，不应被误写成“长期全站免费 API”
@@ -514,7 +514,7 @@
   - `Token Plan` 和 `Coding Plan` 各有独立 API Key 与独立 base URL，不能和常规 `maas-api` 混用
   - `Token Plan` 当前 OpenAI 兼容 base URL 为 `https://maas-token-api.cn-huabei-1.xf-yun.com/v2`，Anthropic 兼容为 `https://maas-token-api.cn-huabei-1.xf-yun.com/anthropic`
   - `Coding Plan` 当前 OpenAI 兼容 base URL 为 `https://maas-coding-api.cn-huabei-1.xf-yun.com/v2`，Anthropic 兼容为 `https://maas-coding-api.cn-huabei-1.xf-yun.com/anthropic`，Responses 兼容为 `https://maas-coding-api.cn-huabei-1.xf-yun.com/v1/responses`
-  - `Coding Plan` 官方当前默认模型标识为 `astron-code-latest`，并列出 `Spark X2`、`GLM-5.2`、`DeepSeek-V4-Pro`、`DeepSeek-V4-Flash`、`Kimi-K2.6`、`MiniMax-M2.5`、`Qwen3.6` 等当前模型池示例
+  - `Coding Plan` 官方当前默认模型标识为 `astron-code-latest`，并列出 `Spark X2` / `Spark X2 Agent`、`GLM-5.2` / `GLM-5.1` / `GLM-5`、`DeepSeek-V4-Pro`、`DeepSeek-V4-Flash`、`DeepSeek-V3.2`、`Kimi-K2.6`、`MiniMax-M2.5`、`Qwen3.5` / `Qwen3.6`、`Qwen3-Coder-Next-FP8`、`GLM-4.7-Flash` 等当前模型池示例
   - `Coding Plan` 官方文档明确覆盖 Claude Code、OpenCode、Cursor、OpenClaw、Codex 等交互式编程工具接入；不要把套餐 API Key 当成自动化脚本、批量任务或自建应用后端 key 使用
 - 有效期限：以当前套餐、订阅周期和控制台规则为准
 - OpenAI 兼容：是
