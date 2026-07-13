@@ -11,10 +11,11 @@
 5. Complete real-name verification, security checks, or service authorization
 6. Create API credentials / SecretId / SecretKey
 7. Save them locally as `TENCENT_SECRET_ID` and `TENCENT_SECRET_KEY`
-8. Open [Hunyuan billing overview](https://cloud.tencent.com/document/product/1729/97731), then confirm whether the current entry point has moved to `TokenHub` and whether new capabilities must be enabled there
-9. Record the free package, shared model scope, validity, entry-point source, and whether `Hunyuan-lite` is excluded from the shared package
-10. Check the console postpaid setting and confirm whether usage can continue after free / paid packages are exhausted
-11. If using OpenAI compatibility, open the official compatibility docs and verify the base URL and model name
+8. Open [Hunyuan billing overview](https://cloud.tencent.com/document/product/1729/97731) and [TokenHub new-user trial package](https://cloud.tencent.com/document/product/1823/130053), then confirm whether the current entry point has moved to `TokenHub` and whether new capabilities must be enabled there
+9. Record whether the account received the TokenHub new-user trial package or the legacy Hunyuan package. The current TokenHub language-model trial package is `1M tokens / 90 days`; the current Hunyuan text-generation / multimodal shared package is `1M tokens / 1 year`
+10. Record the free package, shared model scope, validity, entry-point source, and whether `Hunyuan-lite` is excluded from the shared package
+11. Check the console postpaid setting and confirm whether usage can continue after free / paid packages are exhausted
+12. If using OpenAI compatibility, open the official compatibility docs and verify the base URL and model name
 
 ## Human Takeover Points
 
@@ -26,6 +27,7 @@
 
 - Free resource package is issued
 - Validity matches the console
-- Target model is covered by the shared package or needs to be opened separately in `TokenHub` / use separate authentication
+- Target model is covered by the matching entry point's package or needs to be opened separately in `TokenHub` / use separate authentication
+- TokenHub trial package and legacy Hunyuan package entry point, validity, and model scope were not mixed
 - Exhausted or expired packages still do not automatically roll into postpaid
 - OpenAI-compatible configuration comes from current official docs
