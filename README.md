@@ -38,7 +38,7 @@
 | [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月` | 国产模型 / OpenAI 兼容 agent | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
 | [讯飞星辰 MaaS](providers/xfyun-maas/README.md) | 模型广场 + `Token Plan` / `Coding Plan` 订阅接入 | 中国大陆编程工具接入 | 需要 | [套餐订阅](https://maas.xfyun.cn/packageSubscription) |
 | [腾讯混元 / TokenHub](providers/tencent-hunyuan/README.md) | TokenHub 语言 / 多模态理解试用包为 `100万 Tokens / 90天`，图片生成 `50次 / 365天`，视频生成 `50积分 / 365天`，3D 生成 `100积分 / 365天`；混元存量入口另有共享 `100万 tokens / 1年` 资源包 | 混元文本生成 / TokenHub 模型 | 需要 | [TokenHub](https://console.cloud.tencent.com/tokenhub) |
-| [火山方舟](providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度 / Agent Plan | 豆包 / DeepSeek / Coding Plan | 需要 | [火山方舟控制台](https://console.volcengine.com/ark/) |
+| [火山方舟](providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度 / Agent Plan / Coding Plan | 豆包 / DeepSeek / 工具接入 | 需要 | [火山方舟控制台](https://console.volcengine.com/ark/) |
 
 ## 快速导航
 
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-07-15`
+- 更新时间：`2026-07-19`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -571,12 +571,12 @@
   - 方舟活动和套餐规则变化快，必须以控制台为准
   - 建议启用安心体验模式或明确关闭超额付费风险
 - 有效期限：以当前控制台 / 活动页为准
-- OpenAI 兼容：方舟文档包含 OpenAI 兼容和多种 AI 工具接入说明
-- Anthropic 兼容：以当前工具接入文档为准
+- OpenAI 兼容：方舟文档包含 OpenAI 兼容和多种 AI 工具接入说明；`Agent Plan` / `Coding Plan` 的工具页当前覆盖 Codex、Claude Code、OpenCode 和 OpenClaw 等入口
+- Anthropic 兼容：以当前 `Agent Plan` / `Coding Plan` 工具接入文档为准
 - 适合接入：中国大陆用户、豆包 / DeepSeek 等模型、Coding Plan / Agent Plan 工具
 - 优惠策略：
   - 先用免费推理额度验证 endpoint 和模型名
-  - Coding / Agent 工具接入优先看官方“接入 AI 工具”文档
+  - Coding / Agent 工具接入优先看官方 `Agent Plan` / `Coding Plan` 下的“接入 AI 工具”文档
 - 官方文档：
   - [Volcengine Ark docs](https://www.volcengine.com/docs/82379)
 

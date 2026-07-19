@@ -13,7 +13,7 @@
 7. 本地保存为环境变量：`ARK_API_KEY`
 8. 查看控制台的免费推理额度、安心体验模式和当前活动额度
 9. 若使用 `Agent Plan` / `Coding Plan`，打开对应计费或活动页，区分套餐抵扣、活动折扣和免费推理额度
-10. 打开对应模型或接入工具文档，确认 OpenAI 兼容 base URL、模型名和 endpoint
+10. 打开 `Agent Plan` / `Coding Plan` 下的“接入 AI 工具”文档，按目标工具确认 Codex、Claude Code、OpenCode、OpenClaw 等入口的 base URL、模型名、endpoint 和环境变量
 11. 导入 CC Switch 前，确认当前模型是否仍在免费额度或活动范围内
 
 ## 人工接管点
@@ -27,5 +27,6 @@
 - 免费推理额度是否可见
 - 是否启用安心体验模式或明确关闭超额付费风险
 - `Agent Plan` / `Coding Plan` 是否只是套餐或活动折扣，而不是长期免费 API 额度
+- 所用工具入口是否来自当前官方“接入 AI 工具”页面
 - 默认模型和 endpoint 是否来自当前控制台
 - OpenAI 兼容配置是否通过官方文档确认
