@@ -12,7 +12,7 @@
 6. 创建 API Key
 7. 复制 key
 8. 本地保存为环境变量：`DASHSCOPE_API_KEY`
-9. 查看当前免费模型、新人免费额度、`30～90 天` 有效期、华北 `2`（北京）地域和中国内地部署范围说明；必要时打开 [新人免费额度说明](https://help.aliyun.com/zh/model-studio/new-free-quota) 复核领取规则
+9. 查看当前免费模型、新人免费额度、`30～90 天` 有效期、华北 `2`（北京）主路径以及定价页列出的部分新加坡地域 / 国际部署模型说明；必要时打开 [新人免费额度说明](https://help.aliyun.com/zh/model-studio/new-free-quota) 复核领取规则
 10. 在模型用量页打开“免费额度用完即停”，避免已认证账号超出免费额度后继续按量扣费
 11. 在 CC Switch 中按需要录入：
    - OpenAI 兼容入口

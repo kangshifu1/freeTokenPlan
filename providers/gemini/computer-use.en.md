@@ -23,7 +23,7 @@
 3. Complete Google login and any secondary verification
 4. Open `Get API key` or `API keys`
 5. Click `Create API key`
-6. If asked for a project, prefer an `auth key`; do not depend on an unrestricted `standard key`, because Google documents these keys as rejected from `2026-06-19`
+6. If asked for a project, prefer an `auth key`; do not depend on an unrestricted `standard key`, because Google documents these keys as rejected from `2026-06-19`, and inactive keys of that type may be blocked sooner
 7. Copy the generated key immediately
 8. Save it locally as `GEMINI_API_KEY`
 9. Record suggested starter models:

@@ -25,7 +25,7 @@
 3. 完成 Google 登录和可能出现的二次验证
 4. 进入 AI Studio 后，打开 `Get API key` 或 `API keys`
 5. 点击 `Create API key`
-6. 若页面要求选择 project，优先创建 / 使用 `auth key`；不要依赖不受限制的 `standard key`，因为官方已自 `2026-06-19` 起拒绝这类 key
+6. 若页面要求选择 project，优先创建 / 使用 `auth key`；不要依赖不受限制的 `standard key`，因为官方已自 `2026-06-19` 起拒绝这类 key，且长期闲置的同类 key 可能会更早被封锁
 7. 生成后立即复制 key
 8. 本地保存为环境变量名：`GEMINI_API_KEY`
 9. 建议默认模型记录为：

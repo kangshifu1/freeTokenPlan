@@ -21,7 +21,7 @@
 
 | 供应商 | 免费类型 | 适合接入 | 是否需要注册 | 注册地址 |
 |---|---|---|---|---|
-| [Gemini](providers/gemini/README.md) | 长期 Free tier，按模型限额 | `CC Switch` / OpenAI 兼容代理 | 需要 | [AI Studio](https://aistudio.google.com/) |
+| [Gemini](providers/gemini/README.md) | 长期 Free tier，按模型限额；不受限制的 `standard keys` 已停用路径中 | `CC Switch` / OpenAI 兼容代理 | 需要 | [AI Studio](https://aistudio.google.com/) |
 | [OpenRouter](providers/openrouter/README.md) | `:free` 模型：`20 RPM`，低于 `$10` credits 时 `50/日`，达到后 `1000/日` | `Codex` / `CC Switch` | 需要 | [OpenRouter Keys](https://openrouter.ai/keys) |
 | [Cohere](providers/cohere/README.md) | Trial key 月度调用额度 | 轻量测试 / prompt 验证 | 需要 | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
 | [Hugging Face](providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits | API 联调 / demo | 需要 | [User Access Tokens](https://huggingface.co/settings/tokens) |
@@ -30,9 +30,9 @@
 | [Cerebras](providers/cerebras/README.md) | 公开端点免费使用，受速率限制约束 | 高速推理试用 | 需要 | [Cerebras Inference](https://inference.cerebras.ai/) |
 | [NVIDIA NIM](providers/nvidia-nim/README.md) | 免费 serverless NIM 开发调用 | OpenAI 风格原型验证 | 需要 | [NVIDIA Build](https://build.nvidia.com/) |
 | [GitHub Models](providers/github-models/README.md) | 免费 playground / API 限额 | GitHub 账号原型测试 | 需要 | [GitHub Models](https://github.com/marketplace/models) |
-| [Vercel AI Gateway](providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits | Vercel / AI SDK 项目 | 需要 | [Vercel Dashboard](https://vercel.com/dashboard) |
+| [Vercel AI Gateway](providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits，且只覆盖 eligible models | Vercel / AI SDK 项目 | 需要 | [Vercel Dashboard](https://vercel.com/dashboard) |
 | [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
-| [DashScope / 百炼](providers/dashscope/README.md) | 新人实时推理免费额度，支持用完即停 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
+| [DashScope / 百炼](providers/dashscope/README.md) | 区域化新人实时推理免费额度，按地域与部署范围区分 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
 | [SiliconFlow](providers/siliconflow/README.md) | 实名认证后免费模型，CC Switch 注册路径提示 `16元` 赠送余额 | 中国区多模型试用 | 需要 | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
 | [Agnes AI](providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
 | [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月` | 国产模型 / OpenAI 兼容 agent | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-07-19`
+- 更新时间：`2026-07-20`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -120,7 +120,7 @@
   - 免费档按模型区分，不是所有模型都有 Free tier
   - 速率限制、上下文长度、是否启用搜索等都按模型单独计算
   - 免费档数据可能会用于 Google 产品改进，付费档默认不会
-  - AI Studio 新建 key 默认生成 `auth keys`；官方说明自 `2026-06-19` 起已拒绝不受限制的 `standard keys`，受显式限制的 `standard keys` 暂可继续使用，并计划在 `2026-09` 停用所有 `standard keys`
+  - AI Studio 新建 key 默认生成 `auth keys`；官方说明自 `2026-06-19` 起已拒绝不受限制的 `standard keys`，长期闲置的不受限制 `standard keys` 可能会更早被封锁，受显式限制的 `standard keys` 暂可继续使用，并计划在 `2026-09` 停用所有 `standard keys`
 - 有效期限：长期免费档，不是一次性赠金
 - OpenAI 兼容：官方提供 OpenAI compatibility 端点；但功能覆盖不等同于完整 OpenAI API
 - Anthropic 兼容：否
@@ -297,10 +297,10 @@
 - 是否需要信用卡：不需要信用卡，但可能需要阿里云实名认证 / 账户体系
 - 免费内容：
   - 官方文档明确有“新人免费额度”
-  - 部分模型在指定地域下有免费时长或免费 token 配额
+  - 部分模型在指定地域下有免费时长或免费 token 配额，主路径是华北 `2`（北京）和中国内地部署范围，定价页也列出部分新加坡地域 / 国际部署模型
   - 官方新人免费额度说明写明，首次开通百炼时会自动发放符合条件模型的新人免费额度；当前有效期为 `30～90 天`，且 `2025-09-08 11:00` 起首次开通用户获赠额度有效期调整为 `90 天`
 - 使用限制：
-  - 免费额度仅适用于华北 `2`（北京）地域、中国内地部署范围的模型实时推理
+  - 免费额度主路径适用于华北 `2`（北京）地域、中国内地部署范围的模型实时推理，定价页也列出部分新加坡地域 / 国际部署模型
   - 不抵扣 Batch、模型调优、模型部署或自定义模型费用
   - 免费策略比国际平台更复杂，必须实际看当前模型页和地域说明
 - 有效期限：新用户活动期 + 模型 / 地域条件
