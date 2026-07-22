@@ -12,7 +12,7 @@
 6. 创建 API key / SecretId / SecretKey
 7. 本地保存为环境变量：`TENCENT_SECRET_ID`、`TENCENT_SECRET_KEY`
 8. 打开 [混元计费概述](https://cloud.tencent.com/document/product/1729/97731) 和 [TokenHub 新用户体验包](https://cloud.tencent.com/document/product/1823/130053)，确认当前入口是否已迁移到 `TokenHub`，新增能力是否需要在 TokenHub 开通
-9. 记录当前领取的是 TokenHub 新用户体验包还是混元存量资源包；TokenHub 语言模型和多模态理解体验包当前为 `100万 Tokens / 90 天`，图像生成当前为 `50 次生成 / 365 天`，视频生成当前为 `50 积分 / 365 天`，3D 生成当前为 `100 积分 / 365 天`，混元生文 / 多模态共享资源包当前为 `100万 tokens / 1 年`
+9. 记录当前领取的是 TokenHub 新用户体验包还是混元存量资源包；TokenHub 新用户体验包页面于 `2026-07-21` 更新，语言模型和多模态理解体验包当前为 `100万 Tokens / 1 年`，图像生成当前为 `50 次生成 / 1 年`，视频生成当前为 `50 积分 / 1 年`，3D 生成当前为 `100 积分 / 1 年`，混元生文 / 多模态共享资源包当前为 `100万 tokens / 1 年`
 10. 记录免费资源包、共享模型范围、有效期、入口来源、计量口径，以及 `Hunyuan-lite` 是否被排除在共享资源包外
 11. 检查控制台后付费设置，确认免费/付费资源包耗尽后是否会转入后付费
 12. 若使用 OpenAI 兼容模式，打开官方兼容文档复核 base URL 和模型名

@@ -21,7 +21,7 @@
 
 | 供应商 | 免费类型 | 适合接入 | 是否需要注册 | 注册地址 |
 |---|---|---|---|---|
-| [Gemini](providers/gemini/README.md) | 长期 Free tier，按模型限额；不受限制的 `standard keys` 已停用路径中 | `CC Switch` / OpenAI 兼容代理 | 需要 | [AI Studio](https://aistudio.google.com/) |
+| [Gemini](providers/gemini/README.md) | 长期 Free tier，按模型限额；当前官方示例已包含 `gemini-3.6-flash` | `CC Switch` / OpenAI 兼容代理 | 需要 | [AI Studio](https://aistudio.google.com/) |
 | [OpenRouter](providers/openrouter/README.md) | `:free` 模型：`20 RPM`，低于 `$10` credits 时 `50/日`，达到后 `1000/日` | `Codex` / `CC Switch` | 需要 | [OpenRouter Keys](https://openrouter.ai/keys) |
 | [Cohere](providers/cohere/README.md) | Trial key 月度调用额度 | 轻量测试 / prompt 验证 | 需要 | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
 | [Hugging Face](providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits | API 联调 / demo | 需要 | [User Access Tokens](https://huggingface.co/settings/tokens) |
@@ -37,7 +37,7 @@
 | [Agnes AI](providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
 | [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月` | 国产模型 / OpenAI 兼容 agent | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
 | [讯飞星辰 MaaS](providers/xfyun-maas/README.md) | 模型广场 + `Token Plan` / `Coding Plan` 订阅接入 | 中国大陆编程工具接入 | 需要 | [套餐订阅](https://maas.xfyun.cn/packageSubscription) |
-| [腾讯混元 / TokenHub](providers/tencent-hunyuan/README.md) | TokenHub 语言 / 多模态理解试用包为 `100万 Tokens / 90天`，图片生成 `50次 / 365天`，视频生成 `50积分 / 365天`，3D 生成 `100积分 / 365天`；混元存量入口另有共享 `100万 tokens / 1年` 资源包 | 混元文本生成 / TokenHub 模型 | 需要 | [TokenHub](https://console.cloud.tencent.com/tokenhub) |
+| [腾讯混元 / TokenHub](providers/tencent-hunyuan/README.md) | TokenHub 语言 / 多模态理解试用包为 `100万 Tokens / 1年`，图片生成 `50次 / 1年`，视频生成 `50积分 / 1年`，3D 生成 `100积分 / 1年`；混元存量入口另有共享 `100万 tokens / 1年` 资源包 | 混元文本生成 / TokenHub 模型 | 需要 | [TokenHub](https://console.cloud.tencent.com/tokenhub) |
 | [火山方舟](providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度 / Agent Plan / Coding Plan | 豆包 / DeepSeek / 工具接入 | 需要 | [火山方舟控制台](https://console.volcengine.com/ark/) |
 
 ## 快速导航
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-07-20`
+- 更新时间：`2026-07-22`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -114,15 +114,15 @@
 - 是否需要信用卡：通常不需要先绑卡即可试用 Free tier
 - 免费内容：
   - 官方长期提供 `Free` 档
-  - 文档明确列出多个模型的免费层，当前公开定价示例已推进到 `Gemini 3.5 Flash`、`Gemini 3.5 Live Translate`、`Gemini 3.1`、`Gemini 2.5`、`Gemini Embedding` 等模型
-  - `Grounding with Google Search` 免费额度按模型分列；例如部分 `Gemini 2.5 Flash / Flash-Lite` 路径仍显示免费档每天 `500 RPD`，Gemini 3.x 相关行则需要逐模型确认
+  - 文档明确列出多个模型的免费层，当前公开定价示例已推进到 `Gemini 3.6 Flash`、`Gemini 3.5 Flash`、`Gemini 3.5 Live Translate`、`Gemini 3.1`、`Gemini 2.5`、`Gemini Embedding` 等模型
+  - `Grounding with Google Search` 免费额度按模型分列；Gemini 3.x 付费档当前共享每月 `5,000` 次 free grounding prompts / requests，Free tier 是否支持需要逐模型确认
 - 使用限制：
   - 免费档按模型区分，不是所有模型都有 Free tier
   - 速率限制、上下文长度、是否启用搜索等都按模型单独计算
   - 免费档数据可能会用于 Google 产品改进，付费档默认不会
-  - AI Studio 新建 key 默认生成 `auth keys`；官方说明自 `2026-06-19` 起已拒绝不受限制的 `standard keys`，长期闲置的不受限制 `standard keys` 可能会更早被封锁，受显式限制的 `standard keys` 暂可继续使用，并计划在 `2026-09` 停用所有 `standard keys`
+  - AI Studio 新建 key 默认生成 `auth keys`；官方说明已拒绝不受限制的 `standard keys`，长期闲置的不受限制 `standard keys` 已自 `2026-05-07` 起被封锁，受显式限制的 `standard keys` 暂可继续使用，并计划在 `2026-09` 停用所有 `standard keys`
 - 有效期限：长期免费档，不是一次性赠金
-- OpenAI 兼容：官方提供 OpenAI compatibility 端点；但功能覆盖不等同于完整 OpenAI API
+- OpenAI 兼容：官方提供 OpenAI compatibility 端点，当前 base URL 为 `https://generativelanguage.googleapis.com/v1beta/openai/`；但功能覆盖不等同于完整 OpenAI API
 - Anthropic 兼容：否
 - 适合接入：`CC Switch`、OpenAI 兼容代理、部分 IDE 网关
 - 优惠策略：
@@ -537,8 +537,8 @@
 - 是否需要信用卡：通常不需要信用卡，但需要腾讯云账号与实名体系
 - 免费内容：
   - 官方计费页说明混元大模型相关能力将逐步迁移至 `TokenHub`，新增模型服务或更多模型能力应前往 TokenHub 开通
-  - 官方 TokenHub 新用户体验页当前列出语言模型、多模态理解、图片生成、视频生成、3D 生成等多类体验包；本期活动时间截至 `2026-12-31`，后续以页面展示或平台公告为准
-  - 语言模型和多模态理解模型均提供 `100万 Tokens`，有效期 `90 天`；`HY-Image-V3.0` 图像生成提供 `50 次生成 / 365 天`，视频生成体验包提供 `50 积分 / 365 天`，3D 生成体验包提供 `100 积分 / 365 天`
+  - 官方 TokenHub 新用户体验页于 `2026-07-21` 更新，当前列出语言模型、多模态理解、图片生成、视频生成、3D 生成等多类体验包；本期活动时间截至 `2026-12-31`，后续以页面展示或平台公告为准
+  - 语言模型和多模态理解模型均提供 `100万 Tokens`，有效期 `1 年`；`HY-Image-V3.0` 图像生成提供 `50 次生成 / 1 年`，视频生成体验包提供 `50 积分 / 1 年`，3D 生成体验包提供 `100 积分 / 1 年`
   - 完成实名认证后首次点击“立即使用”会发放免费体验额度
   - 当前混元生文免费额度为一次性共享资源包：列出的混元生文（不含 `Hunyuan-lite`）与混元多模态模型共享 `100万 tokens`，自开通日起 `1 年` 内有效
   - `Hunyuan-embedding` 单独列出 `100万 tokens / 1 年`
@@ -546,7 +546,7 @@
   - TokenHub 新用户包与混元存量入口资源包是不同入口 / 不同有效期的政策，免费资源包、共享 tokens、有效期、模型范围和开通入口以当前文档 / 控制台为准
   - 扣费顺序为“免费资源包 > 付费资源包 > 按量后付费”；资源包耗尽或到期后不会自动转入后付费，需要主动开通
   - 腾讯云 SecretId / SecretKey 可能需要经过兼容网关转换成工具期望的 bearer key
-- 有效期限：TokenHub 语言模型和多模态理解新用户体验包当前列为 `90 天`；图片 / 视频 / 3D 生成体验包当前列为 `365 天`；混元生文 / 多模态共享资源包当前列为 `1 年`
+- 有效期限：TokenHub 新用户体验包当前均列为 `1 年`；混元生文 / 多模态共享资源包当前列为 `1 年`
 - OpenAI 兼容：官方提供兼容文档，导入前需复核 base URL 和模型名
 - Anthropic 兼容：否
 - 适合接入：中国大陆用户、混元轻量文本生成、OpenAI 兼容客户端
