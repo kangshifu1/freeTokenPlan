@@ -38,7 +38,7 @@ This is a public repository for beginners who want a practical index of free AI 
 | [Baidu Qianfan](providers/baidu-qianfan/README.en.md) | New-user model token grants, commonly `1M tokens / 3 months` | Domestic models / OpenAI-compatible agents | Yes | [Qianfan Console](https://console.bce.baidu.com/qianfan/) |
 | [iFlytek Astron MaaS](providers/xfyun-maas/README.en.md) | Model square plus `Token Plan` / `Coding Plan` subscription access | Mainland China coding-tool integration | Yes | [Package Subscription](https://maas.xfyun.cn/packageSubscription) |
 | [Tencent Hunyuan / TokenHub](providers/tencent-hunyuan/README.en.md) | TokenHub language / multimodal-understanding trials provide `1M Tokens / 1 year`; image generation provides `50 generations / 1 year`, video generation `50 points / 1 year`, and 3D generation `100 points / 1 year`; legacy Hunyuan also has a shared `1M tokens / 1 year` package | Hunyuan text generation / TokenHub models | Yes | [TokenHub](https://console.cloud.tencent.com/tokenhub) |
-| [Volcengine Ark](providers/volcengine-ark/README.en.md) | Free inference / campaign quota / Agent Plan / Coding Plan | Doubao / DeepSeek / tool integration | Yes | [Ark Console](https://console.volcengine.com/ark/) |
+| [Volcengine Ark](providers/volcengine-ark/README.en.md) | Free inference / campaign quota; Doubao Search / `web_search` currently has `500` free uses per month, while `Agent Plan` / `Coding Plan` are separate package routes | Doubao / DeepSeek / tool integration | Yes | [Ark Console](https://console.volcengine.com/ark/) |
 
 ## Quick Navigation
 
@@ -51,7 +51,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-07-24`
+- Updated: `2026-07-28`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -155,7 +155,7 @@ Each provider has its own directory with:
 - Baidu Qianfan: official new-user free-quota docs now say first-time Qianfan activations from `2025-10-24 00:00:00` automatically receive eligible model quotas. The current page lists multiple models at `1M tokens` valid for `3 months`, including examples from `ERNIE-4.5-Turbo`, `DeepSeek-R1`, `DeepSeek-V3.1`, `Kimi-K2-Instruct`, and `Qwen3` / `Qwen3-Coder` families. Baidu documents an OpenAI-compatible V2 base URL at `https://qianfan.baidubce.com/v2`.
 - iFlytek Astron MaaS: the public model square is the discovery entry, but the current coding-tool path is documented through separate `Token Plan` and `Coding Plan` products. Both publish OpenAI- and Anthropic-compatible endpoints, use dedicated plan-specific API keys, and should not be confused with the regular MaaS inference base URL. `Token Plan` now lists refreshed model examples such as `GLM-5.2` / `GLM-5.1` / `GLM-5`, `DeepSeek-V4-Pro`, `DeepSeek-V4-Flash`, `DeepSeek-V3.2`, `Kimi-K2.6`, `Kimi-K2.5`, `MiniMax-M2.5`, `Qwen3.5` / `Qwen3.6`, `Qwen3-Coder-Next-FP8`, and `GLM-4.7-Flash`, with point-based usage and a `0.8` off-peak time coefficient. `Coding Plan` still uses `astron-code-latest` as the official default model identifier, adds a Responses-compatible endpoint, now lists `Kimi-K2.7-Code` alongside the refreshed model families, marks the first-month plan unavailable for purchase from `2026-04-09 00:00`, supports monthly renewed-version purchases from `2026-04-09` and quarterly renewed-version purchases from `2026-06-15`, and applies a `2026-06-18` off-peak coefficient to request limits. The `2026-07-23` model-deduction table lists `Kimi-K2.7-Code` as `xopkimi27code` with coefficient `5`. Treat it as an interactive coding-tool plan, not a backend batch API.
 - Tencent Hunyuan / TokenHub: the current billing overview says Hunyuan capabilities are gradually moving to TokenHub, so new model services or expanded capabilities should be checked in TokenHub instead of assuming the legacy Hunyuan console path. The official TokenHub new-user trial page was updated on `2026-07-21` and now lists language, multimodal-understanding, image-generation, video-generation, and 3D-generation packages, with the current activity scheduled through `2026-12-31` subject to page notices or platform announcements. Language and multimodal-understanding packages provide `1M Tokens` valid for `1 year`; `HY-Image-V3.0` image generation provides `50 generations / 1 year`, video-generation packages provide `50 points / 1 year`, and 3D-generation packages provide `100 points / 1 year`. First-time legacy Hunyuan activation can still issue a separate one-time shared `1M tokens` package valid for `1 year` across listed Hunyuan text and multimodal models, excluding `Hunyuan-lite`. Treat these as different entry points and validity windows; free packages are consumed before paid packages and postpaid billing, and exhausted or expired packages do not automatically roll into postpaid unless the user enables postpaid.
-- Volcengine Ark: free inference quota, safe-experience mode, and campaign credits may be available, while `Agent Plan` / `Coding Plan` are separate tool-integration and campaign routes. Current Ark tool docs cover Codex, Claude Code, OpenCode, and OpenClaw-style entry points; exact model, quota, endpoint, and overage behavior remain console-dependent.
+- Volcengine Ark: free inference quota, safe-experience mode, and campaign credits may be available. Current official docs also show `500` free uses per month for Doubao Search / `web_search`; treat that as a search-tool service quota, not generic inference quota. `Agent Plan` / `Coding Plan` are separate package routes, so package quota, supported tools, models, endpoints, and overage behavior should be confirmed on the current plan page and console.
 
 ## About the CC Switch Templates
 
@@ -236,5 +236,6 @@ Before importing into a live `CC Switch` build, verify field names against your 
   - [TokenHub new-user trial package](https://cloud.tencent.com/document/product/1823/130053)
 - Volcengine Ark
   - [Docs](https://www.volcengine.com/docs/82379)
+  - [Doubao Search / web_search](https://www.volcengine.com/docs/82379/2309827)
 - OmniRoute
   - [GitHub](https://github.com/diegosouzapw/OmniRoute)
