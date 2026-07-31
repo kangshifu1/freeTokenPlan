@@ -27,7 +27,7 @@ This is a public repository for beginners who want a practical index of free AI 
 | [Hugging Face](providers/huggingface/README.en.md) | `$0.10/month` Inference Providers credits for free users | API checks / demos | Yes | [User Access Tokens](https://huggingface.co/settings/tokens) |
 | [Groq](providers/groq/README.en.md) | Free Plan RPM/RPD/TPM/TPD limits by model | Low-latency OpenAI-compatible calls | Yes | [Groq Console](https://console.groq.com/keys) |
 | [Mistral](providers/mistral/README.en.md) | Free plan / evaluation mode | Model-style testing | Yes | [Mistral Console](https://console.mistral.ai/) |
-| [Cerebras](providers/cerebras/README.en.md) | Public endpoints free to use, subject to rate limits | High-speed inference trials | Yes | [Cerebras Inference](https://inference.cerebras.ai/) |
+| [Cerebras](providers/cerebras/README.en.md) | `$5` Free Trial credits after adding a verified payment method, valid for `30` days | High-speed inference trials | Yes | [Cerebras Inference](https://inference.cerebras.ai/) |
 | [NVIDIA NIM](providers/nvidia-nim/README.en.md) | Free serverless NIM development calls | OpenAI-style prototypes | Yes | [NVIDIA Build](https://build.nvidia.com/) |
 | [GitHub Models](providers/github-models/README.en.md) | Free playground / API limits | GitHub-account prototypes | Yes | [GitHub Models](https://github.com/marketplace/models) |
 | [Vercel AI Gateway](providers/vercel-ai-gateway/README.en.md) | Free-tier `$5/month` AI Gateway credits, limited to eligible models | Vercel / AI SDK projects | Yes | [Vercel Dashboard](https://vercel.com/dashboard) |
@@ -51,7 +51,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-07-30`
+- Updated: `2026-07-31`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -144,7 +144,7 @@ Each provider has its own directory with:
 - Hugging Face: Inference Providers currently give free users `$0.10` monthly credits. Those credits apply to serverless Inference Providers calls routed through Hugging Face and do not apply when using custom third-party provider keys, so this is best treated as a smoke-test or demo route.
 - Groq: official docs provide OpenAI-compatible access and now publish a Free Plan Limits table by model. Example Free Plan limits include `30 RPM / 14.4K RPD / 6K TPM / 500K TPD` for `llama-3.1-8b-instant`, `30 RPM / 1K RPD / 12K TPM / 100K TPD` for `llama-3.3-70b-versatile`, and `30 RPM / 1K RPD / 8K TPM / 200K TPD` for the current `openai/gpt-oss-*` models; exact account limits still belong on the console Limits page.
 - Mistral: the public pricing page still lists Mistral Free with limited Vibe for code access, and the tier docs say API Free mode is enabled by default with limited limits for evaluation and prototyping.
-- Cerebras: the docs still show OpenAI SDK usage, and the current models page says public endpoints are free to use subject to rate limits. The current public production endpoint is `gpt-oss-120b`, with `gemma-4-31b` and `zai-glm-4.7` marked as preview.
+- Cerebras: the docs still show OpenAI SDK / OpenAI-compatible usage, but the current free path is now Free Trial credits: new accounts receive `$5` after adding a verified payment method, the credits expire after `30` days, and Playground / API access remains inactive if the payment method step is skipped. Free Trial limits currently list `5 RPM` / `30K TPM` / `1M TPH` / `1M TPD` for `gpt-oss-120b`, `zai-glm-4.7`, and `gemma-4-31b`; the current public production endpoint is `gpt-oss-120b`, `gemma-4-31b` remains preview, and `zai-glm-4.7` is scheduled for deprecation on `2026-08-17`.
 - NVIDIA NIM: NVIDIA Build exposes free serverless NIM APIs for development and prototyping, with OpenAI-style chat completions at `https://integrate.api.nvidia.com/v1`; production capacity and limits are account/model-page dependent.
 - GitHub Models: free playground and API usage are available with model-tier-specific limits. Under Copilot Free, common free API tiers include `15 RPM / 150 RPD / 5 concurrent` for Low models, `10 RPM / 50 RPD / 2 concurrent` for High models, and `15 RPM / 150 RPD / 5 concurrent` for Embedding models; some named models such as `DeepSeek-R1` and `xAI Grok-3` have lower model-specific limits in the official table. Higher-tier rows such as `Azure OpenAI Global Standard`, `Azure OpenAI Data Zone Standard`, and `o1` / `o3` / `gpt-5` families are marked not applicable to Copilot Free.
 - Vercel AI Gateway: team accounts get a free tier with `$5/month` AI Gateway credits. Credits start on the first AI Gateway request, and the monthly free credit no longer applies after purchasing credits; free credits only apply to eligible models, and BYOK provider keys are a paid feature, so treat it as a project gateway rather than a generic provider.
@@ -198,6 +198,8 @@ Before importing into a live `CC Switch` build, verify field names against your 
   - [Pricing](https://mistral.ai/pricing)
 - Cerebras
   - [Introduction](https://inference-docs.cerebras.ai/introduction)
+  - [Account & Billing](https://inference-docs.cerebras.ai/console/account-billing)
+  - [Rate Limits](https://inference-docs.cerebras.ai/support/rate-limits)
   - [Models](https://inference-docs.cerebras.ai/models)
 - DashScope
   - [Pricing](https://help.aliyun.com/zh/model-studio/model-pricing)

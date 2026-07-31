@@ -27,7 +27,7 @@
 | [Hugging Face](providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits | API 联调 / demo | 需要 | [User Access Tokens](https://huggingface.co/settings/tokens) |
 | [Groq](providers/groq/README.md) | Free Plan 按模型 RPM/RPD/TPM/TPD 限流 | 低延迟 OpenAI 兼容调用 | 需要 | [Groq Console](https://console.groq.com/keys) |
 | [Mistral](providers/mistral/README.md) | Free 计划 / 评估模式 | 模型风格试用 | 需要 | [Mistral Console](https://console.mistral.ai/) |
-| [Cerebras](providers/cerebras/README.md) | 公开端点免费使用，受速率限制约束 | 高速推理试用 | 需要 | [Cerebras Inference](https://inference.cerebras.ai/) |
+| [Cerebras](providers/cerebras/README.md) | 验证支付方式后提供 `$5` Free Trial credits，`30` 天有效 | 高速推理试用 | 需要 | [Cerebras Inference](https://inference.cerebras.ai/) |
 | [NVIDIA NIM](providers/nvidia-nim/README.md) | 免费 serverless NIM 开发调用 | OpenAI 风格原型验证 | 需要 | [NVIDIA Build](https://build.nvidia.com/) |
 | [GitHub Models](providers/github-models/README.md) | 免费 playground / API 限额 | GitHub 账号原型测试 | 需要 | [GitHub Models](https://github.com/marketplace/models) |
 | [Vercel AI Gateway](providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits，且只覆盖 eligible models | Vercel / AI SDK 项目 | 需要 | [Vercel Dashboard](https://vercel.com/dashboard) |
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-07-30`
+- 更新时间：`2026-07-31`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -269,15 +269,15 @@
 - 官网：[Cerebras Inference Docs](https://inference-docs.cerebras.ai/introduction)
 - 类型：模型 API
 - 注册方式：注册后创建 API Key
-- 是否需要信用卡：通常可先试用
+- 是否需要信用卡：需要添加已验证的支付方式后激活 Free Trial credits；不额外购买 credits 不会收费
 - 免费内容：
-  - 官方模型页说明公开端点可免费使用，但受速率限制约束
+  - 官方账号 / 计费与 Rate Limits 文档说明：新账号添加已验证支付方式后可获得 `$5` Free Trial credits，发放后 `30` 天有效，可用于所有 public models
   - 官方提供 OpenAI SDK / OpenAI compatible 用法
 - 使用限制：
-  - 官方没有在统一页面给出固定的长期免费 token 数字
-  - 更适合作为“可试用的高速推理入口”，具体额度看控制台
-  - 官方模型页当前列出公开生产端点 `gpt-oss-120b`，并标注 `gemma-4-31b` 与 `zai-glm-4.7` 为预览模型；默认模型应以模型页为准
-- 有效期限：以控制台和活动策略为准
+  - Free Trial 层当前对 `gpt-oss-120b`、`zai-glm-4.7`、`gemma-4-31b` 列出 `5 RPM` / `30K TPM` / `1M TPH` / `1M TPD` 的共享层级限制，具体账号仍以控制台 Limits 为准
+  - 未在注册时添加支付方式时，Playground 和 API access 会保持 inactive
+  - 官方模型页当前列出公开生产端点 `gpt-oss-120b`，并标注 `gemma-4-31b` 与 `zai-glm-4.7` 为预览模型；变更日志说明 `zai-glm-4.7` 计划在 `2026-08-17` 下线，默认模型应以模型页为准
+- 有效期限：Free Trial credits 发放后 `30` 天有效；后续 Pay-as-you-go / Developer 层以控制台为准
 - OpenAI 兼容：是
 - Anthropic 兼容：否
 - 适合接入：`Codex`、`CC Switch`、OpenAI 兼容客户端
@@ -287,6 +287,8 @@
 - 官方文档：
   - [Introduction](https://inference-docs.cerebras.ai/introduction)
   - [OpenAI SDK](https://inference-docs.cerebras.ai/resources/openai)
+  - [Account & Billing](https://inference-docs.cerebras.ai/console/account-billing)
+  - [Rate Limits](https://inference-docs.cerebras.ai/support/rate-limits)
   - [Models](https://inference-docs.cerebras.ai/models)
 
 ### 8. DashScope / 阿里云百炼
@@ -913,6 +915,8 @@ export ANTHROPIC_AUTH_TOKEN=your-token
 - Cerebras
   - [Introduction](https://inference-docs.cerebras.ai/introduction)
   - [OpenAI SDK](https://inference-docs.cerebras.ai/resources/openai)
+  - [Account & Billing](https://inference-docs.cerebras.ai/console/account-billing)
+  - [Rate Limits](https://inference-docs.cerebras.ai/support/rate-limits)
   - [Models](https://inference-docs.cerebras.ai/models)
 - DashScope / 百炼
   - [Pricing](https://help.aliyun.com/zh/model-studio/model-pricing)
