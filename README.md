@@ -29,7 +29,7 @@
 | [Mistral](providers/mistral/README.md) | Free 计划 / 评估模式 | 模型风格试用 | 需要 | [Mistral Console](https://console.mistral.ai/) |
 | [Cerebras](providers/cerebras/README.md) | 验证支付方式后提供 `$5` Free Trial credits，`30` 天有效 | 高速推理试用 | 需要 | [Cerebras Inference](https://inference.cerebras.ai/) |
 | [NVIDIA NIM](providers/nvidia-nim/README.md) | 免费 serverless NIM 开发调用 | OpenAI 风格原型验证 | 需要 | [NVIDIA Build](https://build.nvidia.com/) |
-| [GitHub Models](providers/github-models/README.md) | 免费 playground / API 限额 | GitHub 账号原型测试 | 需要 | [GitHub Models](https://github.com/marketplace/models) |
+| [GitHub Models](providers/github-models/README.md) | 已于 `2026-07-30` 全面退役，playground / catalog / API / BYOK 均不可用 | 仅作历史记录 | 不适用 | [GitHub Docs](https://docs.github.com/en/github-models) |
 | [Vercel AI Gateway](providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits，且只覆盖 eligible models | Vercel / AI SDK 项目 | 需要 | [Vercel Dashboard](https://vercel.com/dashboard) |
 | [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算；部分新模型仅 Workers Paid 可用 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
 | [DashScope / 百炼](providers/dashscope/README.md) | 区域化新人实时推理免费额度，按地域与部署范围区分 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
@@ -66,11 +66,9 @@
    适合“一个账号试很多模型”，并且有大量 `:free` 模型。
 3. [NVIDIA NIM](https://build.nvidia.com/)
    适合试用 NVIDIA 托管模型和 OpenAI 风格 API，官方 Build 页面提供免费开发调用入口。
-4. [GitHub Models](https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models)
-   适合已有 GitHub 账号的原型验证，免费 API 有明确 rate limit。
-5. [Cohere](https://docs.cohere.com/docs/rate-limits)
+4. [Cohere](https://docs.cohere.com/docs/rate-limits)
    适合轻量测试，官方明确给出试用期速率限制。
-6. [DashScope / 阿里云百炼](https://help.aliyun.com/zh/model-studio/model-pricing)
+5. [DashScope / 阿里云百炼](https://help.aliyun.com/zh/model-studio/model-pricing)
    适合中国大陆用户，控制台、文档、兼容模式都比较完整。
 
 如果你要把这些额度接入 IDE / agent 工具，优先路线是：
@@ -375,29 +373,22 @@
 
 - 官网：[GitHub Models](https://docs.github.com/en/github-models)
 - 类型：模型 API / Playground
-- 注册方式：GitHub 账号登录后使用 Models playground 或 API
-- 是否需要信用卡：免费 API 用量通常不需要先绑卡；付费扩容另行开通
+- 注册方式：不再适用
+- 是否需要信用卡：不再适用
 - 免费内容：
-  - 官方文档说明 playground 和 API 有免费使用额度
-  - 免费 API 按模型 tier 限制 RPM、RPD、tokens/request 和并发请求
-  - Copilot Free 下普通 `Low` 模型当前免费 API 限制为 `15 RPM`、`150 RPD`、`8000 input / 4000 output tokens per request`、`5` 并发请求
-  - Copilot Free 下 `High` 模型当前免费 API 限制为 `10 RPM`、`50 RPD`、`8000 input / 4000 output tokens per request`、`2` 并发请求
-  - Copilot Free 下 `Embedding` 模型当前免费 API 限制为 `15 RPM`、`150 RPD`、`64000 tokens/request`、`5` 并发请求
-  - Copilot Free 下 `DeepSeek-R1` / `DeepSeek-R1-0528` / `MAI-DS-R1` 当前限制为 `1 RPM`、`8 RPD`、`4000 input / 4000 output tokens/request`、`1` 并发；`xAI Grok-3` 当前限制为 `1 RPM`、`15 RPD`、`1` 并发
-  - `Azure OpenAI Global Standard`、`Azure OpenAI Data Zone Standard`、`o1` / `o3` / `gpt-5` 系列等更高层级行在官方表中对 Copilot Free 标为不适用，不能当作免费账户额度
+  - 官方文档当前说明 GitHub Models 已于 `2026-07-30` 全面退役
+  - Playground、model catalog、inference API 和 BYOK 均已不再向任何客户提供
 - 使用限制：
-  - Low / High / Embedding 以及部分具名模型的 tier 限额不同
-  - 生产级更高限额需要开通 paid usage 或自带 provider key
-- 有效期限：长期可用，但限额可能调整
-- OpenAI 兼容：官方示例可用 OpenAI SDK，base URL 为 `https://models.github.ai/inference`
-- Anthropic 兼容：否
-- 适合接入：`Codex`、`CC Switch`、OpenAI 兼容客户端
+  - 不应再把 GitHub Models 作为可用免费额度、免费 API 或 BYOK 路由来源
+  - GitHub Models 与 GitHub Copilot 是不同服务；Copilot 是否可用应单独查 Copilot 文档
+- 有效期限：已退役
+- OpenAI 兼容：历史端点已不可作为当前可用接入点记录
+- Anthropic 兼容：不适用
+- 适合接入：不再适合接入；仅保留历史目录，避免旧链接和旧模板被误用
 - 优惠策略：
-  - 适合 GitHub 用户低成本试模型
-  - 先用低成本 / 低 tier 模型做连通性测试
+  - 新项目需要模型目录时，按官方建议转向 Azure AI Foundry 或 GitHub Copilot 等当前服务
 - 官方文档：
-  - [Prototyping with AI models](https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models)
-  - [GitHub Models](https://github.com/marketplace/models)
+  - [GitHub Models](https://docs.github.com/en/github-models)
 
 ### 12. Vercel AI Gateway
 
@@ -634,9 +625,8 @@
 1. `Gemini API`
 2. `OpenRouter free models`
 3. `NVIDIA NIM`
-4. `GitHub Models`
-5. `Groq`
-6. `DashScope`
+4. `Groq`
+5. `DashScope`
 
 ### 路线 C：中国大陆网络优先
 
@@ -691,7 +681,6 @@ brew install --cask cc-switch
 - `DashScope`
 - `SiliconFlow`
 - `NVIDIA NIM`
-- `GitHub Models`
 - `百度千帆`
 - `腾讯混元`
 - `火山方舟`
@@ -784,9 +773,8 @@ wire_api = "responses"
 1. `DashScope`：因为官方明确给了 `OpenAI Responses` 文档
 2. `OpenRouter`：因为免费模型多，但更建议配合适配层
 3. `NVIDIA NIM`：适合 OpenAI 风格 chat/completions 原型验证
-4. `GitHub Models`：适合已有 GitHub token 的轻量测试
-5. `Groq`：适合低延迟交互
-6. `Gemini`：更适合通过中间层统一接入
+4. `Groq`：适合低延迟交互
+5. `Gemini`：更适合通过中间层统一接入
 
 ## 如何在 Claude Code 中使用
 
@@ -934,8 +922,7 @@ export ANTHROPIC_AUTH_TOKEN=your-token
   - [NVIDIA Build](https://build.nvidia.com/)
   - [NVIDIA NIM](https://developer.nvidia.com/nim)
 - GitHub Models
-  - [Prototyping with AI models](https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models)
-  - [GitHub Models marketplace](https://github.com/marketplace/models)
+  - [GitHub Models retired notice](https://docs.github.com/en/github-models)
 - Vercel AI Gateway
   - [AI Gateway](https://vercel.com/docs/ai-gateway)
   - [Pricing](https://vercel.com/docs/ai-gateway/pricing)

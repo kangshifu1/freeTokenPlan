@@ -29,7 +29,7 @@ This is a public repository for beginners who want a practical index of free AI 
 | [Mistral](providers/mistral/README.en.md) | Free plan / evaluation mode | Model-style testing | Yes | [Mistral Console](https://console.mistral.ai/) |
 | [Cerebras](providers/cerebras/README.en.md) | `$5` Free Trial credits after adding a verified payment method, valid for `30` days | High-speed inference trials | Yes | [Cerebras Inference](https://inference.cerebras.ai/) |
 | [NVIDIA NIM](providers/nvidia-nim/README.en.md) | Free serverless NIM development calls | OpenAI-style prototypes | Yes | [NVIDIA Build](https://build.nvidia.com/) |
-| [GitHub Models](providers/github-models/README.en.md) | Free playground / API limits | GitHub-account prototypes | Yes | [GitHub Models](https://github.com/marketplace/models) |
+| [GitHub Models](providers/github-models/README.en.md) | Retired on `2026-07-30`; playground, catalog, API, and BYOK are no longer available | Historical reference only | N/A | [GitHub Docs](https://docs.github.com/en/github-models) |
 | [Vercel AI Gateway](providers/vercel-ai-gateway/README.en.md) | Free-tier `$5/month` AI Gateway credits, limited to eligible models | Vercel / AI SDK projects | Yes | [Vercel Dashboard](https://vercel.com/dashboard) |
 | [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.en.md) | Daily `10,000` Neurons free allocation, model-cost dependent; some new models require Workers Paid | Workers / edge demos | Yes | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
 | [DashScope / Bailian](providers/dashscope/README.en.md) | Regional new-user realtime inference quota, split by region and deployment scope | Mainland China / `Codex` / `Claude Code` | Yes | [DashScope Console](https://dashscope.console.aliyun.com/) |
@@ -63,9 +63,8 @@ If you just want to get started fast, start with:
 1. [Google Gemini API](https://ai.google.dev/gemini-api/docs/pricing)
 2. [OpenRouter](https://openrouter.ai/docs/quickstart)
 3. [NVIDIA NIM](https://build.nvidia.com/)
-4. [GitHub Models](https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models)
-5. [Cohere](https://docs.cohere.com/docs/rate-limits)
-6. [DashScope / Alibaba Cloud Bailian](https://help.aliyun.com/zh/model-studio/model-pricing)
+4. [Cohere](https://docs.cohere.com/docs/rate-limits)
+5. [DashScope / Alibaba Cloud Bailian](https://help.aliyun.com/zh/model-studio/model-pricing)
 
 Recommended tool path:
 
@@ -146,7 +145,7 @@ Each provider has its own directory with:
 - Mistral: the public pricing page still lists Mistral Free with limited Vibe for code access, and the tier docs say API Free mode is enabled by default with limited limits for evaluation and prototyping.
 - Cerebras: the docs still show OpenAI SDK / OpenAI-compatible usage, but the current free path is now Free Trial credits: new accounts receive `$5` after adding a verified payment method, the credits expire after `30` days, and Playground / API access remains inactive if the payment method step is skipped. Free Trial limits currently list `5 RPM` / `30K TPM` / `1M TPH` / `1M TPD` for `gpt-oss-120b`, `zai-glm-4.7`, and `gemma-4-31b`; the current public production endpoint is `gpt-oss-120b`, `gemma-4-31b` remains preview, and `zai-glm-4.7` is scheduled for deprecation on `2026-08-17`.
 - NVIDIA NIM: NVIDIA Build exposes free serverless NIM APIs for development and prototyping, with OpenAI-style chat completions at `https://integrate.api.nvidia.com/v1`; production capacity and limits are account/model-page dependent.
-- GitHub Models: free playground and API usage are available with model-tier-specific limits. Under Copilot Free, common free API tiers include `15 RPM / 150 RPD / 5 concurrent` for Low models, `10 RPM / 50 RPD / 2 concurrent` for High models, and `15 RPM / 150 RPD / 5 concurrent` for Embedding models; some named models such as `DeepSeek-R1` and `xAI Grok-3` have lower model-specific limits in the official table. Higher-tier rows such as `Azure OpenAI Global Standard`, `Azure OpenAI Data Zone Standard`, and `o1` / `o3` / `gpt-5` families are marked not applicable to Copilot Free.
+- GitHub Models: GitHub says the service was fully retired on `2026-07-30`. The playground, model catalog, inference API, and BYOK are no longer available, so this repo keeps the directory only as historical reference.
 - Vercel AI Gateway: team accounts get a free tier with `$5/month` AI Gateway credits. Credits start on the first AI Gateway request, and the monthly free credit no longer applies after purchasing credits; free credits only apply to eligible models, and BYOK provider keys are a paid feature, so treat it as a project gateway rather than a generic provider.
 - Cloudflare Workers AI: Workers AI still includes a free daily allocation of `10,000` Neurons, resetting daily at `00:00 UTC`. Cloudflare's current pricing page explains that model-specific input/output and related usage are converted into Neurons and shows example costs by model, so check the target model's Neurons cost before treating the free allocation as usable volume. The same pricing page currently marks `@cf/moonshotai/kimi-k2.6`, `@cf/moonshotai/kimi-k2.7-code`, and `@cf/zai-org/glm-5.2` as unavailable on Workers Free and requiring Workers Paid.
 - DashScope / Bailian: free quota is regional and activity-based. The official new-user free-quota FAQ says first activation automatically issues eligible model quotas, with the main mainland path limited to China North `2` (Beijing) and China mainland deployment scope; the pricing page also lists some Singapore-region / international-deployment models with free quota. Current validity is `30-90 days`, with first-time activations from `2025-09-08 11:00` onward receiving `90-day` validity.
@@ -218,8 +217,7 @@ Before importing into a live `CC Switch` build, verify field names against your 
   - [NVIDIA Build](https://build.nvidia.com/)
   - [NVIDIA NIM](https://developer.nvidia.com/nim)
 - GitHub Models
-  - [Prototyping with AI models](https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models)
-  - [GitHub Models marketplace](https://github.com/marketplace/models)
+  - [GitHub Models retired notice](https://docs.github.com/en/github-models)
 - Vercel AI Gateway
   - [AI Gateway](https://vercel.com/docs/ai-gateway)
   - [Pricing](https://vercel.com/docs/ai-gateway/pricing)

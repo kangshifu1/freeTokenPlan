@@ -21,22 +21,22 @@
     "needs_local_routing": true
   },
   "free_tier": {
-    "summary": "Free playground and API usage are available with model-tier-specific RPM, RPD, token, and concurrency limits.",
+    "summary": "GitHub Models was fully retired on 2026-07-30; playground, catalog, API, and BYOK are no longer available.",
     "limit_window": "per-minute-and-daily",
-    "reset_rule": "official GitHub Models limits apply",
-    "expires": "long-term-available"
+    "reset_rule": "retired-service-no-longer-applies",
+    "expires": "retired"
   },
   "cc_switch": {
     "import_mode": "universal_provider",
     "model_map": [
       {
         "label": "starter-example",
-        "model": "openai/gpt-4.1-mini"
+        "model": "historical-reference-only"
       }
     ]
   },
   "notes": [
-    "Use a current GitHub Models model ID before import.",
-    "Free limits differ by model tier and can change without notice."
+    "Do not import this provider as an active route.",
+    "Keep only for historical reference."
   ]
 }
