@@ -12,7 +12,7 @@
 6. Create an API key
 7. Copy the key
 8. Save it locally as `DASHSCOPE_API_KEY`
-9. Check the current free models, new-user quota, `30-90 day` validity window, the main China North `2` (Beijing) route, and any Singapore-region / international-deployment models listed in pricing; if needed, open [new-user free quota](https://help.aliyun.com/zh/model-studio/new-free-quota) to verify claim rules
+9. Check the current free models, new-user quota, the main `90-day` validity rule, and the main China North `2` (Beijing) route; if needed, open [new-user free quota](https://help.aliyun.com/zh/model-studio/new-free-quota) and the pricing tables to verify whether the target model has Singapore-region / international-deployment free quota
 10. On the model usage page, enable the stop-after-free-quota control to avoid paid overage after the free quota is exhausted
 11. Record both OpenAI-compatible and Anthropic-compatible endpoints if needed
 
