@@ -31,7 +31,7 @@
 | [NVIDIA NIM](providers/nvidia-nim/README.md) | 免费 serverless NIM 开发调用 | OpenAI 风格原型验证 | 需要 | [NVIDIA Build](https://build.nvidia.com/) |
 | [GitHub Models](providers/github-models/README.md) | 已于 `2026-07-30` 全面退役，playground / catalog / API / BYOK 均不可用 | 仅作历史记录 | 不适用 | [GitHub Docs](https://docs.github.com/en/github-models) |
 | [Vercel AI Gateway](providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits，且只覆盖 eligible models | Vercel / AI SDK 项目 | 需要 | [Vercel Dashboard](https://vercel.com/dashboard) |
-| [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算；部分新模型仅 Workers Paid 可用 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
+| [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算；部分新模型仅 Workers Paid 或预付 AI Gateway credits 可用 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
 | [DashScope / 百炼](providers/dashscope/README.md) | 区域化新人实时推理免费额度，按地域与部署范围区分 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
 | [SiliconFlow](providers/siliconflow/README.md) | 实名认证后免费模型，CC Switch 注册路径提示 `16元` 赠送余额 | 中国区多模型试用 | 需要 | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
 | [Agnes AI](providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-07-31`
+- 更新时间：`2026-08-08`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -427,8 +427,8 @@
   - 官方定价页说明 Workers AI 基于 Neurons 计费，并提供每日 `10,000` Neurons 免费 allocation
   - Cloudflare 当前按模型展示示例成本；文本、图片、音频等模型的输入/输出或推理量会换算为 Neurons
   - 不同模型消耗的 Neurons 不同，同样 `10,000` Neurons 对不同模型代表的请求量不同
-  - 定价页当前明确：`@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2` 不在 Workers Free plan 可用范围内，需要 Workers Paid plan
-  - 超过免费 allocation 后需要 Workers Paid plan
+  - 定价页当前明确：`@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2` 不在 Workers Free plan 可用范围内，需要 Workers Paid plan 或预付 AI Gateway credits
+  - 超过免费 allocation 后需要 Workers Paid plan 或预付 AI Gateway credits
 - 使用限制：
   - 更适合 Cloudflare Worker / REST API / 边缘 demo
   - 如果要接通通用 agent 工具，需要确认当前 OpenAI compatible endpoint
