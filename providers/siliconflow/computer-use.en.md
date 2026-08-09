@@ -6,7 +6,7 @@
 
 1. Open [https://cloud.siliconflow.cn/](https://cloud.siliconflow.cn/)
 2. Register or sign in
-3. Complete real-name verification; an official update says unverified users cannot use platform functions from `2026-05-15`
+3. Complete real-name verification if the console requires it or if you are using the promoted `CC Switch` reward path
 4. Open the API keys page
 5. Create a key
 6. Copy the key

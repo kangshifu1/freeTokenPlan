@@ -33,7 +33,7 @@
 | [Vercel AI Gateway](providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits，且只覆盖 eligible models | Vercel / AI SDK 项目 | 需要 | [Vercel Dashboard](https://vercel.com/dashboard) |
 | [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算；部分新模型仅 Workers Paid 或预付 AI Gateway credits 可用 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
 | [DashScope / 百炼](providers/dashscope/README.md) | 区域化新人实时推理免费额度，按地域与部署范围区分 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
-| [SiliconFlow](providers/siliconflow/README.md) | 实名认证后免费模型，CC Switch 注册路径提示 `16元` 赠送余额 | 中国区多模型试用 | 需要 | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
+| [SiliconFlow](providers/siliconflow/README.md) | 以控制台 / 模型广场为准的免费模型，CC Switch 实名注册路径提示 `16元` 赠送余额 | 中国区多模型试用 | 需要 | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
 | [Agnes AI](providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
 | [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月` | 国产模型 / OpenAI 兼容 agent | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
 | [讯飞星辰 MaaS](providers/xfyun-maas/README.md) | 模型广场 + `Token Plan` / `Coding Plan` 订阅接入 | 中国大陆编程工具接入 | 需要 | [套餐订阅](https://maas.xfyun.cn/packageSubscription) |
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-08-08`
+- 更新时间：`2026-08-09`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -272,7 +272,7 @@
   - 官方账号 / 计费与 Rate Limits 文档说明：新账号添加已验证支付方式后可获得 `$5` Free Trial credits，发放后 `30` 天有效，可用于所有 public models
   - 官方提供 OpenAI SDK / OpenAI compatible 用法
 - 使用限制：
-  - Free Trial 层当前对 `gpt-oss-120b`、`zai-glm-4.7`、`gemma-4-31b` 列出 `5 RPM` / `30K TPM` / `1M TPH` / `1M TPD` 的共享层级限制，具体账号仍以控制台 Limits 为准
+  - Free Trial 层当前对 `gpt-oss-120b`、`zai-glm-4.7`、`gemma-4-31b` 列出 `5 RPM` / `30K TPM` / `1M TPH` / `1M TPD`；但官方 Rate Limits 现在把 token 限制说明为独立的 uncached token limit 与 total token limit 双桶模型，uncached token 限制可见性会在 `2026-08-17` 前逐步显示到控制台，具体账号仍以控制台 Limits 为准
   - 未在注册时添加支付方式时，Playground 和 API access 会保持 inactive
   - 官方模型页当前列出公开生产端点 `gpt-oss-120b`，并标注 `gemma-4-31b` 与 `zai-glm-4.7` 为预览模型；变更日志说明 `zai-glm-4.7` 计划在 `2026-08-17` 下线，默认模型应以模型页为准
 - 有效期限：Free Trial credits 发放后 `30` 天有效；后续 Pay-as-you-go / Developer 层以控制台为准
@@ -324,12 +324,11 @@
 - 注册方式：账户注册并创建 API Key
 - 是否需要信用卡：通常不需要
 - 免费内容：
-  - 官方模型广场会对部分模型标注 `免费`
-  - 官方文档说明实名认证后可使用免费模型
+  - 官方 Quickstart 引导到模型广场查看当前模型可用性、价格和用户最高限速，部分模型可能在控制台标注为 `免费`
   - 官方 `CC Switch` 接入教程当前提示：通过其注册链接注册并完成实名认证后可获 `16元` 赠送余额
-  - 官方还专门写了 [Claude Code 接入教程](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
+  - 官方还专门写了 [Claude Code 接入教程](https://docs.siliconflow.cn/cn/usercases/use-siliconcloud-in-ClaudeCode)
 - 使用限制：
-  - 官方公告说明从 `2026-05-15` 起，未完成实名认证用户无法使用平台功能，且余额会被冻结，需完成实名认证后恢复
+  - 当前实名认证 FAQ 说明未实名会影响账户充值和开票；`CC Switch` 推广注册路径仍要求完成实名认证后领取 `16元` 赠送余额
   - 免费额度通常按“具体模型是否免费”来定，不是统一全站赠送
   - `16元` 赠送余额属于官方 `CC Switch` 注册路径说明，是否到账仍需以当前注册页面和账户后台为准
   - 哪些模型免费、免费多久，变化会比较快
@@ -343,9 +342,10 @@
 - 官方文档：
   - [Docs Home](https://docs.siliconflow.cn/)
   - [Platform Introduction](https://docs.siliconflow.cn/cn/userguide/introduction)
-  - [Use with Claude Code](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
-  - [Use with CC Switch](https://docs.siliconflow.cn/cn/userguide/introduction/use-with-cc-switch)
-  - [Updates](https://docs.siliconflow.cn/cn/updates/20250515)
+  - [Quickstart](https://docs.siliconflow.cn/cn/userguide/quickstart)
+  - [实名认证 FAQ](https://docs.siliconflow.cn/cn/faqs/authentication)
+  - [Use with Claude Code](https://docs.siliconflow.cn/cn/usercases/use-siliconcloud-in-ClaudeCode)
+  - [Use with CC Switch](https://docs.siliconflow.cn/cn/usercases/use-siliconcloud-in-ccswitch)
   - [Models](https://cloud.siliconflow.cn/models)
 
 ### 10. NVIDIA NIM
@@ -915,8 +915,10 @@ export ANTHROPIC_AUTH_TOKEN=your-token
   - [Anthropic compatibility](https://help.aliyun.com/zh/model-studio/anthropic-api)
 - SiliconFlow
   - [Docs](https://docs.siliconflow.cn/)
-  - [Use with Claude Code](https://docs.siliconflow.cn/quickstart/use_with_claude_code)
-  - [Use with CC Switch](https://docs.siliconflow.cn/cn/userguide/introduction/use-with-cc-switch)
+  - [Quickstart](https://docs.siliconflow.cn/cn/userguide/quickstart)
+  - [Real-name verification FAQ](https://docs.siliconflow.cn/cn/faqs/authentication)
+  - [Use with Claude Code](https://docs.siliconflow.cn/cn/usercases/use-siliconcloud-in-ClaudeCode)
+  - [Use with CC Switch](https://docs.siliconflow.cn/cn/usercases/use-siliconcloud-in-ccswitch)
 - Agnes AI
   - [Homepage](https://agnes-ai.com/)
   - [Quick start](https://agnes-ai.com/doc/quick-start)

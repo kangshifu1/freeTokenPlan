@@ -11,7 +11,7 @@
 5. Create a key
 6. Copy the key
 7. Save it locally as `CEREBRAS_API_KEY`
-8. Check the OpenAI SDK, Account & Billing, Rate Limits, and official Models pages in the docs to confirm Free Trial terms, rate limits, model status, and deprecation notices
+8. Check the OpenAI SDK, Account & Billing, Rate Limits, and official Models pages in the docs to confirm Free Trial terms, dual-bucket uncached / total token limits, model status, and deprecation notices
 9. Record the compatible routing details for `CC Switch`
 
 ## Human Takeover Points
@@ -23,5 +23,5 @@
 ## Final Checklist
 
 - Current model IDs recorded
-- Current Free Trial credits, validity, and rate-limit note recorded
+- Current Free Trial credits, validity, and dual-bucket rate-limit note recorded
 - Default model plus production / preview status and `zai-glm-4.7` deprecation date confirmed against the official Models / Change Log pages

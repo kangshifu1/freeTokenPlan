@@ -6,7 +6,7 @@
 
 1. 打开 [https://cloud.siliconflow.cn/](https://cloud.siliconflow.cn/)
 2. 注册或登录
-3. 按平台提示完成实名认证；官方公告说明自 `2026-05-15` 起未实名用户无法使用平台功能
+3. 如控制台要求，或使用官方 `CC Switch` 赠送余额路径，则按提示完成实名认证
 4. 打开 API Keys 页面
 5. 创建 key
 6. 复制 key
