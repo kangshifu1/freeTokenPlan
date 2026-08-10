@@ -35,7 +35,7 @@
 | [DashScope / 百炼](providers/dashscope/README.md) | 区域化新人实时推理免费额度，按地域与部署范围区分 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
 | [SiliconFlow](providers/siliconflow/README.md) | 以控制台 / 模型广场为准的免费模型，CC Switch 实名注册路径提示 `16元` 赠送余额 | 中国区多模型试用 | 需要 | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
 | [Agnes AI](providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
-| [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月` | 国产模型 / OpenAI 兼容 agent | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
+| [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月`；编程工具新购路径转向 `Token Plan 个人版` | 国产模型 / OpenAI 兼容 agent / Token Plan 工具接入 | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
 | [讯飞星辰 MaaS](providers/xfyun-maas/README.md) | 模型广场 + `Token Plan` / `Coding Plan` 订阅接入 | 中国大陆编程工具接入 | 需要 | [套餐订阅](https://maas.xfyun.cn/packageSubscription) |
 | [腾讯混元 / TokenHub](providers/tencent-hunyuan/README.md) | TokenHub 语言 / 多模态理解试用包为 `100万 Tokens / 1年`，图片生成 `50次 / 1年`，视频生成 `50积分 / 1年`，3D 生成 `100积分 / 1年`；混元存量入口另有共享 `100万 tokens / 1年` 资源包 | 混元文本生成 / TokenHub 模型 | 需要 | [TokenHub](https://console.cloud.tencent.com/tokenhub) |
 | [火山方舟](providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度；豆包搜索 / `web_search` 当前有每月 `500` 次免费额度，`Agent Plan` / `Coding Plan` 走单独套餐 | 豆包 / DeepSeek / 工具接入 | 需要 | [火山方舟控制台](https://console.volcengine.com/ark/) |
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-08-09`
+- 更新时间：`2026-08-10`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -446,7 +446,7 @@
 ### 14. 百度千帆
 
 - 官网：[新用户免费额度](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
-- 类型：模型 API / Agent 平台
+- 类型：模型 API / Agent 平台 / Token Plan 工具套餐
 - 注册方式：百度智能云账号开通千帆，按要求完成实名认证
 - 是否需要信用卡：通常不需要信用卡，但需要百度智能云账号与实名体系
 - 免费内容：
@@ -457,16 +457,23 @@
   - 免费额度只覆盖官方页面列出的模型和服务范围
   - 模型名单、赠送 tokens、有效期和是否仍在活动窗口内受官方页面影响
   - 通过 OpenAI 兼容入口接入时，仍需按当前模型确认名称、上下文和工具能力
+  - 官方公告写明自 `2026-07-13 10:00:00` 起 `Coding Plan` 全档位停止新购，仍在有效期内的存量 `Coding Plan` 可继续使用至服务周期结束，并可一键迁移到 `Token Plan`
+  - `Token Plan 个人版` 是独立订阅和专用 API Key / base URL 路径，仅限兼容 AI 编程和智能体工具中的交互式使用，不应用作自动化脚本或应用后端
 - 有效期限：以官方新用户免费额度页面为准
-- OpenAI 兼容：是，官方 V2 兼容模式 base URL 为 `https://qianfan.baidubce.com/v2`
-- Anthropic 兼容：需按当前文档确认
-- 适合接入：中国大陆用户、国产模型试用、轻量 agent
+- OpenAI 兼容：是，普通模型服务官方 V2 兼容模式 base URL 为 `https://qianfan.baidubce.com/v2`；`Token Plan 个人版`专用 OpenAI base URL 为 `https://qianfan.baidubce.com/v2/tokenplan/personal`
+- Anthropic 兼容：`Token Plan 个人版`提供专用 Anthropic base URL `https://qianfan.baidubce.com/anthropic/tokenplan/personal`；普通模型服务需按当前文档确认
+- 适合接入：中国大陆用户、国产模型试用、轻量 agent、`Codex`、`Claude Code`、`CC-Switch`
 - 优惠策略：
   - 先开通千帆并确认免费额度已自动到账，再选当前免费范围内的模型
   - 需要 CC Switch 时优先记录官方 OpenAI 兼容 base URL，并把默认模型设为当前账号免费额度覆盖的模型
+  - 如果目标是编程工具交互式接入，应区分普通新用户免费额度、`Token Plan 个人版`专用 key、以及存量 `Coding Plan` key；三者额度、base URL 和适用场景不同
 - 官方文档：
   - [New-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
   - [OpenAI SDK compatibility](https://cloud.baidu.com/doc/qianfan/s/Hmh4suq26)
+  - [Token Plan personal](https://cloud.baidu.com/doc/qianfan/s/Dmrabu8b6)
+  - [Token Plan personal quickstart](https://cloud.baidu.com/doc/qianfan/s/kmracfgi2)
+  - [Token Plan personal CC-Switch guide](https://cloud.baidu.com/doc/qianfan/s/Tmrad8foj)
+  - [Token Plan personal launch and Coding Plan stop-sale notice](https://cloud.baidu.com/doc/qianfan/s/Fmrexuejc)
 
 ### 15. Agnes AI
 
@@ -936,6 +943,10 @@ export ANTHROPIC_AUTH_TOKEN=your-token
 - 百度千帆
   - [New-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
   - [OpenAI SDK compatibility](https://cloud.baidu.com/doc/qianfan/s/Hmh4suq26)
+  - [Token Plan personal](https://cloud.baidu.com/doc/qianfan/s/Dmrabu8b6)
+  - [Token Plan personal quickstart](https://cloud.baidu.com/doc/qianfan/s/kmracfgi2)
+  - [Token Plan personal CC-Switch guide](https://cloud.baidu.com/doc/qianfan/s/Tmrad8foj)
+  - [Token Plan personal launch and Coding Plan stop-sale notice](https://cloud.baidu.com/doc/qianfan/s/Fmrexuejc)
 - 讯飞星辰 MaaS
   - [Model square](https://maas.xfyun.cn/modelSquare)
   - [Token Plan](https://www.xfyun.cn/doc/spark/TokenPlan.html)
