@@ -26,7 +26,7 @@ This is a public repository for beginners who want a practical index of free AI 
 | [Cohere](providers/cohere/README.en.md) | Trial-key monthly call quota | Lightweight tests / prompt validation | Yes | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
 | [Hugging Face](providers/huggingface/README.en.md) | `$0.10/month` Inference Providers credits for free users | API checks / demos | Yes | [User Access Tokens](https://huggingface.co/settings/tokens) |
 | [Groq](providers/groq/README.en.md) | Free Plan RPM/RPD/TPM/TPD limits by model | Low-latency OpenAI-compatible calls | Yes | [Groq Console](https://console.groq.com/keys) |
-| [Mistral](providers/mistral/README.en.md) | Free plan / evaluation mode | Model-style testing | Yes | [Mistral Console](https://console.mistral.ai/) |
+| [Mistral](providers/mistral/README.en.md) | Free plan currently lists `$10/mo` API credits; API `Free mode` is enabled by default | Model-style testing | Yes | [Mistral Console](https://console.mistral.ai/) |
 | [Cerebras](providers/cerebras/README.en.md) | `$5` Free Trial credits after adding a verified payment method, valid for `30` days | High-speed inference trials | Yes | [Cerebras Inference](https://inference.cerebras.ai/) |
 | [NVIDIA NIM](providers/nvidia-nim/README.en.md) | Free serverless NIM development calls | OpenAI-style prototypes | Yes | [NVIDIA Build](https://build.nvidia.com/) |
 | [GitHub Models](providers/github-models/README.en.md) | Retired on `2026-07-30`; playground, catalog, API, and BYOK are no longer available | Historical reference only | N/A | [GitHub Docs](https://docs.github.com/en/github-models) |
@@ -142,7 +142,7 @@ Each provider has its own directory with:
 - Cohere: trial keys remain the correct free testing path, with a documented `1,000 API calls/month` cap and per-endpoint limits such as `20 req/min` for current Chat models, `2,000 inputs/min` for Embed, and `10 req/min` for Rerank.
 - Hugging Face: Inference Providers currently give free users `$0.10` monthly credits. Those credits apply to serverless Inference Providers calls routed through Hugging Face and do not apply when using custom third-party provider keys, so this is best treated as a smoke-test or demo route.
 - Groq: official docs provide OpenAI-compatible access and now publish a Free Plan Limits table by model. Example Free Plan limits include `30 RPM / 14.4K RPD / 6K TPM / 500K TPD` for `llama-3.1-8b-instant`, `30 RPM / 1K RPD / 12K TPM / 100K TPD` for `llama-3.3-70b-versatile`, and `30 RPM / 1K RPD / 8K TPM / 200K TPD` for the current `openai/gpt-oss-*` models; exact account limits still belong on the console Limits page.
-- Mistral: the public pricing page still lists Mistral Free with limited Vibe for code access, and the tier docs say API Free mode is enabled by default with limited limits for evaluation and prototyping.
+- Mistral: the public pricing page still lists Mistral Free with limited Vibe for code access and currently lists `$10/mo` in API credits. The Studio quickstart says API `Free mode` is enabled by default, does not require a credit card for the free trial, and uses limited usage and rate limits. API keys are not tied to a billing mode; the same key follows the workspace's current plan and billing state.
 - Cerebras: the docs still show OpenAI SDK / OpenAI-compatible usage, but the current free path is now Free Trial credits: new accounts receive `$5` after adding a verified payment method, the credits expire after `30` days, and Playground / API access remains inactive if the payment method step is skipped. Free Trial limits currently list `5 RPM` / `30K TPM` / `1M TPH` / `1M TPD` for `gpt-oss-120b`, `zai-glm-4.7`, and `gemma-4-31b`, but token rate limiting is now documented as a dual-bucket model with independent uncached and total token limits; uncached-token visibility is rolling out to consoles by `2026-08-17`. The current public production endpoint is `gpt-oss-120b`, `gemma-4-31b` remains preview, and `zai-glm-4.7` is scheduled for deprecation on `2026-08-17`.
 - NVIDIA NIM: NVIDIA Build exposes free serverless NIM APIs for development and prototyping, with OpenAI-style chat completions at `https://integrate.api.nvidia.com/v1`; production capacity and limits are account/model-page dependent.
 - GitHub Models: GitHub says the service was fully retired on `2026-07-30`. The playground, model catalog, inference API, and BYOK are no longer available, so this repo keeps the directory only as historical reference.
@@ -195,6 +195,8 @@ Before importing into a live `CC Switch` build, verify field names against your 
   - [Rate limits](https://console.groq.com/docs/rate-limits)
 - Mistral
   - [Pricing](https://mistral.ai/pricing)
+  - [Activate Studio and generate an API key](https://docs.mistral.ai/getting-started/quickstarts/studio/activate-and-generate-api-key)
+  - [API keys](https://docs.mistral.ai/admin/identity-access/api-keys)
 - Cerebras
   - [Introduction](https://inference-docs.cerebras.ai/introduction)
   - [Account & Billing](https://inference-docs.cerebras.ai/console/account-billing)
