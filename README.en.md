@@ -21,7 +21,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 | Provider | Free type | Best fit | Registration required | Registration URL |
 |---|---|---|---|---|
-| [Gemini](providers/gemini/README.en.md) | Long-term model-dependent Free tier; current official examples include `gemini-3.6-flash` | `CC Switch` / OpenAI-compatible gateway | Yes | [AI Studio](https://aistudio.google.com/) |
+| [Gemini](providers/gemini/README.en.md) | Long-term model-dependent Free tier; current official examples include `gemini-3.7-flash` | `CC Switch` / OpenAI-compatible gateway | Yes | [AI Studio](https://aistudio.google.com/) |
 | [OpenRouter](providers/openrouter/README.en.md) | `:free` models: `20 RPM`, `50/day` before `$10` credits, `1000/day` after | `Codex` / `CC Switch` | Yes | [OpenRouter Keys](https://openrouter.ai/keys) |
 | [Cohere](providers/cohere/README.en.md) | Trial-key monthly call quota | Lightweight tests / prompt validation | Yes | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
 | [Hugging Face](providers/huggingface/README.en.md) | `$0.10/month` Inference Providers credits for free users | API checks / demos | Yes | [User Access Tokens](https://huggingface.co/settings/tokens) |
@@ -51,7 +51,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-08-10`
+- Updated: `2026-08-14`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -137,7 +137,7 @@ Each provider has its own directory with:
 
 ## Current Provider Notes
 
-- Gemini: the Free tier remains model-dependent, with current public pricing examples now led by `gemini-3.6-flash` and Gemini 3.5 models. AI Studio now creates new keys as `auth keys`, Google documents that unrestricted `standard keys` are rejected, dormant unrestricted keys have been blocked since `2026-05-07`, and all `standard keys` are planned for shutdown in `2026-09`. Gemini also has an official OpenAI compatibility endpoint at `https://generativelanguage.googleapis.com/v1beta/openai/`, but it is not a full OpenAI API replacement.
+- Gemini: the Free tier remains model-dependent, with current public pricing examples now led by `gemini-3.7-flash` and Gemini 3.5 models. AI Studio now creates new keys as `auth keys`, Google documents that unrestricted `standard keys` are rejected, dormant unrestricted keys have been blocked since `2026-05-07`, and all `standard keys` are planned for shutdown in `2026-09`. Gemini also has an official OpenAI compatibility endpoint at `https://generativelanguage.googleapis.com/v1beta/openai/`, but it is not a full OpenAI API replacement.
 - OpenRouter: free accounts can still create keys without a credit card and use `:free` model variants. The current official limits page lists `20 requests/min`, `50 requests/day` for accounts with less than `$10` purchased credits, and `1000 requests/day` after purchasing at least `$10` credits; the `openrouter/free` router can pick from currently available free models for low-volume experiments.
 - Cohere: trial keys remain the correct free testing path, with a documented `1,000 API calls/month` cap and per-endpoint limits such as `20 req/min` for current Chat models, `2,000 inputs/min` for Embed, and `10 req/min` for Rerank.
 - Hugging Face: Inference Providers currently give free users `$0.10` monthly credits. Those credits apply to serverless Inference Providers calls routed through Hugging Face and do not apply when using custom third-party provider keys, so this is best treated as a smoke-test or demo route.

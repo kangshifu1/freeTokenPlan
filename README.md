@@ -21,7 +21,7 @@
 
 | 供应商 | 免费类型 | 适合接入 | 是否需要注册 | 注册地址 |
 |---|---|---|---|---|
-| [Gemini](providers/gemini/README.md) | 长期 Free tier，按模型限额；当前官方示例已包含 `gemini-3.6-flash` | `CC Switch` / OpenAI 兼容代理 | 需要 | [AI Studio](https://aistudio.google.com/) |
+| [Gemini](providers/gemini/README.md) | 长期 Free tier，按模型限额；当前官方示例已包含 `gemini-3.7-flash` | `CC Switch` / OpenAI 兼容代理 | 需要 | [AI Studio](https://aistudio.google.com/) |
 | [OpenRouter](providers/openrouter/README.md) | `:free` 模型：`20 RPM`，低于 `$10` credits 时 `50/日`，达到后 `1000/日` | `Codex` / `CC Switch` | 需要 | [OpenRouter Keys](https://openrouter.ai/keys) |
 | [Cohere](providers/cohere/README.md) | Trial key 月度调用额度 | 轻量测试 / prompt 验证 | 需要 | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
 | [Hugging Face](providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits | API 联调 / demo | 需要 | [User Access Tokens](https://huggingface.co/settings/tokens) |
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-08-10`
+- 更新时间：`2026-08-14`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -112,7 +112,7 @@
 - 是否需要信用卡：通常不需要先绑卡即可试用 Free tier
 - 免费内容：
   - 官方长期提供 `Free` 档
-  - 文档明确列出多个模型的免费层，当前公开定价示例已推进到 `Gemini 3.6 Flash`、`Gemini 3.5 Flash`、`Gemini 3.5 Live Translate`、`Gemini 3.1`、`Gemini 2.5`、`Gemini Embedding` 等模型
+  - 文档明确列出多个模型的免费层，当前公开定价示例已推进到 `Gemini 3.7 Flash`、`Gemini 3.5 Flash`、`Gemini 3.5 Live Translate`、`Gemini 3.1`、`Gemini 2.5`、`Gemini Embedding` 等模型
   - `Grounding with Google Search` 免费额度按模型分列；Gemini 3.x 付费档当前共享每月 `5,000` 次 free grounding prompts / requests，Free tier 是否支持需要逐模型确认
 - 使用限制：
   - 免费档按模型区分，不是所有模型都有 Free tier
