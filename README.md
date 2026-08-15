@@ -24,14 +24,14 @@
 | [Gemini](providers/gemini/README.md) | 长期 Free tier，按模型限额；当前官方示例已包含 `gemini-3.7-flash` | `CC Switch` / OpenAI 兼容代理 | 需要 | [AI Studio](https://aistudio.google.com/) |
 | [OpenRouter](providers/openrouter/README.md) | `:free` 模型：`20 RPM`，低于 `$10` credits 时 `50/日`，达到后 `1000/日` | `Codex` / `CC Switch` | 需要 | [OpenRouter Keys](https://openrouter.ai/keys) |
 | [Cohere](providers/cohere/README.md) | Trial key 月度调用额度 | 轻量测试 / prompt 验证 | 需要 | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
-| [Hugging Face](providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits | API 联调 / demo | 需要 | [User Access Tokens](https://huggingface.co/settings/tokens) |
+| [Hugging Face](providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits（可能调整，超出需购买 credits） | API 联调 / demo | 需要 | [User Access Tokens](https://huggingface.co/settings/tokens) |
 | [Groq](providers/groq/README.md) | Free Plan 按模型 RPM/RPD/TPM/TPD 限流 | 低延迟 OpenAI 兼容调用 | 需要 | [Groq Console](https://console.groq.com/keys) |
 | [Mistral](providers/mistral/README.md) | Free 计划当前列出 `$10/月` API credits；API `Free mode` 默认启用 | 模型风格试用 | 需要 | [Mistral Console](https://console.mistral.ai/) |
 | [Cerebras](providers/cerebras/README.md) | 验证支付方式后提供 `$5` Free Trial credits，`30` 天有效 | 高速推理试用 | 需要 | [Cerebras Inference](https://inference.cerebras.ai/) |
 | [NVIDIA NIM](providers/nvidia-nim/README.md) | 免费 serverless NIM 开发调用 | OpenAI 风格原型验证 | 需要 | [NVIDIA Build](https://build.nvidia.com/) |
 | [GitHub Models](providers/github-models/README.md) | 已于 `2026-07-30` 全面退役，playground / catalog / API / BYOK 均不可用 | 仅作历史记录 | 不适用 | [GitHub Docs](https://docs.github.com/en/github-models) |
 | [Vercel AI Gateway](providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits，且只覆盖 eligible models | Vercel / AI SDK 项目 | 需要 | [Vercel Dashboard](https://vercel.com/dashboard) |
-| [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算；部分新模型仅 Workers Paid 或预付 AI Gateway credits 可用 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
+| [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算；部分模型仅 Workers Paid 或预付 AI Gateway credits 可用 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
 | [DashScope / 百炼](providers/dashscope/README.md) | 区域化新人实时推理免费额度，按地域与部署范围区分 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
 | [SiliconFlow](providers/siliconflow/README.md) | 以控制台 / 模型广场为准的免费模型，CC Switch 实名注册路径提示 `16元` 赠送余额 | 中国区多模型试用 | 需要 | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
 | [Agnes AI](providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-08-14`
+- 更新时间：`2026-08-15`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -192,11 +192,11 @@
 - 注册方式：Hugging Face 账号登录
 - 是否需要信用卡：免费额度阶段通常不需要
 - 免费内容：
-  - 官方文档明确：免费用户每月有 `$0.10` credits
+  - 官方文档明确：免费用户每月有 `$0.10` credits，但该额度可能调整，超出后需要购买 credits
   - `PRO` 用户每月有 `$2.00` credits
   - 免费额度只适用于通过 Hugging Face 路由的 serverless Inference Providers 请求；自带第三方 provider key 的请求不会消耗这些 monthly credits
   - 自托管 endpoint 不在这类免费额度范围内
-- 使用限制：
+  - 使用限制：
   - 金额不大，只适合 API 联调、样例、页面 demo
   - 按 provider 实际调用结算，热门模型消耗会很快
 - 有效期限：每月重置
@@ -431,7 +431,7 @@
   - 官方定价页说明 Workers AI 基于 Neurons 计费，并提供每日 `10,000` Neurons 免费 allocation
   - Cloudflare 当前按模型展示示例成本；文本、图片、音频等模型的输入/输出或推理量会换算为 Neurons
   - 不同模型消耗的 Neurons 不同，同样 `10,000` Neurons 对不同模型代表的请求量不同
-  - 定价页当前明确：`@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2` 不在 Workers Free plan 可用范围内，需要 Workers Paid plan 或预付 AI Gateway credits
+  - 定价页当前明确：`@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2`、`@cf/deepseek-ai/deepseek-v4-flash-0731`、`@cf/deepseek-ai/deepseek-v4-pro-0813` 不在 Workers Free plan 可用范围内，需要 Workers Paid plan 或预付 AI Gateway credits
   - 超过免费 allocation 后需要 Workers Paid plan 或预付 AI Gateway credits
 - 使用限制：
   - 更适合 Cloudflare Worker / REST API / 边缘 demo
