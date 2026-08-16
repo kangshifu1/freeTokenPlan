@@ -29,7 +29,7 @@
 7. 生成后立即复制 key
 8. 本地保存为环境变量名：`GEMINI_API_KEY`
 9. 建议默认模型记录为：
-   - 优先选择 AI Studio 当前推荐的 `Flash` 系列模型，例如当前官方定价页已列出的 `gemini-3.7-flash`
+   - 优先选择 AI Studio 当前推荐的 `Flash` 系列模型，例如当前官方定价页已列出的 `gemini-3.7-flash` / `gemini-3.6-flash`
    - 模板默认值仍保留为已验证过的 `gemini-2.5-flash`，导入前按官方模型页复核
 10. 把 key 填入 CC Switch；如走 Gemini 官方 OpenAI compatibility，可记录当前官方兼容端点 `https://generativelanguage.googleapis.com/v1beta/openai/`；如果下游要求完整 Responses API，仍建议先经兼容代理验证
 

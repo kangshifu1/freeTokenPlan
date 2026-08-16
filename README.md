@@ -21,7 +21,7 @@
 
 | 供应商 | 免费类型 | 适合接入 | 是否需要注册 | 注册地址 |
 |---|---|---|---|---|
-| [Gemini](providers/gemini/README.md) | 长期 Free tier，按模型限额；当前官方示例已包含 `gemini-3.7-flash` | `CC Switch` / OpenAI 兼容代理 | 需要 | [AI Studio](https://aistudio.google.com/) |
+| [Gemini](providers/gemini/README.md) | 长期 Free tier，按模型限额；当前官方示例已包含 `gemini-3.7-flash` / `gemini-3.6-flash` | `CC Switch` / OpenAI 兼容代理 | 需要 | [AI Studio](https://aistudio.google.com/) |
 | [OpenRouter](providers/openrouter/README.md) | `:free` 模型：`20 RPM`，低于 `$10` credits 时 `50/日`，达到后 `1000/日` | `Codex` / `CC Switch` | 需要 | [OpenRouter Keys](https://openrouter.ai/keys) |
 | [Cohere](providers/cohere/README.md) | Trial key 月度调用额度 | 轻量测试 / prompt 验证 | 需要 | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
 | [Hugging Face](providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits（可能调整，超出需购买 credits） | API 联调 / demo | 需要 | [User Access Tokens](https://huggingface.co/settings/tokens) |
@@ -38,7 +38,7 @@
 | [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月`；编程工具新购路径转向 `Token Plan 个人版` | 国产模型 / OpenAI 兼容 agent / Token Plan 工具接入 | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
 | [讯飞星辰 MaaS](providers/xfyun-maas/README.md) | 模型广场 + `Token Plan` / `Coding Plan` 订阅接入 | 中国大陆编程工具接入 | 需要 | [套餐订阅](https://maas.xfyun.cn/packageSubscription) |
 | [腾讯混元 / TokenHub](providers/tencent-hunyuan/README.md) | TokenHub 语言 / 多模态理解试用包为 `100万 Tokens / 1年`，图片生成 `50次 / 1年`，视频生成 `50积分 / 1年`，3D 生成 `100积分 / 1年`；混元存量入口另有共享 `100万 tokens / 1年` 资源包 | 混元文本生成 / TokenHub 模型 | 需要 | [TokenHub](https://console.cloud.tencent.com/tokenhub) |
-| [火山方舟](providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度；豆包搜索 / `web_search` 当前有每月 `500` 次免费额度，`Agent Plan` / `Coding Plan` 走单独套餐 | 豆包 / DeepSeek / 工具接入 | 需要 | [火山方舟控制台](https://console.volcengine.com/ark/) |
+| [火山方舟](providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度；豆包搜索 / `web_search` 普通免费包与 Agent Plan 套餐额度分开计算，`Agent Plan` / `Coding Plan` 走单独套餐 | 豆包 / DeepSeek / 工具接入 | 需要 | [火山方舟控制台](https://console.volcengine.com/ark/) |
 
 ## 快速导航
 
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-08-15`
+- 更新时间：`2026-08-16`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -112,7 +112,7 @@
 - 是否需要信用卡：通常不需要先绑卡即可试用 Free tier
 - 免费内容：
   - 官方长期提供 `Free` 档
-  - 文档明确列出多个模型的免费层，当前公开定价示例已推进到 `Gemini 3.7 Flash`、`Gemini 3.5 Flash`、`Gemini 3.5 Live Translate`、`Gemini 3.1`、`Gemini 2.5`、`Gemini Embedding` 等模型
+  - 文档明确列出多个模型的免费层，当前公开定价示例已推进到 `Gemini 3.7 Flash`、`Gemini 3.6 Flash`、`Gemini 3.5 Flash`、`Gemini 3.5 Live Translate`、`Gemini 3.1`、`Gemini 2.5`、`Gemini Embedding` 等模型
   - `Grounding with Google Search` 免费额度按模型分列；Gemini 3.x 付费档当前共享每月 `5,000` 次 free grounding prompts / requests，Free tier 是否支持需要逐模型确认
 - 使用限制：
   - 免费档按模型区分，不是所有模型都有 Free tier
@@ -573,13 +573,13 @@
 - 是否需要信用卡：以火山引擎账号和活动要求为准
 - 免费内容：
   - 官方文档和控制台会展示免费推理额度、安心体验模式和活动额度
-  - 豆包搜索 / `web_search` 当前文档说明有每月 `500` 次免费额度；这是搜索工具服务额度，不应和通用推理免费额度或套餐额度混用
+  - 豆包搜索 / `web_search` 当前在模型价格页作为普通免费资源包的一部分出现，官方示例为每个账号一次性 `500` 次 `web_search` 调用；Agent Plan 套餐页另有按套餐周期提供的搜索额度，二者不应和通用推理免费额度混用
   - `Coding Plan` 作为独立套餐 / 活动入口，套餐额度、模型范围、有效期和折扣规则以当前套餐页与控制台为准
   - 通用推理额度、活动额度、模型和有效期以当前控制台 / 活动页为准
 - 使用限制：
   - 方舟活动和套餐规则变化快，必须以控制台为准
   - 建议启用安心体验模式或明确关闭超额付费风险
-  - 豆包搜索 / `web_search`、`Agent Plan`、`Coding Plan`、普通推理 endpoint 的额度、计费和环境变量应分开核对
+  - 豆包搜索 / `web_search` 普通免费包、Agent Plan 套餐搜索额度、`Coding Plan`、普通推理 endpoint 的额度、计费和环境变量应分开核对
 - 有效期限：以当前控制台 / 活动页为准
 - OpenAI 兼容：方舟文档包含 OpenAI 兼容和多种 AI 工具接入说明；`Agent Plan` / `Coding Plan` 的工具页当前覆盖 Codex、Claude Code、OpenCode 和 OpenClaw 等入口
 - Anthropic 兼容：以当前 `Agent Plan` / `Coding Plan` 工具接入文档为准
@@ -589,6 +589,8 @@
   - Coding / Agent 工具接入优先看官方 `Agent Plan` / `Coding Plan` 下的套餐、计费和“接入 AI 工具”文档
 - 官方文档：
   - [Volcengine Ark docs](https://www.volcengine.com/docs/82379)
+  - [Model pricing](https://www.volcengine.com/docs/82379/1099320)
+  - [Agent Plan](https://www.volcengine.com/docs/82379/2374452)
 
 ## 不要搞混：工具本体和模型供应商不是一回事
 
@@ -962,6 +964,8 @@ export ANTHROPIC_AUTH_TOKEN=your-token
   - [TokenHub 新用户体验包](https://cloud.tencent.com/document/product/1823/130053)
 - 火山方舟
   - [Docs](https://www.volcengine.com/docs/82379)
+  - [Model pricing](https://www.volcengine.com/docs/82379/1099320)
+  - [Agent Plan](https://www.volcengine.com/docs/82379/2374452)
   - [豆包搜索 / web_search](https://www.volcengine.com/docs/82379/2309827)
 - Codex
   - [Config](https://developers.openai.com/codex/config)
