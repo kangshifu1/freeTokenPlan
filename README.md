@@ -221,9 +221,9 @@
   - 官方 Rate Limits 页面现在直接列出 `Free Plan Limits` 表，按模型给出 `RPM`、`RPD`、`TPM`、`TPD`
 - 使用限制：
   - 官方速率限制文档说明限制按组织级别生效，可能先触发请求数或 token 数任一维度
-  - 当前免费计划示例：`llama-3.1-8b-instant` 为 `30 RPM` / `14.4K RPD` / `6K TPM` / `500K TPD`
-  - 当前免费计划示例：`llama-3.3-70b-versatile` 为 `30 RPM` / `1K RPD` / `12K TPM` / `100K TPD`
-  - 当前免费计划示例：`openai/gpt-oss-120b` 和 `openai/gpt-oss-20b` 均为 `30 RPM` / `1K RPD` / `8K TPM` / `200K TPD`
+  - 当前免费计划示例：`groq/compound` / `groq/compound-mini` 为 `30 RPM` / `250 RPD` / `70K TPM`
+  - 当前免费计划示例：`meta-llama/llama-prompt-guard-2-22m` / `meta-llama/llama-prompt-guard-2-86m` 为 `30 RPM` / `14.4K RPD` / `15K TPM` / `500K TPD`
+  - 当前免费计划示例：`openai/gpt-oss-120b` / `openai/gpt-oss-20b` 和 `qwen/qwen3.6-27b` 均为 `30 RPM` / `1K RPD` / `8K TPM` / `200K TPD`
   - 官方说明该表是高层摘要，账号的精确当前限额仍应以控制台 `Limits` 页面为准
   - 免费层适合交互式、低延迟场景，不适合默认认为有大批量免费额度
 - 有效期限：持续可用，但模型和配额以官方 Rate Limits / 控制台为准
@@ -276,7 +276,7 @@
   - 官方账号 / 计费与 Rate Limits 文档说明：新账号添加已验证支付方式后可获得 `$5` Free Trial credits，发放后 `30` 天有效，可用于所有 public models
   - 官方提供 OpenAI SDK / OpenAI compatible 用法
 - 使用限制：
-  - Free Trial 层当前对 `gpt-oss-120b`、`zai-glm-4.7`、`gemma-4-31b` 列出 `5 RPM` / `30K TPM` / `1M TPH` / `1M TPD`；但官方 Rate Limits 现在把 token 限制说明为独立的 uncached token limit 与 total token limit 双桶模型，uncached token 限制可见性会在 `2026-08-17` 前逐步显示到控制台，具体账号仍以控制台 Limits 为准
+  - Free Trial 层当前对 `gpt-oss-120b` 与 `gemma-4-31b` 列出 `5 RPM` / `30K TPM` / `1M TPH` / `1M TPD`；但官方 Rate Limits 现在把 token 限制说明为独立的 uncached token limit 与 total token limit 双桶模型，uncached token 限制可见性按官方说明在 `2026-08-17` 前逐步显示到控制台，具体账号仍以控制台 Limits 为准
   - 未在注册时添加支付方式时，Playground 和 API access 会保持 inactive
   - 官方模型页当前列出公开生产端点 `gpt-oss-120b`，并标注 `gemma-4-31b` 与 `zai-glm-4.7` 为预览模型；变更日志说明 `zai-glm-4.7` 计划在 `2026-08-17` 下线，默认模型应以模型页为准
 - 有效期限：Free Trial credits 发放后 `30` 天有效；后续 Pay-as-you-go / Developer 层以控制台为准
