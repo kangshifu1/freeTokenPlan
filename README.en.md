@@ -51,7 +51,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-08-16`
+- Updated: `2026-08-21`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -139,7 +139,7 @@ Each provider has its own directory with:
 
 - Gemini: the Free tier remains model-dependent, with current public pricing examples now led by `gemini-3.7-flash`, `gemini-3.6-flash`, and Gemini 3.5 models. AI Studio now creates new keys as `auth keys`, Google documents that unrestricted `standard keys` are rejected, dormant unrestricted keys have been blocked since `2026-05-07`, and all `standard keys` are planned for shutdown in `2026-09`. Gemini also has an official OpenAI compatibility endpoint at `https://generativelanguage.googleapis.com/v1beta/openai/`, but it is not a full OpenAI API replacement.
 - OpenRouter: free accounts can still create keys without a credit card and use `:free` model variants. The current official limits page lists `20 requests/min`, `50 requests/day` for accounts with less than `$10` purchased credits, and `1000 requests/day` after purchasing at least `$10` credits; the `openrouter/free` router can pick from currently available free models for low-volume experiments.
-- Cohere: trial keys remain the correct free testing path, with a documented `1,000 API calls/month` cap and per-endpoint limits such as `20 req/min` for current Chat models, `2,000 inputs/min` for Embed, and `10 req/min` for Rerank.
+- Cohere: trial keys remain the correct free testing path, with a documented `1,000 API calls/month` cap and per-endpoint limits such as `20 req/min` for current Chat models, `2,000 inputs/min` for Embed, and `10 req/min` for Rerank. Current model docs mark chat models such as `Command A`, `North Mini`, `Command R+`, and `Command R` as free to try with rate limits; `Command A` and `North Mini` are also marked as fast.
 - Hugging Face: Inference Providers currently give free users `$0.10` monthly credits, subject to change; extra usage requires purchased credits. Those credits apply to serverless Inference Providers calls routed through Hugging Face and do not apply when using custom third-party provider keys, so this is best treated as a smoke-test or demo route.
 - Groq: official docs provide OpenAI-compatible access and now publish a Free Plan Limits table by model. Example Free Plan limits include `30 RPM / 250 RPD / 70K TPM` for `groq/compound` / `groq/compound-mini`, `30 RPM / 14.4K RPD / 15K TPM / 500K TPD` for current `meta-llama/llama-prompt-guard-*` models, and `30 RPM / 1K RPD / 8K TPM / 200K TPD` for `openai/gpt-oss-*` and `qwen/qwen3.6-27b`; exact account limits still belong on the console Limits page.
 - Mistral: the public pricing page still lists Mistral Free with limited Vibe for code access and currently lists `$10/mo` in API credits. The Studio quickstart says API `Free mode` is enabled by default, does not require a credit card for the free trial, and uses limited usage and rate limits. API keys are not tied to a billing mode; the same key follows the workspace's current plan and billing state.

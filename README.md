@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-08-16`
+- 更新时间：`2026-08-21`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -170,7 +170,7 @@
   - 官方文档明确：`trial keys` 可免费试用
   - 试用 key 以及部分较新的 Chat 模型生产 key 受 `1000 API calls/month` 限制
   - 当前 Chat API 试用限制通常为 `20 req/min`；`Embed` 为 `2,000 inputs/min`，`Rerank` 为 `10 req/min`
-  - 模型目录页中也有“free until rate limit reached”描述
+  - 当前模型文档把 `Command A` / `North Mini` / `Command R+` / `Command R` 等可聊天模型标为 “Try for free with rate limits”，其中 `Command A`、`North Mini` 还标注为 `fast`
 - 使用限制：
   - 主要面向评估和开发，不适合直接当高并发生产额度
   - 模型可用性受 key 类型影响

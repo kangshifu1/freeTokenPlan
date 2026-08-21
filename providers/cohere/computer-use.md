@@ -11,7 +11,7 @@
 5. 创建一个 trial key
 6. 复制 key
 7. 本地保存为环境变量：`COHERE_API_KEY`
-8. 记录当前适合试用的模型
+8. 打开模型文档，优先记录当前标注 “Try for free with rate limits” 的聊天模型，例如 `Command A`、`North Mini`、`Command R+`、`Command R`
 9. 如果要放入 CC Switch，优先经由兼容代理或统一网关接入
 
 ## 人工接管点
@@ -23,3 +23,4 @@
 
 - 是否确认为 trial key
 - 是否记录当前试用速率限制
+- 是否把模型是否支持免费试用、是否标注 `fast` 与当前文档日期一起记录

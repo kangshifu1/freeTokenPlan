@@ -11,7 +11,7 @@
 5. Create a trial key
 6. Copy the key
 7. Save it locally as `COHERE_API_KEY`
-8. Record the current recommended trial model
+8. Open the model docs and record the current chat models marked "Try for free with rate limits", such as `Command A`, `North Mini`, `Command R+`, and `Command R`
 9. For `CC Switch`, prefer using a compatible gateway or unified proxy
 
 ## Human Takeover Points
@@ -23,4 +23,4 @@
 
 - Confirm the key is a trial key
 - Record current trial rate limits
-
+- Record whether the target model is free to try, whether it is marked `fast`, and the current docs date
