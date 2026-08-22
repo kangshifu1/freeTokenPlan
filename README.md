@@ -23,7 +23,7 @@
 |---|---|---|---|---|
 | [Gemini](providers/gemini/README.md) | 长期 Free tier，按模型限额；当前官方示例已包含 `gemini-3.7-flash` / `gemini-3.6-flash` | `CC Switch` / OpenAI 兼容代理 | 需要 | [AI Studio](https://aistudio.google.com/) |
 | [OpenRouter](providers/openrouter/README.md) | `:free` 模型：`20 RPM`，低于 `$10` credits 时 `50/日`，达到后 `1000/日` | `Codex` / `CC Switch` | 需要 | [OpenRouter Keys](https://openrouter.ai/keys) |
-| [Cohere](providers/cohere/README.md) | Trial key 月度调用额度 | 轻量测试 / prompt 验证 | 需要 | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
+| [Cohere](providers/cohere/README.md) | Trial key 月度调用额度；当前试用模型表包含 `Command A+`、`Command A`、`Command A Reasoning`、`Command A Translate`、`Command A Vision`、`Command R7B`、`Command R+`、`Command R`、`North Mini Code` | 轻量测试 / prompt 验证 | 需要 | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
 | [Hugging Face](providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits（可能调整，超出需购买 credits） | API 联调 / demo | 需要 | [User Access Tokens](https://huggingface.co/settings/tokens) |
 | [Groq](providers/groq/README.md) | Free Plan 按模型 RPM/RPD/TPM/TPD 限流 | 低延迟 OpenAI 兼容调用 | 需要 | [Groq Console](https://console.groq.com/keys) |
 | [Mistral](providers/mistral/README.md) | Free 计划当前列出 `$10/月` API credits；API `Free mode` 默认启用 | 模型风格试用 | 需要 | [Mistral Console](https://console.mistral.ai/) |
@@ -170,7 +170,7 @@
   - 官方文档明确：`trial keys` 可免费试用
   - 试用 key 以及部分较新的 Chat 模型生产 key 受 `1000 API calls/month` 限制
   - 当前 Chat API 试用限制通常为 `20 req/min`；`Embed` 为 `2,000 inputs/min`，`Rerank` 为 `10 req/min`
-  - 当前模型文档把 `Command A` / `North Mini` / `Command R+` / `Command R` 等可聊天模型标为 “Try for free with rate limits”，其中 `Command A`、`North Mini` 还标注为 `fast`
+  - 当前模型文档现在把 `Command A+` / `Command A` / `Command A Reasoning` / `Command A Translate` / `Command A Vision` / `Command R7B` / `Command R+` / `Command R` / `North Mini Code` 列为当前试用模型集
 - 使用限制：
   - 主要面向评估和开发，不适合直接当高并发生产额度
   - 模型可用性受 key 类型影响
@@ -278,7 +278,7 @@
 - 使用限制：
   - Free Trial 层当前对 `gpt-oss-120b` 与 `gemma-4-31b` 列出 `5 RPM` / `30K TPM` / `1M TPH` / `1M TPD`；但官方 Rate Limits 现在把 token 限制说明为独立的 uncached token limit 与 total token limit 双桶模型，uncached token 限制可见性按官方说明在 `2026-08-17` 前逐步显示到控制台，具体账号仍以控制台 Limits 为准
   - 未在注册时添加支付方式时，Playground 和 API access 会保持 inactive
-  - 官方模型页当前列出公开生产端点 `gpt-oss-120b`，并标注 `gemma-4-31b` 与 `zai-glm-4.7` 为预览模型；变更日志说明 `zai-glm-4.7` 计划在 `2026-08-17` 下线，默认模型应以模型页为准
+  - 官方模型页当前列出公开共享端点 `gpt-oss-120b` 与 `gemma-4-31b`
 - 有效期限：Free Trial credits 发放后 `30` 天有效；后续 Pay-as-you-go / Developer 层以控制台为准
 - OpenAI 兼容：是
 - Anthropic 兼容：否

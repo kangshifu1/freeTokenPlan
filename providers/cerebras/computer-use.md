@@ -11,7 +11,7 @@
 5. 创建 key
 6. 复制 key
 7. 本地保存为环境变量：`CEREBRAS_API_KEY`
-8. 查看 docs 中的 OpenAI SDK、Account & Billing、Rate Limits 和官方 Models 页面，确认 Free Trial、uncached / total token 双桶速率限制、模型状态和下线提示
+8. 查看 docs 中的 OpenAI SDK、Account & Billing、Rate Limits 和官方 Models 页面，确认 Free Trial、uncached / total token 双桶速率限制和当前公开模型
 9. 在 CC Switch 中录入兼容信息
 
 ## 人工接管点
@@ -24,4 +24,4 @@
 
 - 是否记录了当前控制台可用模型
 - 是否记录了 Free Trial credits、有效期和双桶速率限制说明
-- 是否从官方 Models / Change Log 页面确认默认模型、生产 / 预览状态和 `zai-glm-4.7` 下线日期
+- 是否从官方 Models 页面确认当前公开模型
