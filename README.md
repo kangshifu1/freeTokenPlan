@@ -26,7 +26,7 @@
 | [Cohere](providers/cohere/README.md) | Trial key 月度调用额度；当前试用模型表包含 `Command A+`、`Command A`、`Command A Reasoning`、`Command A Translate`、`Command A Vision`、`Command R7B`、`Command R+`、`Command R`、`North Mini Code` | 轻量测试 / prompt 验证 | 需要 | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
 | [Hugging Face](providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits（可能调整，超出需购买 credits） | API 联调 / demo | 需要 | [User Access Tokens](https://huggingface.co/settings/tokens) |
 | [Groq](providers/groq/README.md) | Free Plan 按模型 RPM/RPD/TPM/TPD 限流 | 低延迟 OpenAI 兼容调用 | 需要 | [Groq Console](https://console.groq.com/keys) |
-| [Mistral](providers/mistral/README.md) | Free 计划当前列出 `$10/月` API credits；API `Free mode` 默认启用 | 模型风格试用 | 需要 | [Mistral Console](https://console.mistral.ai/) |
+| [Mistral](providers/mistral/README.md) | Free 计划当前列出 `$10/月` API credits；API `Free mode` 默认启用，但首次请求仍需核对支付方式/账单状态 | 模型风格试用 | 需要 | [Mistral Console](https://console.mistral.ai/) |
 | [Cerebras](providers/cerebras/README.md) | 验证支付方式后提供 `$5` Free Trial credits，`30` 天有效 | 高速推理试用 | 需要 | [Cerebras Inference](https://inference.cerebras.ai/) |
 | [NVIDIA NIM](providers/nvidia-nim/README.md) | 按模型页开放的免费 serverless NIM 开发端点；部分旧端点已标记 `Deprecated` | OpenAI 风格原型验证 | 需要 | [NVIDIA Build](https://build.nvidia.com/) |
 | [GitHub Models](providers/github-models/README.md) | 已于 `2026-07-30` 全面退役，playground / catalog / API / BYOK 均不可用 | 仅作历史记录 | 不适用 | [GitHub Docs](https://docs.github.com/en/github-models) |
@@ -248,9 +248,10 @@
 - 免费内容：
   - 官方定价页继续列出 `Mistral Free` 计划，并说明包含有限的 `Vibe for code` 能力
   - 同一官方定价页当前列出 Free 计划包含 `$10 /mo in API credits`
-  - 官方 tier 文档说明每个新账号默认启用 API `Free mode`，免费试用无需先绑定信用卡，带有限 rate limit，面向评估与原型验证
+  - 官方 quickstart 说明 API `Free mode` 默认启用，免费试用无需先绑定信用卡，带有限 rate limit，面向评估与原型验证
 - 使用限制：
   - 免费模式和月度 credits 适合轻量评估；具体可用模型、扣费和重置仍以当前账号 / 定价页为准
+  - 官方 developer quickstart 也把 `402 Payment Required` 解释为账号缺少支付方式，所以首次 API 请求前仍要核对当前 workspace 的支付方式与账单状态
   - API key 不绑定特定计费模式；同一个 key 会按组织当前计划和账单状态从 `Free mode` 切到 `Pay as you go` 或更高 tier
   - 更像“提供免费试用模式”，不是大额度长期免费池
   - 需要更高限额时升级到 `Scale` 计划，随后按累计账单进入更高 usage tier
@@ -264,6 +265,7 @@
 - 官方文档：
   - [Pricing](https://mistral.ai/pricing)
   - [Activate Studio and generate an API key](https://docs.mistral.ai/getting-started/quickstarts/studio/activate-and-generate-api-key)
+  - [Send your first API request](https://docs.mistral.ai/getting-started/quickstarts/developer/first-api-request)
   - [API keys](https://docs.mistral.ai/admin/identity-access/api-keys)
 
 ### 7. Cerebras Inference
