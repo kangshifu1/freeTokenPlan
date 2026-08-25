@@ -28,7 +28,7 @@
 | [Groq](providers/groq/README.md) | Free Plan 按模型 RPM/RPD/TPM/TPD 限流 | 低延迟 OpenAI 兼容调用 | 需要 | [Groq Console](https://console.groq.com/keys) |
 | [Mistral](providers/mistral/README.md) | Free 计划当前列出 `$10/月` API credits；API `Free mode` 默认启用 | 模型风格试用 | 需要 | [Mistral Console](https://console.mistral.ai/) |
 | [Cerebras](providers/cerebras/README.md) | 验证支付方式后提供 `$5` Free Trial credits，`30` 天有效 | 高速推理试用 | 需要 | [Cerebras Inference](https://inference.cerebras.ai/) |
-| [NVIDIA NIM](providers/nvidia-nim/README.md) | 免费 serverless NIM 开发调用 | OpenAI 风格原型验证 | 需要 | [NVIDIA Build](https://build.nvidia.com/) |
+| [NVIDIA NIM](providers/nvidia-nim/README.md) | 按模型页开放的免费 serverless NIM 开发端点；部分旧端点已标记 `Deprecated` | OpenAI 风格原型验证 | 需要 | [NVIDIA Build](https://build.nvidia.com/) |
 | [GitHub Models](providers/github-models/README.md) | 已于 `2026-07-30` 全面退役，playground / catalog / API / BYOK 均不可用 | 仅作历史记录 | 不适用 | [GitHub Docs](https://docs.github.com/en/github-models) |
 | [Vercel AI Gateway](providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits，且只覆盖 eligible models | Vercel / AI SDK 项目 | 需要 | [Vercel Dashboard](https://vercel.com/dashboard) |
 | [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算；部分模型仅 Workers Paid 或预付 AI Gateway credits 可用 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-08-21`
+- 更新时间：`2026-08-25`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -359,18 +359,19 @@
 - 注册方式：NVIDIA Developer / build.nvidia.com 账号登录后创建 API Key
 - 是否需要信用卡：开发试用入口通常不需要先绑卡，生产使用以 NVIDIA 当前策略为准
 - 免费内容：
-  - Build 页面提供面向开发和原型验证的免费 serverless NIM API
+  - Build 页面继续提供面向开发和原型验证的免费 serverless NIM API
+  - 当前模型页会按模型标注 `Free Endpoint` 是否 `Available`；部分旧模型页已标记 `Deprecated`，但仍可能提供 Partner Endpoint 或自托管下载
   - 模型、速率和可用性按账号与模型页实时变化
 - 使用限制：
   - 免费路径应视为 development / prototyping，不应当作生产额度
-  - 速率限制、并发和模型名单需要在 build.nvidia.com 当前页面确认
+  - 速率限制、并发、模型名单和 `Free Endpoint` 状态需要在 build.nvidia.com 当前模型页确认
 - 有效期限：以账号和模型页当前策略为准
 - OpenAI 兼容：是，常见 base URL 为 `https://integrate.api.nvidia.com/v1`
 - Anthropic 兼容：否
 - 适合接入：`Codex`、`CC Switch`、OpenAI 兼容客户端
 - 优惠策略：
   - 用来验证 NVIDIA 托管模型和高性能推理体验
-  - 导入前从当前模型页复制模型 ID，避免模板里的示例模型过期
+  - 导入前从当前模型页复制模型 ID，并确认该模型的 `Free Endpoint` 仍为 `Available`
 - 官方文档：
   - [NVIDIA Build](https://build.nvidia.com/)
   - [NVIDIA NIM](https://developer.nvidia.com/nim)
