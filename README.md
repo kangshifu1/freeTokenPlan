@@ -35,7 +35,7 @@
 | [DashScope / 百炼](providers/dashscope/README.md) | 区域化新人实时推理免费额度，按地域与部署范围区分 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
 | [SiliconFlow](providers/siliconflow/README.md) | 以控制台 / 模型广场为准的免费模型，CC Switch 实名注册路径提示 `16元` 赠送余额 | 中国区多模型试用 | 需要 | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
 | [Agnes AI](providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
-| [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，常见 `100万 Tokens / 3个月`；编程工具新购路径转向 `Token Plan 个人版` | 国产模型 / OpenAI 兼容 agent / Token Plan 工具接入 | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
+| [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，当前页面列出多款模型各 `100万 Tokens / 3个月`；编程工具新购路径转向 `Token Plan 个人版` | 国产模型 / OpenAI 兼容 agent / Token Plan 工具接入 | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
 | [讯飞星辰 MaaS](providers/xfyun-maas/README.md) | 模型广场 + `Token Plan` / `Coding Plan` 订阅接入 | 中国大陆编程工具接入 | 需要 | [套餐订阅](https://maas.xfyun.cn/packageSubscription) |
 | [腾讯混元 / TokenHub](providers/tencent-hunyuan/README.md) | TokenHub 语言 / 多模态理解试用包为 `100万 Tokens / 1年`，图片生成 `50次 / 1年`，视频生成 `50积分 / 1年`，3D 生成 `100积分 / 1年`；混元存量入口另有共享 `100万 tokens / 1年` 资源包 | 混元文本生成 / TokenHub 模型 | 需要 | [TokenHub](https://console.cloud.tencent.com/tokenhub) |
 | [火山方舟](providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度；豆包搜索 / `web_search` 普通免费包与 Agent Plan 套餐额度分开计算，`Agent Plan` / `Coding Plan` 走单独套餐 | 豆包 / DeepSeek / 工具接入 | 需要 | [火山方舟控制台](https://console.volcengine.com/ark/) |
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-08-27`
+- 更新时间：`2026-08-28`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -457,7 +457,7 @@
 - 注册方式：百度智能云账号开通千帆，按要求完成实名认证
 - 是否需要信用卡：通常不需要信用卡，但需要百度智能云账号与实名体系
 - 免费内容：
-  - 官方新用户免费额度页说明，`2025年10月24日 0 点起` 首次开通千帆的用户会自动领取适用模型的免费额度
+  - 官方新用户免费额度页目前列出多款模型的自动赠送额度
   - 当前页面列出多款模型各 `100万 Tokens`，有效期 `3 个月`，示例包括 `ERNIE-4.5-Turbo` 系列、`DeepSeek-R1`、`DeepSeek-V3.1`、`Kimi-K2-Instruct`、`Qwen3` / `Qwen3-Coder` 系列等
   - 免费额度有效期从用户首次开通千帆之日算起；支持模型、tokens 和活动规则以官方页面为准
 - 使用限制：

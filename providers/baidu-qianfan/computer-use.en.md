@@ -11,7 +11,7 @@
 5. Open the API key / security credential page
 6. Create and copy the API key / secret
 7. Save it locally as `QIANFAN_API_KEY`; if required, also save `QIANFAN_SECRET_KEY`
-8. Open [new-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg), confirm whether the free quota was issued automatically, then record covered models, token grants, and validity; current official examples include `ERNIE-4.5-Turbo`, `DeepSeek`, `Kimi`, and `Qwen3` / `Qwen3-Coder` models, but the account page remains authoritative
+8. Open [new-user free quota](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg), confirm whether the free quota was issued automatically on first activation, then record covered models, token grants, and validity; current official examples include `ERNIE-4.5-Turbo`, `DeepSeek`, `Kimi`, and `Qwen3` / `Qwen3-Coder` models, but the account page remains authoritative
 9. For normal model-service access through CC Switch or another OpenAI-compatible client, open the [OpenAI SDK compatibility](https://cloud.baidu.com/doc/qianfan/s/Hmh4suq26) guide and record the normal model-service base URL: `https://qianfan.baidubce.com/v2`
 10. If the target is a coding-tool subscription, open [Token Plan personal](https://cloud.baidu.com/doc/qianfan/s/Dmrabu8b6) and the [quickstart](https://cloud.baidu.com/doc/qianfan/s/kmracfgi2), confirm whether the account should purchase or migrate to `Token Plan`, and copy the dedicated `Token Plan personal` API key from the subscription page
 11. Record the dedicated `Token Plan personal` base URLs: OpenAI `https://qianfan.baidubce.com/v2/tokenplan/personal`, Anthropic `https://qianfan.baidubce.com/anthropic/tokenplan/personal`

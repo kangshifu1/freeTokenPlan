@@ -4,7 +4,7 @@
 
 - 官网：[百度千帆新用户免费额度](https://cloud.baidu.com/doc/qianfan/s/Imi2rpirg)
 - 注册：百度智能云账号开通千帆，按要求完成实名认证
-- 免费：官方新用户免费额度页说明，`2025年10月24日 0 点起` 首次开通千帆用户会自动领取适用模型的免费额度；当前页面列出多款模型各 `100万 Tokens`，有效期 `3 个月`，示例包括 `ERNIE-4.5-Turbo` 系列、`DeepSeek-R1`、`DeepSeek-V3.1`、`Kimi-K2-Instruct`、`Qwen3` / `Qwen3-Coder` 系列等
+- 免费：官方新用户免费额度页说明，首次开通千帆用户会自动领取适用模型的免费额度；当前页面列出多款模型各 `100万 Tokens`，有效期 `3 个月`，示例包括 `ERNIE-4.5-Turbo` 系列、`DeepSeek-R1`、`DeepSeek-V3.1`、`Kimi-K2-Instruct`、`Qwen3` / `Qwen3-Coder` 系列等
 - 限制：免费额度有效期从首次开通千帆之日算起；具体模型、tokens、活动窗口和是否仍可领取以官方页面为准
 - 工具套餐：官方公告写明自 `2026-07-13 10:00:00` 起 `Coding Plan` 全档位停止新购，`Token Plan 个人版`全面开放购买；存量有效 `Coding Plan` 可继续使用至服务周期结束，也可迁移到 `Token Plan`
 - 兼容：千帆提供 [OpenAI SDK 兼容说明](https://cloud.baidu.com/doc/qianfan/s/Hmh4suq26)，普通模型服务 V2 base URL 为 `https://qianfan.baidubce.com/v2`；`Token Plan 个人版`使用专用 API Key，OpenAI base URL 为 `https://qianfan.baidubce.com/v2/tokenplan/personal`，Anthropic base URL 为 `https://qianfan.baidubce.com/anthropic/tokenplan/personal`
