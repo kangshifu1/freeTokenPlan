@@ -12,7 +12,7 @@
 6. Save the token locally as `CLOUDFLARE_API_TOKEN`
 7. Open [Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/) and confirm whether the free daily allocation is still `10,000` Neurons
 8. On the Pricing page, check the target model's example Neurons cost and record how input, output, or inference volume is converted, so `10,000` Neurons is not treated as a fixed request count
-9. On the Pricing page, confirm whether the target model is available on Workers Free; `@cf/moonshotai/kimi-k2.6`, `@cf/moonshotai/kimi-k2.7-code`, `@cf/zai-org/glm-5.2`, `@cf/deepseek-ai/deepseek-v4-flash-0731`, and `@cf/deepseek-ai/deepseek-v4-pro-0813` currently require Workers Paid or prepaid AI Gateway credits
+9. On the Pricing page, confirm whether the target model is available on Workers Free; `@cf/moonshotai/kimi-k2.6`, `@cf/moonshotai/kimi-k2.7-code`, `@cf/zai-org/glm-5.2`, `@cf/zai-org/glm-5.3`, `@cf/zai-org/glm-5.3-flash`, `@cf/deepseek-ai/deepseek-v4-flash-0731`, and `@cf/deepseek-ai/deepseek-v4-pro-0813` currently require Workers Paid or prepaid AI Gateway credits
 10. For OpenAI-compatible calls, open [OpenAI compatible API endpoints](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/) and verify the current base URL
 
 ## Human Takeover Points

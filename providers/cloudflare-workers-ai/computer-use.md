@@ -12,7 +12,7 @@
 6. 本地保存 token：`CLOUDFLARE_API_TOKEN`
 7. 打开 [Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/) 确认当前每日免费 allocation 是否仍为 `10,000` Neurons
 8. 在 Pricing 页查目标模型的示例 Neurons 成本，记录输入、输出或推理量如何换算，避免把 `10,000` Neurons 当作固定请求数
-9. 在 Pricing 页确认目标模型是否支持 Workers Free plan；当前 `@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2`、`@cf/deepseek-ai/deepseek-v4-flash-0731`、`@cf/deepseek-ai/deepseek-v4-pro-0813` 需要 Workers Paid plan 或预付 AI Gateway credits
+9. 在 Pricing 页确认目标模型是否支持 Workers Free plan；当前 `@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2`、`@cf/zai-org/glm-5.3`、`@cf/zai-org/glm-5.3-flash`、`@cf/deepseek-ai/deepseek-v4-flash-0731`、`@cf/deepseek-ai/deepseek-v4-pro-0813` 需要 Workers Paid plan 或预付 AI Gateway credits
 10. 如果需要 OpenAI 兼容调用，打开 [OpenAI compatible API endpoints](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/) 复核当前 base URL
 
 ## 人工接管点

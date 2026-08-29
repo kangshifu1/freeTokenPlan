@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-08-28`
+- 更新时间：`2026-08-29`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -434,7 +434,7 @@
   - 官方定价页说明 Workers AI 基于 Neurons 计费，并提供每日 `10,000` Neurons 免费 allocation
   - Cloudflare 当前按模型展示示例成本；文本、图片、音频等模型的输入/输出或推理量会换算为 Neurons
   - 不同模型消耗的 Neurons 不同，同样 `10,000` Neurons 对不同模型代表的请求量不同
-  - 定价页当前明确：`@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2`、`@cf/deepseek-ai/deepseek-v4-flash-0731`、`@cf/deepseek-ai/deepseek-v4-pro-0813` 不在 Workers Free plan 可用范围内，需要 Workers Paid plan 或预付 AI Gateway credits
+  - 定价页当前明确：`@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2`、`@cf/zai-org/glm-5.3`、`@cf/zai-org/glm-5.3-flash`、`@cf/deepseek-ai/deepseek-v4-flash-0731`、`@cf/deepseek-ai/deepseek-v4-pro-0813` 不在 Workers Free plan 可用范围内，需要 Workers Paid plan 或预付 AI Gateway credits
   - 超过免费 allocation 后需要 Workers Paid plan 或预付 AI Gateway credits
 - 使用限制：
   - 更适合 Cloudflare Worker / REST API / 边缘 demo
