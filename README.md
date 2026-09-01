@@ -32,7 +32,7 @@
 | [GitHub Models](providers/github-models/README.md) | 已于 `2026-07-30` 全面退役，playground / catalog / API / BYOK 均不可用 | 仅作历史记录 | 不适用 | [GitHub Docs](https://docs.github.com/en/github-models) |
 | [Vercel AI Gateway](providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits，且只覆盖 eligible models | Vercel / AI SDK 项目 | 需要 | [Vercel Dashboard](https://vercel.com/dashboard) |
 | [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算；部分模型仅 Workers Paid 或预付 AI Gateway credits 可用 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
-| [DashScope / 百炼](providers/dashscope/README.md) | 区域化新人实时推理免费额度，按地域与部署范围区分 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
+| [DashScope / 百炼](providers/dashscope/README.md) | 区域化新人实时推理免费额度，当前按地域与模型行区分，北京主路线外仍需逐行复核 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
 | [SiliconFlow](providers/siliconflow/README.md) | 以控制台 / 模型广场为准的免费模型，CC Switch 实名注册路径提示 `16元` 赠送余额 | 中国区多模型试用 | 需要 | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
 | [Agnes AI](providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
 | [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，当前页面列出多款模型各 `100万 Tokens / 3个月`；编程工具新购路径转向 `Token Plan 个人版` | 国产模型 / OpenAI 兼容 agent / Token Plan 工具接入 | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-08-29`
+- 更新时间：`2026-09-01`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -303,11 +303,11 @@
 - 是否需要信用卡：不需要信用卡；官方新人免费额度页当前说明无需实名认证即可获取和使用免费额度，额度耗尽后若要继续按量付费才需要完成实名认证 / 充值
 - 免费内容：
   - 官方文档明确有“新人免费额度”
-  - 部分模型在指定地域下有免费时长或免费 token 配额；官方新人免费额度页主规则当前写明仅华北 `2`（北京）地域模型享有免费额度，其他地域无免费额度；同页 FAQ 后文也提到“仅新加坡地域的模型”，因此必须按具体模型行和控制台剩余额度重新核对
+  - 部分模型在指定地域下有免费时长或免费 token 配额；官方新人免费额度页主规则当前写明华北 `2`（北京）地域模型享有免费额度，其他地域无免费额度；同页 FAQ 后文也提到新加坡地域模型行，因此必须按具体模型行和控制台剩余额度重新核对
   - 官方新人免费额度说明写明，首次开通百炼时会自动发放符合条件模型的新人免费额度；无需实名认证即可获取和使用免费额度；当前主规则为 `90 天`，`2025-09-08 11:00` 前已开通用户的有效期可能不足 `90 天`
   - 如果使用 `Token Plan` / `Coding Plan` 专属 API Key，请注意官方 FAQ 写明这类 key 不消耗普通新人免费额度；想验证新人免费额度时应使用普通模型调用 API Key 与对应地域模型
 - 使用限制：
-  - 免费额度主路径按华北 `2`（北京）地域模型实时推理核验；新加坡地域 / 国际部署模型不要默认视为有新人免费额度，必须按当前模型行和控制台确认
+  - 免费额度主路径按华北 `2`（北京）地域模型实时推理核验；新加坡地域模型也必须按当前模型行和控制台确认，不要从地域名称直接推断可用额度
   - 不抵扣 Batch、模型调优、模型部署或自定义模型费用
   - `Token Plan` / `Coding Plan` 与普通新人免费额度是不同套餐 / key 路径，导入 CC Switch 前不要混用额度判断
   - 全新未认证用户额度耗尽后默认停止响应并返回 `AllocationQuota.FreeTierOnly`；已认证用户可能继续按量扣费，应提前开启“免费额度用完即停”
