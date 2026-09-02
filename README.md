@@ -37,7 +37,7 @@
 | [Agnes AI](providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
 | [百度千帆](providers/baidu-qianfan/README.md) | 新用户模型 token 赠送，当前页面列出多款模型各 `100万 Tokens / 3个月`；编程工具新购路径转向 `Token Plan 个人版` | 国产模型 / OpenAI 兼容 agent / Token Plan 工具接入 | 需要 | [千帆控制台](https://console.bce.baidu.com/qianfan/) |
 | [讯飞星辰 MaaS](providers/xfyun-maas/README.md) | 模型广场 + `Token Plan` / `Coding Plan` 订阅接入 | 中国大陆编程工具接入 | 需要 | [套餐订阅](https://maas.xfyun.cn/packageSubscription) |
-| [腾讯混元 / TokenHub](providers/tencent-hunyuan/README.md) | TokenHub 语言 / 多模态理解试用包为 `100万 Tokens / 1年`，图片生成 `50次 / 1年`，视频生成 `50积分 / 1年`，3D 生成 `100积分 / 1年`；混元存量入口另有共享 `100万 tokens / 1年` 资源包 | 混元文本生成 / TokenHub 模型 | 需要 | [TokenHub](https://console.cloud.tencent.com/tokenhub) |
+| [腾讯混元 / TokenHub](providers/tencent-hunyuan/README.md) | TokenHub 语言模型试用包为 `100万 Tokens / 1年`；视觉模型当前公开免费包包含视频生成 `50积分 / 1年` 和 3D 生成 `100积分 / 1年`；混元存量入口另有共享 `100万 tokens / 1年` 资源包 | 混元文本生成 / TokenHub 模型 | 需要 | [TokenHub](https://console.cloud.tencent.com/tokenhub) |
 | [火山方舟](providers/volcengine-ark/README.md) | 免费推理额度 / 活动额度；豆包搜索 / `web_search` 普通免费包与 Agent Plan 套餐额度分开计算，`Agent Plan` / `Coding Plan` 走单独套餐 | 豆包 / DeepSeek / 工具接入 | 需要 | [火山方舟控制台](https://console.volcengine.com/ark/) |
 
 ## 快速导航
@@ -548,8 +548,8 @@
 - 是否需要信用卡：通常不需要信用卡，但需要腾讯云账号与实名体系
 - 免费内容：
   - 官方计费页说明混元大模型相关能力将逐步迁移至 `TokenHub`，新增模型服务或更多模型能力应前往 TokenHub 开通
-  - 官方 TokenHub 新用户体验页于 `2026-07-21` 更新，当前列出语言模型、多模态理解、图片生成、视频生成、3D 生成等多类体验包；本期活动时间截至 `2026-12-31`，后续以页面展示或平台公告为准
-  - 语言模型和多模态理解模型均提供 `100万 Tokens`，有效期 `1 年`；`HY-Image-V3.0` 图像生成提供 `50 次生成 / 1 年`，视频生成体验包提供 `50 积分 / 1 年`，3D 生成体验包提供 `100 积分 / 1 年`
+  - 官方 TokenHub 新用户体验页于 `2026-07-21` 更新，当前公开免费包包含语言模型、多模态理解、视频生成、3D 生成等类别；本期活动时间截至 `2026-12-31`，后续以页面展示或平台公告为准
+  - 语言模型和多模态理解模型均提供 `100万 Tokens`，有效期 `1 年`；视觉模型当前公开的免费包为视频生成 `50 积分 / 1 年` 和 3D 生成 `100 积分 / 1 年`
   - 完成实名认证后首次点击“立即使用”会发放免费体验额度
   - 当前混元生文免费额度为一次性共享资源包：列出的混元生文（不含 `Hunyuan-lite`）与混元多模态模型共享 `100万 tokens`，自开通日起 `1 年` 内有效
   - `Hunyuan-embedding` 单独列出 `100万 tokens / 1 年`
