@@ -4,7 +4,7 @@
 
 - Website: [Gemini API Pricing](https://ai.google.dev/gemini-api/docs/pricing)
 - Registration: sign in to Google AI Studio with a Google account, then create an API key; new keys are now created as `auth keys`
-- Free tier: official long-term free tier, model-dependent; current public pricing examples include `gemini-3.8-flash`, `gemini-3.7-flash`, `gemini-3.6-flash`, Gemini 3.5, Gemini 3.1, Gemini 2.5, and Gemini Embedding models; unrestricted `standard keys` are rejected, dormant unrestricted `standard keys` have been blocked since `2026-05-07`, explicitly restricted `standard keys` can still work for now, and all `standard keys` are planned for shutdown in `2026-09`
+- Free tier: official long-term free tier, model-dependent; the current public pricing page includes `gemini-3-flash-preview` and other Gemini 3 Flash models alongside Gemini 2.5 and Gemini Embedding models. Unrestricted `standard keys` are rejected, and dormant unrestricted keys have been blocked since `2026-05-07`; since the current date is September 2026, do not depend on an older `standard key` and verify the key type and status during setup
 - Compatibility: official [OpenAI compatibility](https://ai.google.dev/gemini-api/docs/openai) exists with base URL `https://generativelanguage.googleapis.com/v1beta/openai/`, but verify the downstream protocol requirement first
 - Recommended for: beginner testing, lightweight coding, grounding demos
 

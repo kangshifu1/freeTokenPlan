@@ -23,11 +23,11 @@
 3. Complete Google login and any secondary verification
 4. Open `Get API key` or `API keys`
 5. Click `Create API key`
-6. If asked for a project, prefer an `auth key`; do not depend on an unrestricted `standard key`, because Google documents these keys as rejected, and dormant unrestricted keys have been blocked since `2026-05-07`
+6. If asked for a project, prefer an `auth key`; do not depend on an unrestricted `standard key`, because Google documents these keys as rejected, and dormant unrestricted keys have been blocked since `2026-05-07`. Since the current date is September 2026, also verify the type and status of any migrated key
 7. Copy the generated key immediately
 8. Save it locally as `GEMINI_API_KEY`
 9. Record suggested starter models:
-   - Prefer the current `Flash` family model recommended by AI Studio, such as `gemini-3.8-flash`, `gemini-3.7-flash`, or `gemini-3.6-flash` now listed on the official pricing page
+   - Prefer a current `Flash` family model listed by AI Studio, such as `gemini-3-flash-preview` on the official pricing page
    - The template default remains the previously verified `gemini-2.5-flash`; re-check the official model page before import
 10. For `CC Switch`, record the current official Gemini OpenAI compatibility endpoint `https://generativelanguage.googleapis.com/v1beta/openai/` if you use it; if the downstream tool requires full Responses API behavior, validate through a compatible gateway first
 
@@ -42,4 +42,4 @@
 - API key created successfully
 - Creation date recorded
 - Current free-tier model list checked
-- Key type is not an unrestricted `standard key`, and the setup does not depend on an older `standard key` planned for full shutdown in `2026-09`
+- Key type is not an unrestricted `standard key`, and any older key was checked for its current status in September 2026
