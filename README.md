@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-09-09`
+- 更新时间：`2026-09-10`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -223,7 +223,7 @@
   - 官方速率限制文档说明限制按组织级别生效，可能先触发请求数或 token 数任一维度
   - 当前免费计划示例：`groq/compound` / `groq/compound-mini` 为 `30 RPM` / `250 RPD` / `70K TPM`
   - 当前免费计划示例：`meta-llama/llama-prompt-guard-2-22m` / `meta-llama/llama-prompt-guard-2-86m` 为 `30 RPM` / `14.4K RPD` / `15K TPM` / `500K TPD`
-  - 当前免费计划示例：`openai/gpt-oss-120b` / `openai/gpt-oss-20b` 和 `qwen/qwen3.6-27b` 为 `30 RPM` / `1K RPD` / `8K TPM` / `200K TPD`；`qwen/qwen3.8-27b` 为 `30 RPM` / `1K RPD` / `8K TPM` / `2M TPD`
+  - 当前免费计划示例：`openai/gpt-oss-120b` / `openai/gpt-oss-20b`、`qwen/qwen3.6-27b` 和 `qwen/qwen3.8-27b` 均为 `30 RPM` / `1K RPD` / `8K TPM` / `200K TPD`
   - 官方说明该表是高层摘要，账号的精确当前限额仍应以控制台 `Limits` 页面为准
   - 免费层适合交互式、低延迟场景，不适合默认认为有大批量免费额度
 - 有效期限：持续可用，但模型和配额以官方 Rate Limits / 控制台为准
