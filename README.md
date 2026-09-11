@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-09-10`
+- 更新时间：`2026-09-12`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -275,12 +275,12 @@
 - 注册方式：注册后创建 API Key
 - 是否需要信用卡：需要添加已验证的支付方式后激活 Free Trial credits；不额外购买 credits 不会收费
 - 免费内容：
-  - 官方账号 / 计费与 Rate Limits 文档说明：新账号添加已验证支付方式后可获得 `$5` Free Trial credits，发放后 `30` 天有效，可用于所有 public models
+  - 官方账号 / 计费与 Rate Limits 文档说明：新账号添加已验证支付方式后可获得 `$5` Free Trial credits，发放后 `30` 天有效，可用于所有 public models；Cerebras 当前没有自动续期的永久免费额度
   - 官方提供 OpenAI SDK / OpenAI compatible 用法
 - 使用限制：
-  - Free Trial 层当前对 `gpt-oss-120b` 与 `gemma-4-31b` 列出 `5 RPM` / `30K TPM` / `1M TPH` / `1M TPD`；但官方 Rate Limits 现在把 token 限制说明为独立的 uncached token limit 与 total token limit 双桶模型，uncached token 限制可见性按官方说明在 `2026-08-17` 前逐步显示到控制台，具体账号仍以控制台 Limits 为准
+  - Free Trial 层当前对 `gpt-oss-120b` 与 `qwen-3.8-27b` 列出 `5 RPM` / `30K uncached TPM` / `90K total TPM` / `1M TPH` / `1M TPD`；官方 Rate Limits 将 token 限制说明为独立的 uncached token limit 与 total token limit 双桶模型，具体账号仍以控制台 Limits 为准
   - 未在注册时添加支付方式时，Playground 和 API access 会保持 inactive
-  - 官方模型页当前列出公开共享端点 `gpt-oss-120b` 与 `gemma-4-31b`
+  - 官方模型页当前列出公开共享端点 `gpt-oss-120b` 与 `qwen-3.8-27b`
 - 有效期限：Free Trial credits 发放后 `30` 天有效；后续 Pay-as-you-go / Developer 层以控制台为准
 - OpenAI 兼容：是
 - Anthropic 兼容：否

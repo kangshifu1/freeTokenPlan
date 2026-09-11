@@ -11,7 +11,7 @@
 5. Create a key
 6. Copy the key
 7. Save it locally as `CEREBRAS_API_KEY`
-8. Check the OpenAI SDK, Account & Billing, Rate Limits, and official Models pages in the docs to confirm Free Trial terms, dual-bucket uncached / total token limits, and current public models
+8. Check the OpenAI SDK, Account & Billing, Rate Limits, and official Models pages in the docs to confirm the Free Trial `$5` / `30-day` boundary, `5 RPM` / `30K uncached TPM` / `90K total TPM` / `1M TPH` / `1M TPD` limits, and the current public models `gpt-oss-120b` and `qwen-3.8-27b`
 9. Record the compatible routing details for `CC Switch`
 
 ## Human Takeover Points
@@ -22,6 +22,6 @@
 
 ## Final Checklist
 
-- Current model IDs recorded
-- Current Free Trial credits, validity, and dual-bucket rate-limit note recorded
+- Current model IDs recorded and checked against the official Models page
+- Current Free Trial credits, validity, dual-bucket rate limits, and the lack of a permanent free tier recorded
 - Current public models confirmed against the official Models page
