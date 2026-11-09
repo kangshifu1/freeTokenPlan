@@ -23,7 +23,7 @@
 3. Complete Google login and any secondary verification
 4. Open `Get API key` or `API keys`
 5. Click `Create API key`
-6. If asked for a project, prefer an `auth key`; do not depend on an unrestricted `standard key`, because Google documents these keys as rejected, and dormant unrestricted keys have been blocked since `2026-05-07`. Since the current date is September 2026, also verify the type and status of any migrated key
+6. If asked for a project, prefer an `auth key`; do not depend on an unrestricted `standard key`, because Google documents these keys as rejected, and dormant unrestricted keys have been blocked since `2026-05-07`. Also verify the type and status of any migrated key
 7. Copy the generated key immediately
 8. Save it locally as `GEMINI_API_KEY`
 9. Record suggested starter models:
@@ -42,4 +42,4 @@
 - API key created successfully
 - Creation date recorded
 - Current free-tier model list checked
-- Key type is not an unrestricted `standard key`, and any older key was checked for its current status in September 2026
+- Key type is not an unrestricted `standard key`, and any older key was checked for its current status

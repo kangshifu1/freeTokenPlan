@@ -4,10 +4,10 @@
 
 - Website: [Mistral Pricing](https://mistral.ai/pricing)
 - Registration: create a Mistral platform account
-- Free tier: the public pricing page still lists Mistral Free with limited Vibe for code access and `$10/mo` in API credits; the Studio quickstart says API `Free mode` is enabled by default, does not require a credit card for the free trial, and uses limited rate limits for evaluation and prototyping
-- Key / billing boundary: API keys are not tied to a billing mode; the same key follows the workspace's current plan and billing state as it moves from `Free mode` to `Pay as you go` or a higher tier; the official developer quickstart also maps `402 Payment Required` to an account with no payment method, so first API calls still need current workspace payment-method and billing-state checks
-- Upgrade path: move to the `Scale` plan for higher limits, then usage tiers increase with cumulative billed usage
-- Recommended for: model-style testing and light development evaluation
+- Free tier: the current pricing page presents `Mistral Free` as a Le Chat plan with limited Vibe coding access; it does not list `$10/mo` API credits. API access is separate from the consumer Free plan
+- Key / billing boundary: the official API-key quickstart requires a workspace with API access. Check the current Console plan, billing status, and payment requirements; creating a key does not grant free API quota
+- API access: configure API usage only when the current workspace is eligible; if an API call returns `402 Payment Required`, follow the current official error guidance to check account status
+- Recommended for: trying Le Chat / Vibe for free; API use only when the workspace explicitly has API access
 
 Files in this directory:
 

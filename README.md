@@ -26,12 +26,12 @@
 | [Cohere](providers/cohere/README.md) | Trial key 月度调用额度；当前试用模型表包含 `Command A+`、`Command A`、`Command A Reasoning`、`Command A Translate`、`Command A Vision`、`Command R7B`、`Command R+`、`Command R`、`North Mini Code` | 轻量测试 / prompt 验证 | 需要 | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
 | [Hugging Face](providers/huggingface/README.md) | Free 用户每月 `$0.10` Inference Providers credits（可能调整，超出需购买 credits） | API 联调 / demo | 需要 | [User Access Tokens](https://huggingface.co/settings/tokens) |
 | [Groq](providers/groq/README.md) | Free Plan 按模型 RPM/RPD/TPM/TPD 限流 | 低延迟 OpenAI 兼容调用 | 需要 | [Groq Console](https://console.groq.com/keys) |
-| [Mistral](providers/mistral/README.md) | Free 计划当前列出 `$10/月` API credits；API `Free mode` 默认启用，但首次请求仍需核对支付方式/账单状态 | 模型风格试用 | 需要 | [Mistral Console](https://console.mistral.ai/) |
+| [Mistral](providers/mistral/README.md) | `Mistral Free` 面向 Le Chat / Vibe；API key 需要 workspace 具备 API access，注册后以 Console 计划和账单状态为准 | 模型风格试用 | 需要 | [Mistral Console](https://console.mistral.ai/) |
 | [Cerebras](providers/cerebras/README.md) | 验证支付方式后提供 `$5` Free Trial credits，`30` 天有效 | 高速推理试用 | 需要 | [Cerebras Inference](https://inference.cerebras.ai/) |
 | [NVIDIA NIM](providers/nvidia-nim/README.md) | 按模型页开放的免费 serverless NIM 开发端点；部分旧端点已标记 `Deprecated` | OpenAI 风格原型验证 | 需要 | [NVIDIA Build](https://build.nvidia.com/) |
 | [GitHub Models](providers/github-models/README.md) | 已于 `2026-07-30` 全面退役，playground / catalog / API / BYOK 均不可用 | 仅作历史记录 | 不适用 | [GitHub Docs](https://docs.github.com/en/github-models) |
 | [Vercel AI Gateway](providers/vercel-ai-gateway/README.md) | 免费档每月 `$5` AI Gateway credits，且只覆盖 eligible models | Vercel / AI SDK 项目 | 需要 | [Vercel Dashboard](https://vercel.com/dashboard) |
-| [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算；部分模型仅 Workers Paid 或预付 AI Gateway credits 可用 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
+| [Cloudflare Workers AI](providers/cloudflare-workers-ai/README.md) | 每日 `10,000` Neurons 免费 allocation，按模型消耗核算；包括 `@cf/deepseek-ai/deepseek-v4.1` 在内的部分模型仅 Workers Paid 或预付 AI Gateway credits 可用 | Workers / 边缘 demo | 需要 | [Cloudflare Dashboard](https://dash.cloudflare.com/) |
 | [DashScope / 百炼](providers/dashscope/README.md) | 区域化新人实时推理免费额度，当前按地域与模型行区分，北京主路线外仍需逐行复核 | 中国大陆 / `Codex` / `Claude Code` | 需要 | [DashScope Console](https://dashscope.console.aliyun.com/) |
 | [SiliconFlow](providers/siliconflow/README.md) | 以控制台 / 模型广场为准的免费模型，CC Switch 实名注册路径提示 `16元` 赠送余额 | 中国区多模型试用 | 需要 | [SiliconFlow Console](https://cloud.siliconflow.cn/) |
 | [Agnes AI](providers/agnes-ai/README.md) | 官网公开宣传 free API credits / key / tokens / models | 海外多模型 API 原型验证 | 需要 | [Agnes AI](https://agnes-ai.com/) |
@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-09-12`
+- 更新时间：`2026-11-09`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -118,7 +118,7 @@
   - 免费档按模型区分，不是所有模型都有 Free tier
   - 速率限制、上下文长度、是否启用搜索等都按模型单独计算
   - 免费档数据可能会用于 Google 产品改进，付费档默认不会
-  - AI Studio 新建 key 默认生成 `auth keys`；官方说明已拒绝不受限制的 `standard keys`，长期闲置的不受限制 `standard keys` 已自 `2026-05-07` 起被封锁。进入 `2026-09` 后不要再依赖旧 `standard key`，创建或迁移时应确认当前 key 类型和状态
+  - AI Studio 新建 key 默认生成 `auth keys`；官方说明已拒绝不受限制的 `standard keys`，长期闲置的不受限制 `standard keys` 已自 `2026-05-07` 起被封锁。创建或迁移时应确认当前 key 类型和状态
 - 有效期限：长期免费档，不是一次性赠金
 - OpenAI 兼容：官方提供 OpenAI compatibility 端点，当前 base URL 为 `https://generativelanguage.googleapis.com/v1beta/openai/`；但功能覆盖不等同于完整 OpenAI API
 - Anthropic 兼容：否
@@ -246,21 +246,19 @@
 - 注册方式：Mistral 平台注册
 - 是否需要信用卡：看使用路径；评估阶段通常可先试
 - 免费内容：
-  - 官方定价页继续列出 `Mistral Free` 计划，并说明包含有限的 `Vibe for code` 能力
-  - 同一官方定价页当前列出 Free 计划包含 `$10 /mo in API credits`
-  - 官方 quickstart 说明 API `Free mode` 默认启用，免费试用无需先绑定信用卡，带有限 rate limit，面向评估与原型验证
+  - 当前定价页的 `Mistral Free` 是面向 Le Chat 的免费计划，包含有限的 `Vibe` 编程能力；页面未列出 `$10/月` API credits
+  - API 使用与 Le Chat Free 计划分开；官方 API key quickstart 要求 workspace 具备 API access，需在 Console 核对当前计划、账单状态及可用性，不应将 `Mistral Free` 当作免费的 API 配额
 - 使用限制：
-  - 免费模式和月度 credits 适合轻量评估；具体可用模型、扣费和重置仍以当前账号 / 定价页为准
-  - 官方 developer quickstart 也把 `402 Payment Required` 解释为账号缺少支付方式，所以首次 API 请求前仍要核对当前 workspace 的支付方式与账单状态
-  - API key 不绑定特定计费模式；同一个 key 会按组织当前计划和账单状态从 `Free mode` 切到 `Pay as you go` 或更高 tier
-  - 更像“提供免费试用模式”，不是大额度长期免费池
-  - 需要更高限额时升级到 `Scale` 计划，随后按累计账单进入更高 usage tier
+  - API key 创建和 API 调用资格以当前 workspace 的 API access 状态为准；创建 key 不代表获得免费调用额度
+  - 首次 API 请求前核对 workspace 的计划、账单状态和支付方式要求；如返回 `402 Payment Required`，按当前官方错误说明处理
+  - 不应将消费者端 `Mistral Free` 计划描述为 API 免费试用或长期免费 API 池
+  - 需要 API 额度时，以当前 workspace 可用的 API 计划和计费方式为准
 - 有效期限：以账户和产品当前策略为准
 - OpenAI 兼容：有兼容生态
 - Anthropic 兼容：否
 - 适合接入：`CC Switch`、代理层、轻量开发测试
 - 优惠策略：
-  - 先用官方免费模式判断模型风格是否合适
+  - 可先用 Le Chat / Vibe 免费计划体验；API 另行核对 workspace 的 access 和计费状态
   - 真要做日常 coding 主力，通常需要再配一个稳定免费或低价路由
 - 官方文档：
   - [Pricing](https://mistral.ai/pricing)
@@ -435,7 +433,7 @@
   - 官方定价页说明 Workers AI 基于 Neurons 计费，并提供每日 `10,000` Neurons 免费 allocation
   - Cloudflare 当前按模型展示示例成本；文本、图片、音频等模型的输入/输出或推理量会换算为 Neurons
   - 不同模型消耗的 Neurons 不同，同样 `10,000` Neurons 对不同模型代表的请求量不同
-  - 定价页当前明确：`@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2`、`@cf/zai-org/glm-5.3`、`@cf/zai-org/glm-5.3-flash`、`@cf/deepseek-ai/deepseek-v4-flash-0731`、`@cf/deepseek-ai/deepseek-v4-pro-0813` 不在 Workers Free plan 可用范围内，需要 Workers Paid plan 或预付 AI Gateway credits
+  - 定价页当前明确：`@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2`、`@cf/zai-org/glm-5.3`、`@cf/zai-org/glm-5.3-flash`、`@cf/deepseek-ai/deepseek-v4-flash-0731`、`@cf/deepseek-ai/deepseek-v4-pro-0813`、`@cf/deepseek-ai/deepseek-v4.1` 不在 Workers Free plan 可用范围内，需要 Workers Paid plan 或预付 AI Gateway credits
   - 超过免费 allocation 后需要 Workers Paid plan 或预付 AI Gateway credits
 - 使用限制：
   - 更适合 Cloudflare Worker / REST API / 边缘 demo
