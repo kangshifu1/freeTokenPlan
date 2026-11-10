@@ -10,8 +10,8 @@
 4. Create a key
 5. Copy the key
 6. Save it locally as `MISTRAL_API_KEY`
-7. Check [Mistral Pricing](https://mistral.ai/pricing) and the [API-key quickstart](https://docs.mistral.ai/getting-started/quickstarts/studio/activate-and-generate-api-key) to distinguish the Le Chat / Vibe `Mistral Free` plan from separate API access; the current pricing page does not list `$10/mo` API credits
-8. Check [API keys](https://docs.mistral.ai/admin/identity-access/api-keys), confirm the key's workspace has API access, and record its current plan, billing status, and payment requirements; creating a key does not grant free API quota
+7. Check [Mistral Pricing](https://mistral.ai/pricing) and [Usage and limits](https://docs.mistral.ai/admin/billing-usage/usage-limits): the Free pricing card advertises `$10/month` in credits, but the usage documentation says the included budget is for Vibe and Studio and does not include API access
+8. Check [API keys](https://docs.mistral.ai/admin/identity-access/api-keys), activate billing and pay-as-you-go if API access is required, and record the workspace subscription, billing status, and spending limit; do not treat the advertised Free credits as free API quota
 9. For `CC Switch`, prefer a compatible gateway before import
 
 ## Human Takeover Points
@@ -22,4 +22,4 @@
 ## Final Checklist
 
 - Key created
-- Le Chat / Vibe free access is distinguished from API access, and the workspace plan, billing status, and payment requirements are recorded
+- The included Vibe / Studio budget is distinguished from API access, and the workspace subscription, billing status, pay-as-you-go state, and spending limit are recorded
