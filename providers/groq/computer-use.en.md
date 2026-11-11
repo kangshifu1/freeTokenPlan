@@ -11,6 +11,7 @@
 5. Copy the key
 6. Save it locally as `GROQ_API_KEY`
 7. Check the official Rate Limits docs and the organization-level `Limits` page for current availability; record the target model's `RPM`, `RPD`, `TPM`, and `TPD`
+   - Do not select `groq/compound`, `groq/compound-mini`, or `qwen/qwen3.6-27b`; Groq retired them on `2026-09-24`
 8. In `CC Switch`, add:
    - Base URL: `https://api.groq.com/openai/v1`
    - Default model: a currently available model from the console

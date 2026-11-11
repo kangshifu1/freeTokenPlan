@@ -11,6 +11,7 @@
 5. 复制 key
 6. 本地保存为环境变量：`GROQ_API_KEY`
 7. 打开官方 Rate Limits 文档和组织级 `Limits` 页面确认当前可用模型与限额；先记录目标模型的 `RPM`、`RPD`、`TPM`、`TPD`
+   - 不要选择已于 `2026-09-24` 下线的 `groq/compound`、`groq/compound-mini` 或 `qwen/qwen3.6-27b`
 8. 在 CC Switch 中添加：
    - Base URL：`https://api.groq.com/openai/v1`
    - 默认模型：选择当前控制台可见模型
