@@ -21,7 +21,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 | Provider | Free type | Best fit | Registration required | Registration URL |
 |---|---|---|---|---|
-| [Gemini](providers/gemini/README.en.md) | Long-term model-dependent Free tier; current official examples include `gemini-3-flash-preview` and other Gemini 3 Flash models | `CC Switch` / OpenAI-compatible gateway | Yes | [AI Studio](https://aistudio.google.com/) |
+| [Gemini](providers/gemini/README.en.md) | Long-term model- and mode-dependent Free tier; `gemini-3.8-flash` Standard API is currently free, while Batch and grounding are not | `CC Switch` / OpenAI-compatible gateway | Yes | [AI Studio](https://aistudio.google.com/) |
 | [OpenRouter](providers/openrouter/README.en.md) | `:free` models: `20 RPM`, `50/day` before `$10` credits, `1000/day` after | `Codex` / `CC Switch` | Yes | [OpenRouter Keys](https://openrouter.ai/keys) |
 | [Cohere](providers/cohere/README.en.md) | Trial-key monthly call quota; current trial model set includes `Command A+`, `Command A`, `Command A Reasoning`, `Command A Translate`, `Command A Vision`, `Command R7B`, `Command R+`, `Command R`, and `North Mini Code` | Lightweight tests / prompt validation | Yes | [Cohere Dashboard](https://dashboard.cohere.com/api-keys) |
 | [Hugging Face](providers/huggingface/README.en.md) | `$0.10/month` Inference Providers credits for free users, subject to change; extra usage requires purchased credits | API checks / demos | Yes | [User Access Tokens](https://huggingface.co/settings/tokens) |
@@ -51,7 +51,7 @@ This is a public repository for beginners who want a practical index of free AI 
 
 This repository is a public starter guide for beginners who want to try AI tools with free or low-cost quotas and connect them to coding agents such as `Codex`, `Claude Code`, and `CC Switch`.
 
-- Updated: `2026-11-16`
+- Updated: `2026-11-17`
 - Audience: beginners, indie builders, AI tool users
 - Scope: only official or first-party-documented free tiers, trial quotas, and compatibility notes
 - Warning: free-tier policies change often; account dashboards always win over this repo
@@ -137,7 +137,7 @@ Each provider has its own directory with:
 
 ## Current Provider Notes
 
-- Gemini: the Free tier remains model-dependent, and the current public pricing page includes `gemini-3-flash-preview` and other Gemini 3 Flash examples alongside Gemini 2.5 and embedding models. AI Studio now creates new keys as `auth keys`; Google documents that unrestricted `standard keys` are rejected, and dormant unrestricted keys have been blocked since `2026-05-07`. Verify the key type and status during setup. Gemini also has an official OpenAI compatibility endpoint at `https://generativelanguage.googleapis.com/v1beta/openai/`, but it is not a full OpenAI API replacement.
+- Gemini: the Free tier remains model- and mode-dependent. The current pricing page marks `gemini-3.8-flash` Standard API input, output, and context caching as free of charge, while Batch, Google Search grounding, and Maps grounding are unavailable on its Free tier. The paid tier currently shares `5,000` free Search / Maps requests per month across Gemini 3 and newer models; that paid-tier benefit is not a Free-tier grounding allowance. Gemini 2.5 and embedding rows still need model-by-model checks. AI Studio creates new keys as `auth keys`; unrestricted `standard keys` are rejected, and dormant unrestricted keys have been blocked since `2026-05-07`. Gemini also has an official OpenAI compatibility endpoint at `https://generativelanguage.googleapis.com/v1beta/openai/`, but it is not a full OpenAI API replacement.
 - OpenRouter: free accounts can still create keys without a credit card and use `:free` model variants. The current official limits page lists `20 requests/min`, `50 requests/day` for accounts with less than `$10` purchased credits, and `1000 requests/day` after purchasing at least `$10` credits; the `openrouter/free` router can pick from currently available free models for low-volume experiments.
 - Cohere: trial keys remain the correct free testing path, with a documented `1,000 API calls/month` cap and per-endpoint limits such as `20 req/min` for current Chat models, `2,000 inputs/min` for Embed, and `10 req/min` for Rerank. Current model docs now surface `Command A+`, `Command A`, `Command A Reasoning`, `Command A Translate`, `Command A Vision`, `Command R7B`, `Command R+`, `Command R`, and `North Mini Code` as the main current chat/model set for free-trial testing.
 - Hugging Face: Inference Providers currently give free users `$0.10` monthly credits, subject to change; extra usage requires purchased credits. Those credits apply to serverless Inference Providers calls routed through Hugging Face and do not apply when using custom third-party provider keys, so this is best treated as a smoke-test or demo route.

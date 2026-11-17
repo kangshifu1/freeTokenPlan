@@ -27,7 +27,7 @@
 7. Copy the generated key immediately
 8. Save it locally as `GEMINI_API_KEY`
 9. Record suggested starter models:
-   - Prefer a current `Flash` family model listed by AI Studio, such as `gemini-3-flash-preview` on the official pricing page
+   - Prefer a current `Flash` family model that the pricing page explicitly supports on the Free tier; `gemini-3.8-flash` Standard API is currently free, while Batch, Google Search grounding, and Maps grounding are not on its Free tier
    - The template default remains the previously verified `gemini-2.5-flash`; re-check the official model page before import
 10. For `CC Switch`, record the current official Gemini OpenAI compatibility endpoint `https://generativelanguage.googleapis.com/v1beta/openai/` if you use it; if the downstream tool requires full Responses API behavior, validate through a compatible gateway first
 
@@ -41,5 +41,5 @@
 
 - API key created successfully
 - Creation date recorded
-- Current free-tier model list checked
+- Current Free tier checked by both model and call mode; the paid tier's shared `5,000` monthly Search / Maps requests were not treated as Free-tier grounding quota
 - Key type is not an unrestricted `standard key`, and any older key was checked for its current status
