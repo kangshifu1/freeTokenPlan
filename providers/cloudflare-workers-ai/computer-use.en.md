@@ -10,9 +10,9 @@
 4. Create an API token, or configure an AI binding in a Worker project
 5. Save the account ID locally as `CLOUDFLARE_ACCOUNT_ID`
 6. Save the token locally as `CLOUDFLARE_API_TOKEN`
-7. Open [Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/) and confirm whether the free daily allocation is still `10,000` Neurons
+7. Open [Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/) and confirm the daily free allocation, its `00:00 UTC` reset, and the Workers Paid rate above the allocation (currently `$0.011` per `1,000` Neurons)
 8. On the Pricing page, check the target model's example Neurons cost and record how input, output, or inference volume is converted, so `10,000` Neurons is not treated as a fixed request count
-9. On the Pricing page, confirm whether the target model is available on Workers Free; `@cf/moonshotai/kimi-k2.6`, `@cf/moonshotai/kimi-k2.7-code`, `@cf/zai-org/glm-5.2`, `@cf/zai-org/glm-5.3`, `@cf/zai-org/glm-5.3-flash`, `@cf/deepseek-ai/deepseek-v4-flash-0731`, `@cf/deepseek-ai/deepseek-v4.1-flash-1017`, `@cf/deepseek-ai/deepseek-v4-pro-0813`, and `@cf/thinkingmachines/inkling-2-small` currently require Workers Paid or prepaid AI Gateway credits. Re-check the exact target model row rather than reusing this snapshot
+9. On the Pricing page, confirm whether the target model is available on Workers Free; `@cf/moonshotai/kimi-k2.6`, `@cf/moonshotai/kimi-k2.7-code`, `@cf/zai-org/glm-5.2`, `@cf/zai-org/glm-5.3`, `@cf/zai-org/glm-5.3-flash`, `@cf/deepseek-ai/deepseek-v4-flash-0731`, `@cf/deepseek-ai/deepseek-v4.1-flash-1017`, `@cf/deepseek-ai/deepseek-v4-pro-0813`, and `@cf/thinkingmachines/inkling-2-small` are currently unavailable on Workers Free. Once the daily allocation is exhausted, Workers Free must upgrade to Workers Paid to continue; prepaid AI Gateway credits are a separate billing path. Re-check the exact model row rather than reusing this list
 10. For OpenAI-compatible calls, open [OpenAI compatible API endpoints](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/) and verify the current base URL
 
 ## Human Takeover Points
@@ -23,7 +23,7 @@
 
 ## Final Checklist
 
-- Daily `10,000` Neurons free allocation is still available
+- Workers Free and Workers Paid still each include `10,000` free Neurons per day with a `00:00 UTC` reset; verify the current Workers Paid overage rate
 - Model Neurons cost fits the intended usage, with request volume re-estimated for the target model
 - Target model is available on Workers Free if the operator is relying on the free plan
 - Call path is REST API, Workers binding, or OpenAI-compatible endpoint

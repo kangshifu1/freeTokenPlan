@@ -10,9 +10,9 @@
 4. 创建 API token，或在 Worker 项目中配置 AI binding
 5. 本地保存账号 ID：`CLOUDFLARE_ACCOUNT_ID`
 6. 本地保存 token：`CLOUDFLARE_API_TOKEN`
-7. 打开 [Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/) 确认当前每日免费 allocation 是否仍为 `10,000` Neurons
+7. 打开 [Pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/) 确认每日免费 allocation、`00:00 UTC` 重置时间，以及 Workers Paid 超出 allocation 后的费率（当前每 `1,000` Neurons `$0.011`）
 8. 在 Pricing 页查目标模型的示例 Neurons 成本，记录输入、输出或推理量如何换算，避免把 `10,000` Neurons 当作固定请求数
-9. 在 Pricing 页确认目标模型是否支持 Workers Free plan；当前 `@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2`、`@cf/zai-org/glm-5.3`、`@cf/zai-org/glm-5.3-flash`、`@cf/deepseek-ai/deepseek-v4-flash-0731`、`@cf/deepseek-ai/deepseek-v4.1-flash-1017`、`@cf/deepseek-ai/deepseek-v4-pro-0813`、`@cf/thinkingmachines/inkling-2-small` 需要 Workers Paid plan 或预付 AI Gateway credits。不要复用这份快照，实际接入前应逐行复核目标模型
+9. 在 Pricing 页确认目标模型是否支持 Workers Free plan；当前 `@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2`、`@cf/zai-org/glm-5.3`、`@cf/zai-org/glm-5.3-flash`、`@cf/deepseek-ai/deepseek-v4-flash-0731`、`@cf/deepseek-ai/deepseek-v4.1-flash-1017`、`@cf/deepseek-ai/deepseek-v4-pro-0813`、`@cf/thinkingmachines/inkling-2-small` 不支持 Workers Free plan。Workers Free 用完每日 allocation 后需升级 Workers Paid；预付 AI Gateway credits 是独立计费路径。不要复用模型名单快照，实际接入前应逐行复核
 10. 如果需要 OpenAI 兼容调用，打开 [OpenAI compatible API endpoints](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/) 复核当前 base URL
 
 ## 人工接管点
@@ -23,7 +23,7 @@
 
 ## 完成后核对
 
-- 每日 `10,000` Neurons 免费 allocation 是否仍可用
+- Workers Free 和 Workers Paid 是否仍各有每日 `10,000` Neurons 免费 allocation、`00:00 UTC` 重置，以及 Workers Paid 的超额费率是否有变化
 - 模型消耗的 Neurons 是否适合当前用量，且已按目标模型重新估算请求量
 - 目标模型是否在 Workers Free plan 可用范围内
 - 是否使用 REST API、Workers binding，还是 OpenAI compatible endpoint

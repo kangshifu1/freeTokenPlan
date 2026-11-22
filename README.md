@@ -52,7 +52,7 @@
 
 面向刚入门的用户，目标是把 2026 年仍可用、适合接入 AI 编程工具的免费额度整理成一份公开索引。
 
-- 更新时间：`2026-11-17`
+- 更新时间：`2026-11-22`
 - 适用对象：想在 `Codex`、`Claude Code`、`CC Switch`、OpenAI 兼容客户端里低成本试用模型的人
 - 说明：免费策略变化很快，本文只收录“官方页面能查到”的信息；无法稳定量化的额度会明确标注“以控制台为准”
 
@@ -430,11 +430,11 @@
 - 注册方式：Cloudflare 账号登录后启用 Workers AI
 - 是否需要信用卡：免费 allocation 阶段通常不需要先绑卡；Workers 计划状态会影响能力边界
 - 免费内容：
-  - 官方定价页说明 Workers AI 基于 Neurons 计费，并提供每日 `10,000` Neurons 免费 allocation
+  - 官方定价页说明 Workers AI 基于 Neurons 计费，Workers Free 和 Workers Paid 均提供每日 `10,000` Neurons 免费 allocation，于 `00:00 UTC` 重置；Workers Free 用完后请求会失败，需升级到 Workers Paid 才能继续调用
+  - Workers Paid 超出每日免费 allocation 的部分当前按每 `1,000` Neurons `$0.011` 计费；预付 AI Gateway credits 是独立计费路径
   - Cloudflare 当前按模型展示示例成本；文本、图片、音频等模型的输入/输出或推理量会换算为 Neurons
   - 不同模型消耗的 Neurons 不同，同样 `10,000` Neurons 对不同模型代表的请求量不同
   - 定价页当前明确：`@cf/moonshotai/kimi-k2.6`、`@cf/moonshotai/kimi-k2.7-code`、`@cf/zai-org/glm-5.2`、`@cf/zai-org/glm-5.3`、`@cf/zai-org/glm-5.3-flash`、`@cf/deepseek-ai/deepseek-v4-flash-0731`、`@cf/deepseek-ai/deepseek-v4.1-flash-1017`、`@cf/deepseek-ai/deepseek-v4-pro-0813`、`@cf/thinkingmachines/inkling-2-small` 不在 Workers Free plan 可用范围内，需要 Workers Paid plan 或预付 AI Gateway credits；该名单会独立变化，使用前应逐行复核目标模型
-  - 超过免费 allocation 后需要 Workers Paid plan 或预付 AI Gateway credits
 - 使用限制：
   - 更适合 Cloudflare Worker / REST API / 边缘 demo
   - 如果要接通通用 agent 工具，需要确认当前 OpenAI compatible endpoint
