@@ -29,7 +29,7 @@
 7. 生成后立即复制 key
 8. 本地保存为环境变量名：`GEMINI_API_KEY`
 9. 建议默认模型记录为：
-   - 优先选择 AI Studio 当前推荐且定价页明确支持 Free tier 的 `Flash` 系列模型；当前 `gemini-3.8-flash` Standard API 免费，但 Batch、Google Search grounding 和 Maps grounding 不在其 Free tier
+   - 优先选择 AI Studio 当前推荐且定价页明确支持 Free tier 的 `Flash` 系列模型；官方当前 Free tier 仅开放部分模型并提供免费输入、输出 token；模型页已列出 Gemini 4 系列，具体模型和调用模式需逐行核对
    - 模板默认值仍保留为已验证过的 `gemini-2.5-flash`，导入前按官方模型页复核
 10. 把 key 填入 CC Switch；如走 Gemini 官方 OpenAI compatibility，可记录当前官方兼容端点 `https://generativelanguage.googleapis.com/v1beta/openai/`；如果下游要求完整 Responses API，仍建议先经兼容代理验证
 
@@ -43,5 +43,5 @@
 
 - 是否成功拿到 API key
 - 是否记录了创建日期
-- 是否按模型和调用模式确认了当前 Free tier；不要把付费档共享的每月 `5,000` 次 Search / Maps requests 当作 Free tier grounding 配额
+- 是否按模型和调用模式确认了当前 Free tier；不要把其他模型或付费档的 grounding / Search / Maps 规则当作当前 Free tier 通用配额
 - 是否确认 key 类型不是不受限制的 `standard key`，并已核对旧 key 的当前状态
